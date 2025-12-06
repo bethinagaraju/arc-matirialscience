@@ -839,35 +839,46 @@ function CallForPapersPage() {
 
         </div>
 
+
+        
+
         {/* RIGHT SIDEBAR */}
-        <div className="lg:col-span-4 space-y-8 sticky top-20">
 
-          {/* Submission Button */}
-          <div className="p-6 bg-white border rounded-xl shadow-lg">
-            <h3 className="text-xl mb-2 font-bold">Ready to Submit?</h3>
-            <Link to="/AbstractSubmission">
-              <button className="bg-indigo-600 text-white w-full py-3 rounded-xl hover:bg-indigo-700 mt-4 flex items-center justify-center gap-2">
-                Submit Now <ArrowRight className="w-4" />
-              </button>
-            </Link>
-          </div>
+{/* RIGHT SIDEBAR */}
+<div className="lg:col-span-4 space-y-8 h-fit sticky top-40">
 
-          {/* Templates */}
-          <div className="bg-white border p-6 rounded-xl">
-            <h4 className="uppercase text-sm font-bold mb-3">Templates</h4>
-            <DownloadLink title="Word Template" size="DOCX" />
-            <DownloadLink title="LaTeX Template" size="ZIP" />
-          </div>
+  {/* Submission Button */}
+  <div className="p-6 bg-white border rounded-xl shadow-lg">
+    <h3 className="text-xl mb-2 font-bold">Ready to Submit?</h3>
+    <Link to="/AbstractSubmission">
+      <button className="bg-indigo-600 text-white w-full py-3 rounded-xl hover:bg-indigo-700 mt-4 flex items-center justify-center gap-2">
+        Submit Now <ArrowRight className="w-4" />
+      </button>
+    </Link>
+  </div>
 
-          {/* Contact */}
-          <div className="bg-slate-50 border p-6 rounded-xl">
-            <p className="font-semibold mb-1">Need Help?</p>
-            <a className="text-indigo-600 underline text-sm" href="mailto:submissions@icamlr2026.org">
-              submissions@icamlr2026.org
-            </a>
-          </div>
+  {/* Templates */}
+  <div className="bg-white border p-6 rounded-xl">
+    <h4 className="uppercase text-sm font-bold mb-3">Templates</h4>
+    <DownloadLink title="Word Template" size="DOCX" />
+    <DownloadLink title="LaTeX Template" size="ZIP" />
+  </div>
 
-        </div>
+  {/* Contact */}
+  <div className="bg-slate-50 border p-6 rounded-xl">
+    <p className="font-semibold mb-1">Need Help?</p>
+    <a className="text-indigo-600 underline text-sm" href="mailto:submissions@icamlr2026.org">
+      submissions@icamlr2026.org
+    </a>
+  </div>
+
+</div>
+
+
+
+
+
+
       </div>
 
       <EndFooter />

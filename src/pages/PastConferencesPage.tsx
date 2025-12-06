@@ -137,6 +137,7 @@ import {
   TrendingUp,
   Globe
 } from 'lucide-react';
+import EndFooter from '../components/EndFooter';
 
 function PastConferencesPage() {
   const pastConferences = [
@@ -245,6 +246,7 @@ function PastConferencesPage() {
         </div>
       </div>
 
+      <EndFooter />
 
     </div>
   );

@@ -166,7 +166,7 @@
 
 import React from "react";
 
-const GuestCard = ({ imageUrl, name, title, company }) => (
+const GuestCard = ({ imageUrl, name, title, company, type }) => (
 
 
     <div className="flex-shrink-0 w-[280px] h-[380px] bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out mx-4 first:ml-0 last:mr-0 snap-center">
@@ -189,6 +189,7 @@ const GuestCard = ({ imageUrl, name, title, company }) => (
       {/* Text Section */}
       <h3 className="text-xl font-bold text-gray-800 mt-4" style={{ fontFamily: 'Manrope, sans-serif' }}>{name}</h3>
       <p className="text-sm text-gray-500 mt-1" style={{ fontFamily: 'Manrope, sans-serif' }}>{title}</p>
+      <p className="text-sm text-gray-500 mt-1" style={{ fontFamily: 'Manrope, sans-serif' }}>{type}</p>
       {/* <p className="text-base font-semibold text-gray-700 mt-2">{company}</p> */}
       <div className="mt-2" /> {/* Extra spacing for visual balance */}
     </div>

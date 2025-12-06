@@ -27,14 +27,14 @@ const committeeMembers = [
 
 const CommitteePreview = () => {
   return (
-    <section className="py-20 pt-10">
+    <section className="py-4 pt-10">
       {/* Title */}
       <div className="text-center mb-12 px-4">
         <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium mb-4">
           <Users className="w-4 h-4" />
           Leadership Team
         </div>
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">
+        <h2 className="text-2xl font-bold text-gray-900 mb-4">
           Organizing Committee
         </h2>
         <p className="text-gray-600 max-w-2xl mx-auto text-lg">

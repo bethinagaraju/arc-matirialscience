@@ -138,51 +138,62 @@ function Mixcomponents() {
       imageUrl: 'speakerone.png',
       name: 'Michael Cafarella',
       title: 'Massachusetts Institute of Technology, USA',
-      company: 'EDF Renewables'
+      company: 'EDF Renewables',
+      type: 'Plenary Speaker'
     },
     {
       imageUrl: 'speakertwo.png',
       name: 'Chris Atkenson',
       title: 'Carnegie Mellon University, USA',
-      company: 'McKinsey'
+      company: 'McKinsey',
+      type: 'Plenary Speaker'
     },
     {
       imageUrl: 'speaker3.png',
       name: 'Yanda Li',
       title: 'Tsinghua University, China',
-      company: 'McKinsey'
+      company: 'McKinsey',
+      type: 'Keynote Speaker'
     },
     {
       imageUrl: 'speaker04.png',
       name: 'Samuel Coogan',
       title: 'Georgia institute of Technology, USA',
-      company: 'Deloitte'
+      company: 'Deloitte',
+      type: 'Keynote Speaker'
     },
     {
       imageUrl: 'Gemini_Generated_Image_v41z06v41z06v41z.png',
       name: 'Leonidas Guibas',
       title: 'Stanford University, USA',
-      company: 'KPMG'
+      company: 'KPMG',
+      type: 'Plenary Speaker'
     },
     {
       imageUrl: 'Gemini_Generated_Image_19cov119cov119co.png',
       name: 'Jeannette Bohg',
       title: 'Stanford University, USA',
-      company: 'KPMG, UK'
+      company: 'KPMG, UK',
+      type: 'Plenary Speaker'
     },
     {
       imageUrl: 'Gemini_Generated_Image_n1hse1n1hse1n1hs.png',
       name: 'Gustavo Alonso',
       title: 'ETH Zurich, Switzerland',
-      company: 'Ministry of Energy & Infrastructure, UAE'
+      company: 'Ministry of Energy & Infrastructure, UAE',
+      type: 'Keynote Speaker'
     },
     {
       imageUrl: 'Gemini_Generated_Image_cksm8zcksm8zcksm.png',
       name: 'Weidong Chen',
       title: 'Shanghai Jiao Tong University, China',
-      company: 'Shanghai Jiao Tong University, China'
+      company: 'Shanghai Jiao Tong University, China',
+      type: 'Plenary Speaker'
     }
   ];
+
+
+  
 
   return (
     <div
@@ -208,6 +219,7 @@ function Mixcomponents() {
                 name={speaker.name}
                 title={speaker.title}
                 company={speaker.company}
+                type={speaker.type}
               />
             </div>
           ))}

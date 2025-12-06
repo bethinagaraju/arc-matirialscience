@@ -32,6 +32,7 @@ function VenueComponent() {
                 Located in a green area near the Villa Doria Pamphili park, this prestigious 4-star superior hotel offers state-of-the-art conference facilities, a spa, and easy access to Vatican City.
               </p>
 
+
               <div className="space-y-2 mb-4">
                 <div className="flex items-start gap-4 p-3 rounded-lg hover:bg-gray-50 transition-colors">
                   <MapPin className="w-5 h-5 text-indigo-500 mt-1 flex-shrink-0" />
@@ -72,6 +73,15 @@ function VenueComponent() {
                 <ExternalLink className="w-4 h-4" /> Visit Website
               </button>
             </div>
+
+
+                          <div className="mb-4 mt-4 p-4 bg-yellow-50 border border-yellow-200 rounded-lg">
+                <p className="text-sm text-yellow-800 font-medium mb-2">Important Note:</p>
+                <ul className="text-sm text-yellow-700 space-y-1">
+                  <li>• The Hotel staff will only provide general information about the hotel and guest rooms; and are not responsible for any specific details about the conference.</li>
+                  <li>• Please mention the conference name, dates along with the organizer "Magnus Group", if you wish to contact the hotel reception.</li>
+                </ul>
+              </div>
           </div>
 
           {/* Right Column: Map */}

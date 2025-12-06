@@ -58,7 +58,7 @@ function HomePage() {
       <CookieConsent />
       <Header />
       <HeroSection />
-      <CTARegisterAbstract />
+      
       
       <StatisticsSection />
       
@@ -72,20 +72,27 @@ function HomePage() {
       <ConferenceHighlights />
       <KeyTopicsSection />
       <ComboKeyDatesAndVenue />
-      <KeyDatesSection />
-      <RegionChartComponent/>
+      {/* <KeyDatesSection /> */}
+
+      {/* <RegionChartComponent/>
       <Agenda />
       
       <WhyAttendSection />
       <ConferenceMissionVision />
       <WhoShouldAttendSection />
-      <CommitteePreview />
+      <CommitteePreview /> */}
       
+
+
+
       {/* <CFPHomeSection /> */}
       {/* <SpeakersSection speakers={speakers} />
       <ExhibitingCompanies companies={companies} /> */}
       {/* <ConferenceDetails /> */}
-              <div className="mt-10">
+             
+             
+             
+              {/* <div className="mt-10">
           <h1
             style={{ fontFamily: "'Manrope', sans-serif", color: '#2e376c', textTransform: 'uppercase' }}
             className="text-center text-2xl md:text-3xl font-bold mb-4"
@@ -93,7 +100,7 @@ function HomePage() {
             Universities Participating in the Conference
           </h1>
           <CompanyCarousel />
-        </div>
+        </div> */}
       
       {/* <EventOverview /> */}
       {/* <ConferenceRegistration />
@@ -103,11 +110,12 @@ function HomePage() {
       {/* <HighletOne/> */}
       
       {/* <ShowHighlights/> */}
-      <PartnerLogos />
-      <ComplianceBadges />
+      {/* <PartnerLogos />
+      <ComplianceBadges /> */}
 
       <CountdownTimer />
       <CTARegisterAbstract />
+      
       
       <Footer />
       <EndFooter/>

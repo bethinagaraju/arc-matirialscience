@@ -318,7 +318,10 @@ function ReviewProcessPage() {
             
             {/* 1. KEY METRICS DASHBOARD */}
             <section id="standards" className="scroll-mt-24">
-               <h2 className="text-xl font-bold text-slate-900 mb-4">Key Standards</h2>
+               {/* <h2 className="text-xl font-bold text-slate-900 mb-4">Review Standards</h2> */}
+               <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <CheckCircle2 className="w-6 h-6 text-indigo-600" /> Review Standards
+               </h2>
                <div className="grid sm:grid-cols-3 gap-4">
                   {/* Reviewers */}
                   <div className="bg-white p-5 rounded-xl border border-gray-200 shadow-sm flex flex-col items-start">
@@ -350,7 +353,7 @@ function ReviewProcessPage() {
             </section>
 
             {/* 2. PLAGIARISM DETAILS */}
-            <section id="plagiarism" className="scroll-mt-24">
+            {/* <section id="plagiarism" className="scroll-mt-24">
                <h2 className="text-2xl font-bold text-slate-900 mb-4">Plagiarism Policy</h2>
                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
                   <p className="text-slate-600 leading-relaxed mb-4">
@@ -371,7 +374,35 @@ function ReviewProcessPage() {
                      </li>
                   </ul>
                </div>
-            </section>
+            </section> */}
+
+            <section id="plagiarism" className="scroll-mt-24">
+ 
+  <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                  <AlertTriangle className="w-6 h-6 text-red-600" /> Plagiarism Screening
+               </h2>
+  <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
+    <p className="text-slate-600 leading-relaxed mb-4">
+      The conference maintains a zero-tolerance policy for plagiarism and unethical academic practices. All submissions undergo an initial plagiarism check using a professional similarity detection tool.
+    </p>
+    <ul className="space-y-3">
+      <li className="flex items-start gap-3 text-sm text-slate-600">
+        <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
+        <span>Papers exceeding <strong>15% similarity</strong> (excluding references, common terminology, and methodological descriptions) will be rejected without review.</span>
+      </li>
+      <li className="flex items-start gap-3 text-sm text-slate-600">
+        <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
+        <span>Self-plagiarism, duplicate submission, or recycling previously published work is not permitted.</span>
+      </li>
+      <li className="flex items-start gap-3 text-sm text-slate-600">
+        <CheckCircle2 className="w-5 h-5 text-green-500 shrink-0" />
+        <span>Final acceptance is conditional upon clearing plagiarism screening.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
 
             {/* 3. CONFLICT OF INTEREST */}
             <section id="conflict" className="scroll-mt-24">
@@ -383,16 +414,16 @@ function ReviewProcessPage() {
                      To ensure fair evaluation, reviewers must decline assignments if they fall under any of the following categories. Assignments are redistributed accordingly in such cases.
                   </p>
                   <div className="grid sm:grid-cols-2 gap-4 not-prose mt-4">
-                     <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 text-sm font-medium">
+                     <div className="bg-slate-50 p-4 rounded-lg border border-slate-200 text-sm font-medium">
                         Have collaborated with any author within the last 3 years.
                      </div>
-                     <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 text-sm font-medium">
+                     <div className="bg-slate-50 p-4 rounded-lg border border-slate-200 text-sm font-medium">
                         Share the same institutional affiliation.
                      </div>
-                     <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 text-sm font-medium">
+                     <div className="bg-slate-50 p-4 rounded-lg border border-slate-200 text-sm font-medium">
                         Have a direct personal or financial interest in the work.
                      </div>
-                     <div className="bg-slate-50 p-4 rounded-lg border border-slate-100 text-sm font-medium">
+                     <div className="bg-slate-50 p-4 rounded-lg border border-slate-200 text-sm font-medium">
                         Supervise or are supervised by any of the authors.
                      </div>
                   </div>
@@ -453,7 +484,7 @@ function ReviewProcessPage() {
             {/* 6. RETRACTION POLICY */}
             <section id="retraction" className="scroll-mt-24">
                <h2 className="text-2xl font-bold text-slate-900 mb-4 flex items-center gap-2">
-                  <AlertTriangle className="w-6 h-6 text-orange-600" /> Retraction Policy
+                  <AlertTriangle className="w-6 h-6 text-orange-600" /> Retraction Guidelines
                </h2>
                <div className="bg-white p-8 rounded-2xl border border-gray-200 shadow-sm">
                   <p className="text-slate-600 mb-4">

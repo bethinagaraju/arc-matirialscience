@@ -353,7 +353,7 @@ const SessionTypesSection: React.FC = () => {
                 <Icon className="w-6 h-6 text-indigo-600 mt-1 flex-shrink-0" />
                 <div>
                   <h3 className="text-lg font-semibold text-slate-900">{item.name}</h3>
-                  <p className="text-slate-700">{item.desc}</p>
+                  {/* <p className="text-slate-700">{item.desc}</p> */}
                 </div>
               </div>
             </li>

@@ -387,6 +387,10 @@ const Agenda: React.FC = () => {
               : renderSchedule(scheduleData.day3)}
           </div>
 
+          <p className="text-start text-gray-600 mt-8 max-w-2xl" style={{ fontSize: '1rem', font: "sans-serif" }}>
+            The agenda is subject to change. More sessions and speakers will be announced soon.
+          </p>
+
           {/* Register Button */}
           <div className="flex justify-center mt-10">
             <Link to="/register">
@@ -398,6 +402,9 @@ const Agenda: React.FC = () => {
             </Link>
           </div>
         </div>
+
+        
+
       </section>
     </div>
   );

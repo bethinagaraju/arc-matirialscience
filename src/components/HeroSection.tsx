@@ -296,7 +296,8 @@ const HeroSection: React.FC = () => {
               className="text-xl sm:text-3xl md:text-4xl font-semibold mb-4 sm:mb-5 text-black uppercase leading-snug"
               style={{ fontFamily: 'Manrope, sans-serif' }}
             >
-              Artificial Intelligence, Machine Learning and Robotics Conference
+              {/* Artificial Intelligence, Machine Learning and Robotics Conference */}
+              3rd Global Conference on AI, ML & Robotics – July 2026, Rome, Italy.
             </p>
 
             <p className="text-lg sm:text-xl md:text-2xl font-medium mb-5 text-gray-800">

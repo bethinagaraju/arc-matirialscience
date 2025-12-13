@@ -395,12 +395,13 @@ const ContentSection: React.FC = () => {
           </Link>
           <span className="mx-2 text-gray-400">|</span>
 
-          <Link to="/speaker-registration" className="text-[#0091b5] hover:text-[#00488B] hover:underline transition-colors">
+          <Link to="/speakers" className="text-[#0091b5] hover:text-[#00488B] hover:underline transition-colors">
             Speaker Registration
           </Link>
+
           <span className="mx-2 text-gray-400">|</span>
 
-          <Link to="/program-schedule" className="text-[#0091b5] hover:text-[#00488B] hover:underline transition-colors">
+          <Link to="/schedule" className="text-[#0091b5] hover:text-[#00488B] hover:underline transition-colors">
             Program Schedule
           </Link>
           <span className="mx-2 text-gray-400">|</span>

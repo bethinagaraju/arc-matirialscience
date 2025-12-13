@@ -386,8 +386,13 @@ const ScrollbarPage: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-8 items-start min-h-[600px]">
 
           {/* LEFT SIDEBAR (Sticky on Desktop) */}
-          <div className="w-full lg:w-[20%] lg:sticky lg:top-28 lg:self-start p-2">
+          {/* <div className="w-full lg:w-[20%] lg:sticky lg:top-28 lg:self-start p-2">
             <MobileSidebarMenu />
+          </div> */}
+           <div className="hidden lg:block w-full lg:w-[20%] p-2 relative">
+            <div className="lg:sticky lg:top-28 lg:max-h-[calc(100vh-120px)]">
+              <MobileSidebarMenu />
+            </div>
           </div>
 
           {/* RIGHT CONTENT (Scrollable Area) */}

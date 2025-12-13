@@ -57,7 +57,7 @@
 // //             About the Conference
 // //           </h3>
 // //           <p className="text-gray-600 leading-relaxed">
-// //             The Global Biotechnology Summit is a premier event that brings together the brightest minds to share cutting-edge research, explore new technologies, and foster collaborations that will address the world's most pressing challenges in health, agriculture, and sustainability.
+// //             The Global Biotechnology Summit is a premier event that brings together the brightest minds to share cutting-edge research, explore new technologies, and poster collaborations that will address the world's most pressing challenges in health, agriculture, and sustainability.
 // //           </p>
 
 // //           <h3 className="text-2xl font-bold text-gray-800 mt-10 mb-4">

@@ -169,7 +169,7 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
                 <Link to="/about" className="block px-4 py-2 hover:bg-gray-100">About Conference</Link>
                 <Link to="/commitee" className="block px-4 py-2 hover:bg-gray-100">Committee</Link>
-                <Link to="/past-conferences" className="block px-4 py-2 hover:bg-gray-100">Past Conferences</Link>
+                {/* <Link to="/past-conferences" className="block px-4 py-2 hover:bg-gray-100">Past Conferences</Link> */}
               </div>
             )}
           </div>
@@ -208,21 +208,7 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
             )}
           </div>
 
-          {/* REGISTRATION */}
-          {/* <div
-            className="relative"
-            onMouseEnter={() => setHovered("registration")}
-            onMouseLeave={() => setHovered(null)}
-          >
-            <span className="tracking-wider hover:text-gray-300 text-sm cursor-pointer flex items-center">
-              REGISTRATION <ChevronDown size={16} />
-            </span>
-            {hovered === "registration" && (
-              <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[200px] z-10">
-                <Link to="/register" className="block px-4 py-2 hover:bg-gray-100">Registration</Link>
-              </div>
-            )}
-          </div> */}
+
 
           <Link to="/register" className="tracking-wider hover:text-gray-300 text-sm">
             REGISTER

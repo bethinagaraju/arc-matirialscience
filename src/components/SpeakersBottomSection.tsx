@@ -17,7 +17,7 @@ function SpeakersBottomSection() {
           <p className="text-indigo-200 mb-8 leading-relaxed">
             Join our distinguished speakers and present your groundbreaking work at ICAMLR 2026.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
             <Link to="/AbstractSubmission">
               <button className="bg-white text-indigo-900 font-bold py-4 px-8 rounded-full hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-xl flex items-center justify-center gap-2">
                 <Mic2 className="w-5 h-5" />
@@ -32,6 +32,10 @@ function SpeakersBottomSection() {
           </div>
         </div>
       </div>
+
+
+
+
     </div>
   );
 }

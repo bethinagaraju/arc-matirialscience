@@ -109,7 +109,8 @@ const sessions = [
       
       {/* Title */}
       <h2 className="text-3xl sm:text-4xl font-semibold text-center text-[#053047] mb-10">
-        Scientific Sessions
+        {/* Scientific Sessions */}
+        Conference Topics
       </h2>
 
       {/* Grid including buttons */}

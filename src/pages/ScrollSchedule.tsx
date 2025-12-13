@@ -273,10 +273,8 @@ const ScrollSchedule: React.FC = () => {
       <section className="py-6 px-4 sm:px-8 lg:px-16">
         <div className="flex flex-col lg:flex-row gap-8 items-start relative">
           
-          {/* Sidebar wrapper */}
-          <div className="w-full lg:w-[20%] p-2 rounded-lg border border-green-800">
-            {/* Sticky only the menu */}
-            <div className="lg:sticky lg:top-28">
+                  <div className="hidden lg:block w-full lg:w-[20%] p-2 relative">
+            <div className="lg:sticky lg:top-28 lg:max-h-[calc(100vh-120px)]">
               <MobileSidebarMenu />
             </div>
           </div>

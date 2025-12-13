@@ -106,7 +106,7 @@ function AboutPage() {
       
       {/* --- HERO SECTION --- */}
       <div className="relative bg-indigo-900 text-white overflow-hidden">
-        {/* Abstract Background Overlay */}
+      
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         
 
@@ -122,7 +122,7 @@ function AboutPage() {
             Converging minds to explore the next era of intelligent and sustainable technological progress.
           </p>
           
-          {/* Date & Location Pills */}
+         
           <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-sm md:text-base">
             <div className="flex items-center gap-2 bg-white/10 px-6 py-3 backdrop-blur-md">
               <Calendar className="w-5 h-5 text-blue-300" />
@@ -164,7 +164,7 @@ function AboutPage() {
                 Join the global community of visionaries at the International Conference on Artificial Intelligence, Machine Learning, and Robotics, taking place from July 28–30, 2026, at Crowne Plaza – St. Peter’s Rome, Italy. This event brings together researchers, technologists, industry leaders, and innovators to explore groundbreaking advancements transforming industries and society.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Engage in insightful discussions and hands-on sessions on deep learning, autonomous systems, generative AI, human–robot collaboration, robotics in healthcare, and ethical AI frameworks. Explore how these technologies are transforming industries, enhancing decision-making, and improving human life through intelligent, adaptive systems. Gain valuable insights from global experts and innovators driving real-world AI and robotics applications. Join this dynamic platform that fosters collaboration, discovery, and innovation, shaping the next era of intelligent and sustainable technological progress.
+                Engage in insightful discussions and hands-on sessions on deep learning, autonomous systems, generative AI, human–robot collaboration, robotics in healthcare, and ethical AI frameworks. Explore how these technologies are transforming industries, enhancing decision-making, and improving human life through intelligent, adaptive systems. Gain valuable insights from global experts and innovators driving real-world AI and robotics applications. Join this dynamic platform that posters collaboration, discovery, and innovation, shaping the next era of intelligent and sustainable technological progress.
               </p>
               {/* <button className="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                 Learn more about our mission <ArrowRight className="w-4 h-4" />

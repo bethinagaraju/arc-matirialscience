@@ -628,55 +628,62 @@ const ComboKeyDatesAndVenue: React.FC = () => {
         </div>
 
         {/* --- THREE MAIN CARDS --- */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-8">
+          {cards.map((card, index) => (
+            <div key={index} className="bg-white shadow-xl border border-gray-200">
+              <div className={`text-white text-center font-semibold py-3 rounded-t-3xl`} style={{ backgroundColor: card.bgColor }}>
+                {card.title}
+              </div>
+              <div className="p-6 text-center space-y-5">
+                {card.data.map((item, idx) => (
+                  <div key={idx}>
+                    <p className="font-semibold">{item.title}</p>
+                    <p>{item.date}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
 
-          {/* Conference Dates */}
-          <div className="bg-white shadow-xl border border-gray-200">
-            <div className="bg-[#003b66] text-white text-center font-semibold py-3 rounded-t-3xl">
-              Conference Dates
+        {/* Mobile Slider */}
+        <div className="md:hidden">
+          <div className="relative">
+            <div className="bg-white shadow-xl border border-gray-200">
+              <div className={`text-white text-center font-semibold py-3 rounded-t-3xl`} style={{ backgroundColor: cards[currentIndex].bgColor }}>
+                {cards[currentIndex].title}
+              </div>
+              <div className="p-6 text-center space-y-5">
+                {cards[currentIndex].data.map((item, idx) => (
+                  <div key={idx}>
+                    <p className="font-semibold">{item.title}</p>
+                    <p>{item.date}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="p-6 text-center space-y-5">
-              {conferenceOpenings.map((item, index) => (
-                <div key={index}>
-                  <p className="font-semibold">{item.title}</p>
-                  <p>{item.date}</p>
-                </div>
-              ))}
-            </div>
+            <button
+              onClick={() => setCurrentIndex((prev) => (prev === 0 ? cards.length - 1 : prev - 1))}
+              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2"
+            >
+              <ChevronLeft size={20} />
+            </button>
+            <button
+              onClick={() => setCurrentIndex((prev) => (prev === cards.length - 1 ? 0 : prev + 1))}
+              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-white shadow-lg rounded-full p-2"
+            >
+              <ChevronRight size={20} />
+            </button>
           </div>
-
-          {/* Registration Deadline */}
-          <div className="bg-white rounded-3xl shadow-xl border border-gray-200">
-            <div className="bg-[#0096c7] text-white text-center font-semibold py-3 rounded-t-3xl">
-              Registrations Deadline
-            </div>
-            <div className="p-6 text-center space-y-5">
-              {registrationDeadlines.map((item, index) => (
-                <div key={index}>
-                  <p className="font-semibold">{item.title}</p>
-                  <p>{item.date}</p>
-                </div>
-              ))}
-            </div>
+          <div className="flex justify-center mt-4 space-x-2">
+            {cards.map((_, idx) => (
+              <button
+                key={idx}
+                onClick={() => setCurrentIndex(idx)}
+                className={`w-3 h-3 rounded-full ${idx === currentIndex ? 'bg-blue-600' : 'bg-gray-300'}`}
+              />
+            ))}
           </div>
-
-          {/* Abstract Deadlines */}
-          <div className="bg-white rounded-3xl shadow-xl border border-gray-200">
-            <div className="bg-[#1a1a1a] text-white text-center font-semibold py-3 rounded-t-3xl">
-              Abstract Deadline
-            </div>
-            <div className="p-6 text-center space-y-5">
-              {abstractDeadlines.map((item, index) => (
-                <div key={index}>
-                  <p className={`font-semibold ${item.highlight ? "bg-teal-400 px-2 rounded text-white" : ""}`}>
-                    {item.title}
-                  </p>
-                  <p>{item.date}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
         </div>
 
         {/* --- VENUE SECTION BELOW CARDS --- */}

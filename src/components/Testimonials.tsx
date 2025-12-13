@@ -84,7 +84,7 @@
 
 
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface Testimonial {
@@ -141,6 +141,14 @@ const testimonials: Testimonial[] = [
 
 const Testimonials: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   // Logic to move the slide window
   const prevSlide = () => {
@@ -151,13 +159,16 @@ const Testimonials: React.FC = () => {
     setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
   };
 
-  // Logic to get the 3 items to display based on currentIndex
-  // We use modulo (%) to create an infinite loop effect for the visual cards
+  // Logic to get the visible testimonials based on screen size
   const getVisibleTestimonials = () => {
-    const item1 = testimonials[currentIndex % testimonials.length];
-    const item2 = testimonials[(currentIndex + 1) % testimonials.length];
-    const item3 = testimonials[(currentIndex + 2) % testimonials.length];
-    return [item1, item2, item3];
+    if (isMobile) {
+      return [testimonials[currentIndex % testimonials.length]];
+    } else {
+      const item1 = testimonials[currentIndex % testimonials.length];
+      const item2 = testimonials[(currentIndex + 1) % testimonials.length];
+      const item3 = testimonials[(currentIndex + 2) % testimonials.length];
+      return [item1, item2, item3];
+    }
   };
 
   const visibleItems = getVisibleTestimonials();
@@ -190,14 +201,14 @@ const Testimonials: React.FC = () => {
                 key={`${item.id}-${currentIndex}`} // Unique key to help React render updates
                 className="bg-white p-8 shadow-lg flex flex-col items-center text-center h-full transition-all duration-300"
               >
-                {/* Avatar Image */}
+                {/* Avatar Image
                 <div className="w-20 h-20 rounded-full overflow-hidden mb-6 border-4 border-gray-100 shadow-sm">
                   <img
                     src={item.image}
                     alt={item.name}
                     className="w-full h-full object-cover"
                   />
-                </div>
+                </div> */}
 
                 {/* Message */}
                 <p className="text-gray-600 mb-2 leading-relaxed flex-grow text-[15px]">

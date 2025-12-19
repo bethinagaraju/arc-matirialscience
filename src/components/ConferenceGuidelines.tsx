@@ -196,8 +196,10 @@ import {
   MonitorPlay, 
   Award, 
   ChevronRight, 
-  ArrowRight 
+  ArrowRight,
+  CalendarDays
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const ConferenceGuidelines: React.FC = () => {
   return (
@@ -213,17 +215,31 @@ const ConferenceGuidelines: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid gap-12">
+      {/* Conference Details */}
+      <div className="mb-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
+        <div className="flex items-center gap-3 mb-4">
+          <CalendarDays className="w-6 h-6 text-blue-900" />
+          <h3 className="text-2xl font-bold text-gray-900">Conference Details</h3>
+        </div>
+        <ul className="space-y-2 text-gray-700">
+          <li><strong>Date:</strong> July 28, 2026</li>
+          <li><strong>Time:</strong> 8:00 AM</li>
+          <li><strong>Location:</strong> Rome, Italy</li>
+          <li><strong>Venue:</strong> Crowne Plaza-St. Peter's Rome, Italy</li>
+        </ul>
+      </div>
+
+      <div className="grid gap-4">
 
         {/* 1. Registration */}
         <section>
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3">
             <div className="p-2 rounded-lg text-blue-900">
               <ClipboardCheck className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900">Registration</h3>
           </div>
-          <ul className="space-y-3 ml-2 md:ml-12">
+          <ul className="space-y-1 ml-2 md:ml-12">
             {[
               "Registrations start at 08:00 AM on October 22, 2026 in Boston, Massachusetts, USA.",
               "The registration desk will remain open from 8 AM during the conference.",
@@ -243,13 +259,13 @@ const ConferenceGuidelines: React.FC = () => {
 
         {/* 2. Speaker Guidelines */}
         <section>
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3">
             <div className="p-2 rounded-lg text-blue-900">
               <Mic2 className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900">Speaker Guidelines</h3>
           </div>
-          <ul className="space-y-3 ml-2 md:ml-12">
+          <ul className="space-y-1 ml-2 md:ml-12">
             {[
               "Please be available in the meeting room from the start time of the conference on your presentation day.",
               "Presentation time: 20–25 minutes (prepare 17–19 minutes to allow for Q&A).",
@@ -272,13 +288,13 @@ const ConferenceGuidelines: React.FC = () => {
 
         {/* 3. Poster Guidelines */}
         <section>
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3">
             <div className="p-2 rounded-lg text-blue-900">
               <ImageIcon className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900">Poster Guidelines</h3>
           </div>
-          <ul className="space-y-3 ml-2 md:ml-12">
+          <ul className="space-y-1 ml-2 md:ml-12">
             {[
               "Poster numbers will be assigned in the final program.",
               "Hang your poster 1 hour before the session begins.",
@@ -299,13 +315,13 @@ const ConferenceGuidelines: React.FC = () => {
 
         {/* 4. Virtual Guidelines */}
         <section>
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3">
             <div className="p-2 rounded-lg text-blue-900">
               <MonitorPlay className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900">Virtual Presentation Guidelines</h3>
           </div>
-          <ul className="space-y-3 ml-2 md:ml-12">
+          <ul className="space-y-1 ml-2 md:ml-12">
             {[
               "Virtual presentations allow remote participation.",
               "Meeting access details will be provided prior to the conference.",
@@ -325,13 +341,13 @@ const ConferenceGuidelines: React.FC = () => {
 
         {/* 5. Certification */}
         <section>
-          <div className="flex items-center gap-3 mb-4">
+          <div className="flex items-center gap-3">
             <div className="p-2 rounded-lg text-blue-900">
               <Award className="w-6 h-6" />
             </div>
             <h3 className="text-2xl font-bold text-gray-900">Certification</h3>
           </div>
-          <ul className="space-y-3 ml-2 md:ml-12">
+          <ul className="space-y-1 ml-2 md:ml-12">
             {[
               "All attendees will receive a certificate signed by the organizing committee.",
               "Details will be printed as per registration records — request changes at least one month prior.",
@@ -351,13 +367,14 @@ const ConferenceGuidelines: React.FC = () => {
 
       {/* Buttons */}
       <div className="flex flex-col sm:flex-row gap-4 mt-16 border-t pt-8">
-        <button className="flex items-center justify-center gap-2 px-8 py-3 bg-[#304278] text-white font-semibold rounded hover:bg-[#304278] transition-colors">
+        
+        <Link to="/register" className="flex items-center justify-center gap-2 px-8 py-3 bg-[#304278] text-white font-semibold rounded hover:bg-[#304278] transition-colors">
           Register Now <ArrowRight className="w-4 h-4" />
-        </button>
+        </Link>
 
-        <button className="flex items-center justify-center gap-2 px-8 py-3 border-2 border-gray-200 text-gray-700 font-semibold rounded hover:border-[#0091b5] hover:text-[#0091b5] transition-colors">
+        <Link to="/AbstractSubmission" className="flex items-center justify-center gap-2 px-8 py-3 border-2 border-gray-200 text-gray-700 font-semibold rounded hover:border-[#0091b5] hover:text-[#0091b5] transition-colors">
           Abstract Submission
-        </button>
+        </Link>
       </div>
     </div>
   );

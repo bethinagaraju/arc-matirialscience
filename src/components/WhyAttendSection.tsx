@@ -372,7 +372,7 @@ export default function WhyAttendSection() {
     >
       <div className="relative max-w-7xl mx-auto">
         <h2 className="text-3xl md:text-4xl font-semibold text-center mb-12">
-          Why Attend NWC?
+          Why Attend AIMLR?
         </h2>
 
         {/* Grid Layout: 1fr (Icons) - 2fr (Video) - 1fr (Icons) */}
@@ -387,27 +387,33 @@ export default function WhyAttendSection() {
 
           {/* Center Video Area */}
           <div className="lg:col-span-2 w-full flex justify-center">
-            <div className="relative w-full aspect-video bg-black shadow-2xl overflow-hidden group cursor-pointer">
+            <div className="relative w-full aspect-video bg-black shadow-2xl overflow-hidden group cursor-pointer items-center justify-center flex rounded-lg">
               
-              {/* Thumbnail Image (Using a placeholder that looks like a conference room) */}
+              
               <img 
                 src="https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1000&auto=format&fit=crop" 
                 alt="Conference Video" 
                 className="w-full h-full object-cover opacity-80 group-hover:opacity-90 transition-opacity"
               />
 
-              {/* Red Play Button */}
+              {/* Navigation Overlay */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-16 h-16 bg-red-600 rounded-lg flex items-center justify-center shadow-lg transform group-hover:scale-110 transition-transform duration-300">
-                  <FaPlay className="text-white ml-1" size={24} />
+                <div className="grid grid-cols-1 gap-4 p-4">
+                  <div className="bg-[#384a81] bg-opacity-90 p-3 text-center shadow-lg hover:bg-opacity-100 transition-all cursor-pointer">
+                    <span className="text-[#ffffff] font-semibold text-base">SPEAKERS</span>
+                  </div>
+                  <div className="bg-[#384a81] bg-opacity-90 p-3 text-center shadow-lg hover:bg-opacity-100 transition-all cursor-pointer">
+                    <span className="text-[#ffffff] font-semibold text-base">ABSTRACT SUBMISSION</span>
+                  </div>
+                  <div className="bg-[#384a81] bg-opacity-90 p-3 text-center shadow-lg hover:bg-opacity-100 transition-all cursor-pointer">
+                    <span className="text-[#ffffff] font-semibold text-base">REGISTER</span>
+                  </div>
+                  <div className="bg-[#384a81] bg-opacity-90 p-3 text-center shadow-lg hover:bg-opacity-100 transition-all cursor-pointer">
+                    <span className="text-[#ffffff] font-semibold text-base">SPONSORS</span>
+                  </div>
                 </div>
               </div>
 
-              {/* Name Overlay Banner */}
-              <div className="absolute bottom-4 left-0 bg-[#2d3e68] text-white py-1 px-4 pr-8 shadow-md">
-                <p className="font-bold text-sm md:text-base">Shannon McCrory-Churchill</p>
-                <p className="text-xs text-gray-300">Nursing World Conference Committee</p>
-              </div>
             </div>
           </div>
 

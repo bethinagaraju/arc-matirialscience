@@ -12,7 +12,7 @@ function SpeakersBanner() {
           <span className="text-xs font-semibold tracking-widest uppercase text-indigo-200">World Class Lineup</span>
         </div>
         <h1 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
-          Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Visionaries</span>
+          Meet Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Speakers</span>
         </h1>
         <p className="text-lg md:text-xl text-indigo-200 max-w-2xl mx-auto font-light">
           Discover the thought leaders and innovators shaping the future of AI, Machine Learning, and Robotics.

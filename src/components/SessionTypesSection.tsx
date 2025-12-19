@@ -344,11 +344,11 @@ const SessionTypesSection: React.FC = () => {
       </div>
 
       {/* Bulleted List */}
-      <ul className="space-y-6 max-w-4xl mx-auto text-slate-800">
+      <ul className="space-y-6 max-w-4xl text-slate-800">
         {sessionTypes.map((item, index) => {
           const Icon = item.icon;
           return (
-            <li key={index} className="space-y-1">
+            
               <div className="flex items-start gap-3">
                 <Icon className="w-6 h-6 text-indigo-600 mt-1 flex-shrink-0" />
                 <div>
@@ -356,7 +356,7 @@ const SessionTypesSection: React.FC = () => {
                   {/* <p className="text-slate-700">{item.desc}</p> */}
                 </div>
               </div>
-            </li>
+            
           );
         })}
       </ul>

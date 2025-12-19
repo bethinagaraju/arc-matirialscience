@@ -130,7 +130,7 @@ const stats = [
   { value: 35, label: 'SPEAKERS' },
   { value: 20, label: 'COUNTRIES REPRESENTED' },
   { value: 150, label: 'PARTICIPANTS' },
-  { value: 100, label: 'COUNTRIES REPRESENTED' }
+  { value: 100, label: 'PANELS & WORKSHOPS' }
 ];
 
 const StatisticsSection: React.FC<StatisticsSectionProps> = ({ embedded = false }) => {

@@ -145,54 +145,56 @@ const testimonials: Testimonial[] = [
     name: "Dr. Aisha Raman",
     title: "Robotics Researcher, IIT Delhi",
     location: "India",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "WhatsApp Image 2025-12-18 at 15.17.07.jpeg",
     message:
-      "The sessions were informative, and the networking opportunities were extremely beneficial for my academic growth."
+      "Thank youI really enjoyed presenting and it looks like my presentation impacted people-  thank you for a great time-slot"
   },
   {
     id: 2,
     name: "Miguel Alvarez",
     title: "AI Systems Engineer, Barcelona Robotics Lab",
     location: "Spain",
-    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "WhatsApp Image 2025-12-18 at 15.18.13.jpeg",
     message:
-      "The conference successfully bridged the gap between academia and industry. I look forward to participating in future editions."
+      "Thank you!  We are enjoying the conference!"
   },
   {
     id: 3,
     name: "Dr. Hana Sato",
     title: "Autonomous Navigation Specialist, Kyoto Tech",
     location: "Japan",
-    image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "WhatsApp Image 2025-12-18 at 15.19.20.jpeg",
     message:
-      "As a student, this conference was very motivatingIt was an inspiring learning experience."
+      "I thoroughly enjoyed the conference and am looking to forward those in the future."
   },
   {
     id: 4,
     name: "Jonathan Miller",
     title: "Lead Robotics Engineer, RoboNext",
     location: "USA",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "WhatsApp Image 2025-12-18 at 15.20.51.jpeg",
     message:
-      "well organized with a strong focus on current research trends.it a valuable platform for academic exchange"
+      "Thank you for a great conference and using me as a Moderator."
   },
+
   {
     id: 5,
     name: "Emily Carter",
     title: "PhD Scholar in AI & Robotics, University of Manchester",
     location: "UK",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "WhatsApp Image 2025-12-18 at 15.21.33.jpeg",
     message:
-      "Organizing committee ensured timely communication, well-planned sessions, and a professional atmosphere."
+      "It was an excellent conference and I am honoured to have been a part of it. One of the best I have been to."
   },
+
     {
     id: 6,
     name: "Emily Carter",
     title: "PhD Scholar in AI & Robotics, University of Manchester",
     location: "UK",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200",
+    image: "WhatsApp Image 2025-12-18 at 15.24.34.jpeg",
     message:
-      "I was impressed by the scientific  and the global participation at the conference. It was a pleasure to be part of such academic event."
+      "I did enjoy meeting so many people from different countries with great ideas"
   }
 ];
 
@@ -261,14 +263,14 @@ const Testimonials: React.FC = () => {
                 key={`${item.id}-${currentIndex}`} // Unique key to help React render updates
                 className="bg-white p-8 shadow-lg flex flex-col items-center text-center h-full transition-all duration-300"
               >
-                {/* Avatar Image
+               
                 <div className="w-20 h-20 rounded-full overflow-hidden mb-6 border-4 border-gray-100 shadow-sm">
                   <img
                     src={item.image}
                     alt={item.name}
                     className="w-full h-full object-cover"
                   />
-                </div> */}
+                </div>
 
                 {/* Message */}
                 <p className="text-gray-600 mb-2 leading-relaxed flex-grow text-[15px]">

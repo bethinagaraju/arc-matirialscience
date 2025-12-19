@@ -1,6 +1,6 @@
 [
     {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Speaker",
     "noofnights": 0,
     "noofguests": 0,
@@ -10,7 +10,7 @@
     "planid": "plan_hLWCDW2D5cK92"
   },
   {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Poster",
     "noofnights": 0,
     "noofguests": 0,
@@ -20,8 +20,8 @@
     "planid": "plan_jfnD3Xi7TnAzV"
   },
   {
-    "registrationtype": "Registration Only",
-    "presentationtype": "Listener/Delegate",
+    "registrationtype": "RegistrationOnly",
+    "presentationtype": "Listener",
     "noofnights": 0,
     "noofguests": 0,
     "registrationfee": 180.75,
@@ -30,7 +30,7 @@
     "planid": "plan_hLWCDW2D5cK92"
   },
   {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Sponsor",
     "noofnights": 0,
     "noofguests": 0,
@@ -40,7 +40,7 @@
     "planid": "plan_jfnD3Xi7TnAzV"
   },
   {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Student",
     "noofnights": 0,
     "noofguests": 0,
@@ -54,7 +54,7 @@
 
 
   {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Speaker",
     "noofnights": 1,
     "noofguests": 1,
@@ -64,7 +64,7 @@
     "planid": "plan_hLWCDW2D5cK92"
   },
   {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Poster",
     "noofnights": 2,
     "noofguests": 2,
@@ -74,8 +74,8 @@
     "planid": "plan_jfnD3Xi7TnAzV"
   },
   {
-    "registrationtype": "Registration Only",
-    "presentationtype": "Listener/Delegate",
+    "registrationtype": "RegistrationOnly",
+    "presentationtype": "Listener",
     "noofnights": 3,
     "noofguests": 0,
     "registrationfee": 180.75,
@@ -84,7 +84,7 @@
     "planid": "plan_hLWCDW2D5cK92"
   },
   {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Sponsor",
     "noofnights": 1,
     "noofguests": 4,
@@ -94,7 +94,7 @@
     "planid": "plan_jfnD3Xi7TnAzV"
   },
   {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Student",
     "noofnights": 2,
     "noofguests": 1,
@@ -104,7 +104,7 @@
     "planid": "plan_hLWCDW2D5cK92"
   },
   {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Exhibitor",
     "noofnights": 3,
     "noofguests": 7,
@@ -114,7 +114,7 @@
     "planid": "plan_jfnD3Xi7TnAzV"
   },
   {
-    "registrationtype": "Registration and Accommodation",
+    "registrationtype": "RegistrationandAccommodation",
     "presentationtype": "Speaker",
     "noofnights": 1,
     "noofguests": 2,
@@ -124,7 +124,7 @@
     "planid": "plan_hLWCDW2D5cK92"
   },
   {
-    "registrationtype": "Registration and Accommodation",
+    "registrationtype": "RegistrationandAccommodation",
     "presentationtype": "Poster",
     "noofnights": 2,
     "noofguests": 3,
@@ -134,8 +134,8 @@
     "planid": "plan_jfnD3Xi7TnAzV"
   },
   {
-    "registrationtype": "Registration and Accommodation",
-    "presentationtype": "Listener/Delegate",
+    "registrationtype": "RegistrationandAccommodation",
+    "presentationtype": "Listener",
     "noofnights": 3,
     "noofguests": 5,
     "registrationfee": 280.00,
@@ -144,7 +144,7 @@
     "planid": "plan_hLWCDW2D5cK92"
   },
   {
-    "registrationtype": "Registration and Accommodation",
+    "registrationtype": "RegistrationandAccommodation",
     "presentationtype": "Sponsor",
     "noofnights": 1,
     "noofguests": 6,
@@ -154,7 +154,7 @@
     "planid": "plan_jfnD3Xi7TnAzV"
   },
   {
-    "registrationtype": "Registration and Accommodation",
+    "registrationtype": "RegistrationandAccommodation",
     "presentationtype": "Student",
     "noofnights": 2,
     "noofguests": 8,
@@ -164,7 +164,7 @@
     "planid": "plan_hLWCDW2D5cK92"
   },
   {
-    "registrationtype": "Registration and Accommodation",
+    "registrationtype": "RegistrationandAccommodation",
     "presentationtype": "Exhibitor",
     "noofnights": 3,
     "noofguests": 3,
@@ -174,8 +174,8 @@
     "planid": "plan_jfnD3Xi7TnAzV"
   },
   {
-    "registrationtype": "Registration Only",
-    "presentationtype": "Listener/Delegate",
+    "registrationtype": "RegistrationOnly",
+    "presentationtype": "Listener",
     "noofnights": 1,
     "noofguests": 10,
     "registrationfee": 225.00,
@@ -184,7 +184,7 @@
     "planid": "PLAN-RL110"
   },
   {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Sponsor",
     "noofnights": 3,
     "noofguests": 1,
@@ -194,7 +194,7 @@
     "planid": "PLAN-RS31"
   },
   {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Speaker",
     "noofnights": 2,
     "noofguests": 5,
@@ -204,7 +204,7 @@
     "planid": "PLAN-RS25"
   },
   {
-    "registrationtype": "Registration and Accommodation",
+    "registrationtype": "RegistrationandAccommodation",
     "presentationtype": "Speaker",
     "noofnights": 3,
     "noofguests": 2,
@@ -214,7 +214,7 @@
     "planid": "PLAN-AS32"
   },
   {
-    "registrationtype": "Registration and Accommodation",
+    "registrationtype": "RegistrationandAccommodation",
     "presentationtype": "Poster",
     "noofnights": 1,
     "noofguests": 0,
@@ -224,7 +224,7 @@
     "planid": "PLAN-AP10"
   },
   {
-    "registrationtype": "Registration and Accommodation",
+    "registrationtype": "RegistrationandAccommodation",
     "presentationtype": "Exhibitor",
     "noofnights": 1,
     "noofguests": 1,
@@ -234,7 +234,7 @@
     "planid": "PLAN-AE11"
   },
   {
-    "registrationtype": "Registration and Accommodation",
+    "registrationtype": "RegistrationandAccommodation",
     "presentationtype": "Student",
     "noofnights": 3,
     "noofguests": 4,
@@ -244,7 +244,7 @@
     "planid": "PLAN-AS34"
   },
   {
-    "registrationtype": "Registration Only",
+    "registrationtype": "RegistrationOnly",
     "presentationtype": "Poster",
     "noofnights": 2,
     "noofguests": 8,

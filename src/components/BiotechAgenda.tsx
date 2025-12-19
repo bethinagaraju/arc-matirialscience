@@ -1072,7 +1072,7 @@ const BiotechAgenda: React.FC = () => {
   };
 
   return (
-    <section id="tracks-section" className="bg-gray-50">
+    <section id="tracks-section" >
       {/* <Header /> */}
 
       {/* Banner Section */}

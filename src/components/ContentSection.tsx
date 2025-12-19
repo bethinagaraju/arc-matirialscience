@@ -297,7 +297,7 @@ const ContentSection: React.FC = () => {
     About AIMLR 2026: HYBRID EVENT
   </h2>
 
-  <p className="mb-5">
+  <p className="mb-2">
     
       We welcome you to the 3rd Edition of the Artificial Intelligence,
       Machine Learning & Robotics Conference (AIMLR 2026), scheduled from
@@ -318,7 +318,7 @@ const ContentSection: React.FC = () => {
   </p> */}
 
 
-  <p className="mb-5">
+  <p className="mb-2">
   AIMLR 2026 stands as a leading platform for professionals across AI,
   machine learning, robotics, deep learning, automation, and data-driven
   innovation — showcasing how intelligent technologies are reshaping
@@ -326,7 +326,7 @@ const ContentSection: React.FC = () => {
 </p>
 
 
-  <p className="mb-5">
+  <p className="mb-2">
     The event will feature keynote speeches, technical sessions,
     product demonstrations, panel discussions, and interactive
     workshops covering a wide spectrum of topics including autonomous
@@ -335,7 +335,7 @@ const ContentSection: React.FC = () => {
     ethics, and next-generation computing architecture.
   </p>
 
-  <p className="mb-5">
+  <p className="mb-2">
     Whether you're a researcher developing new AI frameworks,
     a robotics engineer designing autonomous systems, a student
     exploring emerging technologies, or an industry expert driving
@@ -343,9 +343,8 @@ const ContentSection: React.FC = () => {
     to learn, present, and innovate.
   </p>
 
-  <p className="mb-5">
-    Participants will also have the opportunity to publish their work
-    in indexed conference proceedings, engage with global experts,
+  <p className="mb-2">
+    Participants will also have the opportunity to engage with global experts,
     and join networking sessions designed to foster interdisciplinary
     partnerships, research collaborations, and future-focused innovation.
   </p>

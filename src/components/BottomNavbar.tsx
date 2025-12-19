@@ -188,7 +188,7 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
           </Link>
 
 
-          <div
+          {/* <div
             className="relative"
             onMouseEnter={() => setHovered("papers")}
             onMouseLeave={() => setHovered(null)}
@@ -199,12 +199,10 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
             {hovered === "papers" && (
               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
                 <Link to="/call-for-papers" className="block px-4 py-2 hover:bg-gray-100">Paper Submission</Link>
-                {/* <Link to="/review-process" className="block px-4 py-2 hover:bg-gray-100">Review Process</Link>
-                <Link to="/publication-indexing" className="block px-4 py-2 hover:bg-gray-100">Publication & Indexing</Link> */}
                 <Link to="/poster" className="block px-4 py-2 hover:bg-gray-100">Poster</Link>
               </div>
             )}
-          </div>
+          </div> */}
     
 
           {/* PROGRAM DROPDOWN */}
@@ -221,6 +219,7 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
                 <Link to="/schedule" className="block px-4 py-2 hover:bg-gray-100">Program Schedule</Link>
                 <Link to="/venue" className="block px-4 py-2 hover:bg-gray-100">Venue</Link>
                 <Link to="/sessions" className="block px-4 py-2 hover:bg-gray-100">Sessions</Link>
+                <Link to="/importantdates" className="block px-4 py-2 hover:bg-gray-100">Important Dates</Link>
 
                 {/* Newly Added */}
                 <Link to="/guidelines" className="block px-4 py-2 hover:bg-gray-100">Guidelines</Link>

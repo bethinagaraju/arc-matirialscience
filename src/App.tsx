@@ -34,6 +34,9 @@ import ScrollGuidelines from './pages/ScrollGuidlines';
 import ScrollFaq from './pages/ScrollFaq';
 import ScrollCommiteePage from './pages/ScrollCommiteePage';
 import ScrollSchedule from './pages/ScrollSchedule';
+import NEWRegister from './components/NEWRegister';
+import PaymentSuccess from './components/PaymentSuccess';
+import ComboKeyDatesAndVenue from './components/ComboKeyDatesAndVenue';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -55,7 +58,9 @@ function App() {
         <Route path="/" element={<HomePage />} />
         {/* <Route path="/register" element={<RegisterPage />} /> */}
         <Route path="/register" element={<RegisterPasses />} />
+        <Route path="/newregister" element={<NEWRegister />} />
         <Route path='/AbstractSubmission' element={<AbstractSubmissionPage />} />
+        <Route path="/payment-success" element={<PaymentSuccess />} />
         <Route path='/checkout' element={<CheckoutPage />} />
         <Route path='/thankyou' element={<ThankyouPage />} />
         <Route path='/terms-and-conditions' element={<TermsAndConditionsPage />} />
@@ -82,6 +87,7 @@ function App() {
         <Route path='/commitee' element={<ScrollCommiteePage />} />
         <Route path='/schedule' element={<ScrollSchedule />} />
         <Route path='/poster' element={<Posterpage />} />
+        <Route path='/importantdates' element={<ComboKeyDatesAndVenue />} />
         
         
       </Routes>

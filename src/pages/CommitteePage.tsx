@@ -996,7 +996,7 @@ const reviewCommittee = [
 
 function CommitteePage() {
   return (
-    <div className="font-sans bg-gray-50 text-gray-800">
+    <div className="font-sans text-gray-800">
 
       {/* Page content */}
       <div className="container mx-auto px-4 md:px-6 py-0 max-w-6xl space-y-20">
@@ -1064,7 +1064,7 @@ function CommitteePage() {
           </div>
         </Section> */}
 
-        <div className="grid md:grid-cols-2 gap-10">
+        {/* <div className="grid md:grid-cols-2 gap-10">
           <Section icon={<Globe />} title="Advisory Board">
             <CardList list={advisoryBoard} />
           </Section>
@@ -1072,9 +1072,9 @@ function CommitteePage() {
           <Section icon={<Users />} title="Steering Committee">
             <CardList list={steeringCommittee} />
           </Section>
-        </div>
+        </div> */}
 
-        <Section icon={<ScrollText />} title="Review Committee">
+        <Section icon={<ScrollText />} title="Committee">
           <ReviewSection list={reviewCommittee} />
         </Section>
 

@@ -379,7 +379,7 @@ const Agenda: React.FC = () => {
     day.map((item, index) => (
       <div
         key={index}
-        className="flex flex-col sm:flex-row border-t border-gray-200 py-3"
+        className="flex flex-col sm:flex-row border-t border-gray-200 py-3 max-w-3xl mx-auto"
       >
         <div className="w-full sm:w-1/4 pr-4 mb-2 sm:mb-0 sm:text-right">
           <p className="font-bold text-base" style={{ color: themeColor }}>
@@ -395,12 +395,12 @@ const Agenda: React.FC = () => {
             {item.title}
           </h3>
 
-          <p
+          {/* <p
             className="text-gray-600 mt-1"
             style={{ fontFamily: "'Manrope', sans-serif" }}
           >
             {item.description}
-          </p>
+          </p> */}
 
           {item.room && (
             <div className="mt-2 text-sm text-gray-500">
@@ -469,7 +469,7 @@ const Agenda: React.FC = () => {
           {activeDay === 3 && <ComingSoon day={3} />}
         </div>
 
-        <p className="text-gray-600 mt-8 max-w-2xl">
+        <p className="text-gray-600 mt-8 max-w-2xl text-center mx-auto">
           The agenda is subject to change. More sessions and speakers will be
           announced soon.
         </p>

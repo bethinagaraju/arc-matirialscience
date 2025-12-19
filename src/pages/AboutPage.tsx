@@ -98,11 +98,14 @@ import ConferenceMissionVision from '../components/ConferenceMissionVision';
 import RegionChartComponent from '../components/RegionChartComponent';
 import OrganizerOverview from '../components/OrganizerOverview';
 import EthicsValues from '../components/EthicsValues';
+import ComboKeyDatesAndVenue from '../components/ComboKeyDatesAndVenue';
 
 function AboutPage() {
   return (
     <div className="font-sans text-gray-800">
       <Header />
+      
+     
       
       {/* --- HERO SECTION --- */}
       <div className="relative bg-indigo-900 text-white overflow-hidden">
@@ -119,7 +122,7 @@ function AboutPage() {
             The Future of AI & Robotics
           </h1>
           <p className="text-xl md:text-2xl text-indigo-100 max-w-2xl mx-auto mb-8 font-light">
-            Converging minds to explore the next era of intelligent and sustainable technological progress.
+            Uniting minds for intelligent, sustainable innovation.
           </p>
           
          

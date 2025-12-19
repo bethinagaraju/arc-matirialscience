@@ -273,9 +273,7 @@ function VenueComponent() {
           </div>
         </div>
 
-        <p className="text-gray-600 leading-relaxed mb-8 text-base max-w-4xl">
-          Located in a green area near the Villa Doria Pamphili park, this prestigious 4-star superior hotel offers state-of-the-art conference facilities, a spa, and easy access to Vatican City.
-        </p>
+
 
         {/* Info Section */}
         <div className="space-y-4 mb-8">

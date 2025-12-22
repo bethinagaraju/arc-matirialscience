@@ -6,9 +6,9 @@
     { "planId": "plan_SLouGH0mQ5nnq", "registrationType": "registrationOnly", "presentationType": "Listener", "nights": 0, "price": 749 },
     { "planId": "plan_yXp663wSH08sj", "registrationType": "registrationOnly", "presentationType": "Student", "nights": 0, "price": 349 },
 
-    { "planId": "ACC_SPEAKER_1N", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 1, "price": 824 },
-    { "planId": "plan_3FMBnxGOKHaVs", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 2, "price": 999 },
-    { "planId": "plan_VvfBLk9X23ABq", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 3, "price": 1174 },
+    { "planId": "plan_VvfBLk9X23ABq", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 1, "price": 824 },
+    { "planId": "plan_i4qktbsFYEix9", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 2, "price": 999 },
+    { "planId": "plan_B7xxPnMkavNvB", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 3, "price": 1174 },
  
 
     { "planId": "plan_zcthi5Z2xrWBA", "registrationType": "withAccommodation", "presentationType": "Poster", "nights": 1, "price": 674 },

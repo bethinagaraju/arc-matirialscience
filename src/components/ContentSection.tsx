@@ -345,7 +345,7 @@ const ContentSection: React.FC = () => {
 
   <p className="mb-2">
     Participants will also have the opportunity to engage with global experts,
-    and join networking sessions designed to foster interdisciplinary
+    and join networking sessions designed to poster interdisciplinary
     partnerships, research collaborations, and future-focused innovation.
   </p>
 

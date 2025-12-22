@@ -5,7 +5,7 @@ import React from 'react';
 
 function HighletOne() {
   return (
-    <div className="flex flex-col md:flex-row gap-4 h-auto md:h-[80vh] p-4">
+    <div className="flex flex-col md:flex-row gap-4 h-auto md:h-[80vh] p-4 ">
       {/* Left section */}
       <div className="w-full md:w-[55vw] flex flex-col gap-4 bg-white shadow-md overflow-hidden">
         <div className="w-full h-auto md:h-[50%]">

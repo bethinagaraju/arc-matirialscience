@@ -325,7 +325,7 @@ const WhoShouldAttendSection: React.FC = () => {
     {
       title: "Founders & Industry Practitioners",
       description:
-        "Innovators applying AI and robotics to solve industrial, societal, and global challenges through real-world solutions.",
+        "Innovators applying AI and robotics to solve industrial, social, and global challenges through real-world solutions.",
       icon: Rocket,
     },
   ];

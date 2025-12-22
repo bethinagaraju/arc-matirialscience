@@ -99,6 +99,7 @@ import RegionChartComponent from '../components/RegionChartComponent';
 import OrganizerOverview from '../components/OrganizerOverview';
 import EthicsValues from '../components/EthicsValues';
 import ComboKeyDatesAndVenue from '../components/ComboKeyDatesAndVenue';
+import WhyAttendNew from '../components/WhyAttendNew';
 
 function AboutPage() {
   return (
@@ -178,7 +179,9 @@ function AboutPage() {
       </div>
 
       {/* --- WHY ATTEND (Feature Cards) --- */}
-      <WhyAttendSection />
+      {/* <WhyAttendSection /> */}
+
+       <WhyAttendNew />
 
       {/* --- WHO SHOULD ATTEND --- */}
       <WhoShouldAttendSection />

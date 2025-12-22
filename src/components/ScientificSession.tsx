@@ -253,6 +253,7 @@
 
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ScientificSession: React.FC = () => {
   const sessions = [
@@ -291,7 +292,7 @@ const ScientificSession: React.FC = () => {
   return (
     <div className="w-full">
 
-      <h1 className='text-center text-4xl font-semibold mb-8 text-[#2e376c]'>CONFERENCE TOPICS</h1>
+      <h1 className='text-center text-4xl font-semibold mb-8 text-[#2e376c]'>SESSIONS & TRACKS</h1>
 
       {/* SESSION GRID */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
@@ -324,7 +325,7 @@ const ScientificSession: React.FC = () => {
       {/* BUTTON SECTION - MATCHING CARD SIZE */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         
-        <button
+        <Link to="/register"
           className="
             bg-[#3a4c83]
             text-white
@@ -343,9 +344,8 @@ const ScientificSession: React.FC = () => {
           "
         >
           Registration
-        </button>
-
-        <button
+        </Link>
+        <Link to="/AbstractSubmission"
           className="
             bg-[#3a4c83]
             text-white
@@ -364,7 +364,7 @@ const ScientificSession: React.FC = () => {
           "
         >
           Abstract Submission
-        </button>
+        </Link>
 
       </div>
 

@@ -304,19 +304,9 @@ const HeroSection: React.FC = () => {
               July 28–30, 2026 | Crowne Plaza – St. Peter's Rome, Italy
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-start gap-3 sm:gap-4 w-full">
-              <Link to="/register">
-                <button
-                  className="w-full sm:w-auto px-5 sm:px-6 py-2 sm:py-3 font-semibold text-sm sm:text-base transition hover:opacity-90"
-                  style={{
-                    backgroundImage:
-                      'linear-gradient(90deg, rgba(0,72,139,1) 0%, rgba(15,133,255,1) 100%)',
-                  }}
-                >
-                  REGISTER
-                </button>
-              </Link>
+            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-center gap-3 sm:gap-4 w-full">
 
+{/* 
               <a href="/#contact-form">
                 <button
                   className="w-full sm:w-auto px-5 sm:px-6 py-2 sm:py-3 font-semibold text-sm sm:text-base transition hover:opacity-90"
@@ -327,9 +317,9 @@ const HeroSection: React.FC = () => {
                 >
                   SPONSORSHIP ENQUIRY
                 </button>
-              </a>
+              </a> */}
 
-              <Link to="/AbstractSubmission">
+              <Link to="/register">
                 <button
                   className="w-full sm:w-auto px-5 sm:px-6 py-2 sm:py-3 font-semibold text-sm sm:text-base transition hover:opacity-90"
                   style={{
@@ -337,7 +327,19 @@ const HeroSection: React.FC = () => {
                       'linear-gradient(90deg, rgba(35,35,87,1) 0%, rgba(76,109,166,1) 100%)',
                   }}
                 >
-                  ABSTRACT SUBMISSION
+                  REGISTER
+                </button>
+              </Link>
+
+                            <Link to="/register">
+                <button
+                  className="w-full sm:w-auto px-5 sm:px-6 py-2 sm:py-3 font-semibold text-sm sm:text-base transition hover:opacity-90"
+                  style={{
+                    backgroundImage:
+                      'linear-gradient(90deg, rgba(0,72,139,1) 0%, rgba(15,133,255,1) 100%)',
+                  }}
+                >
+                  SUBMISSION
                 </button>
               </Link>
             </div>

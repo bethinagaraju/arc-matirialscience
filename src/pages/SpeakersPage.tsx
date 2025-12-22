@@ -333,7 +333,7 @@ function SpeakersPage() {
               <p className="text-sm text-[#292e63] font-semibold">{speaker.type}</p>
             </div>
           ))}
-          <p className="text-sm text-[#2F2C7C] mt-4 col-span-full text-center">The speakers mentioned are not final and may be updated.</p>
+          <p className="text-sm text-[#2F2C7C] mt-4 col-span-full text-center">Speakers will update soon</p>
         </div>
 
         {/* Right: Committee - FIXED LAYOUT */}

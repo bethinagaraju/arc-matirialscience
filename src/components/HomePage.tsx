@@ -44,6 +44,9 @@ import TestimonialCard from './TestimonialCard';
 import Testimonials from './Testimonials';
 import VenueAndContactSection from './VenueAndContactSection';
 import Dashboard from './RegionChartComponent';
+import Highletsec from './Highletsec';
+import WhatsAppButton from './WhatsAppButton';
+import WhyAttendNew from './WhyAttendNew';
 
 
 function HomePage() {
@@ -66,6 +69,7 @@ function HomePage() {
     <div className="min-h-screen bg-white">
       {/* <CookieConsent /> */}
       <Header />
+      <WhatsAppButton />
       {/* <AnnouncementBar /> */}
     
       {/* <AnnouncementBar /> */}
@@ -85,8 +89,8 @@ function HomePage() {
       
 
       <Mixcomponents/>
-      
-      <WhyAttendSection />
+      <WhyAttendNew />
+      {/* <WhyAttendSection /> */}
       
       {/* <ConferenceHighlights /> */}
       <ScientificSessions />
@@ -142,6 +146,8 @@ function HomePage() {
       <CountdownTimer />
       
       <Testimonials />
+
+      <Highletsec/>
 
       <CTARegisterAbstract />
       

@@ -90,11 +90,11 @@ const VenueAndContactSection = () => {
           <p className="text-gray-600 text-lg font-medium mb-4">
             Crowne Plaza — St. Peter's Rome
           </p>
-          <p className="text-gray-500 text-sm leading-relaxed mb-8">
+          {/* <p className="text-gray-500 text-sm leading-relaxed mb-8">
             Nestled near Vatican City, this 4-star superior hotel features
             advanced conference facilities, modern accommodations, and quick
             access to Rome’s most iconic cultural and historical landmarks.
-          </p>
+          </p> */}
 
           <Link
             to="/venue-travel"

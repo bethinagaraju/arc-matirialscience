@@ -182,6 +182,12 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
             )}
           </div>
 
+           
+          
+          <Link to="/sessions" className="tracking-wider hover:text-gray-300 text-sm">
+            SESSIONS
+          </Link>
+
           {/* SPEAKERS */}
           <Link to="/speakers" className="tracking-wider hover:text-gray-300 text-sm">
             SPEAKERS
@@ -218,7 +224,7 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
                 <Link to="/schedule" className="block px-4 py-2 hover:bg-gray-100">Program Schedule</Link>
                 <Link to="/venue" className="block px-4 py-2 hover:bg-gray-100">Venue</Link>
-                <Link to="/sessions" className="block px-4 py-2 hover:bg-gray-100">Sessions</Link>
+                {/* <Link to="/sessions" className="block px-4 py-2 hover:bg-gray-100">Sessions</Link> */}
                 <Link to="/importantdates" className="block px-4 py-2 hover:bg-gray-100">Important Dates</Link>
 
                 {/* Newly Added */}
@@ -270,13 +276,17 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
               )}
             </div>
 
+            <Link to="/sessions" className="block text-gray-800 font-semibold">
+              SESSIONS
+            </Link>
+
             <Link to="/speakers" className="block text-gray-800 font-semibold">
               SPEAKERS
             </Link>
 
-            <Link to="/call-for-papers" className="block text-gray-800 font-semibold">
+            {/* <Link to="/call-for-papers" className="block text-gray-800 font-semibold">
               CALL FOR PAPERS
-            </Link>
+            </Link> */}
 
             {/* PROGRAM DROPDOWN */}
             <div>
@@ -294,7 +304,7 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
                 <div className="ml-4 space-y-2 mt-2">
                   <Link to="/schedule" className="block text-gray-600 hover:text-gray-800">Program Schedule</Link>
                   <Link to="/venue" className="block text-gray-600 hover:text-gray-800">Venue</Link>
-                  <Link to="/sessions" className="block text-gray-600 hover:text-gray-800">Sessions</Link>
+                  {/* <Link to="/sessions" className="block text-gray-600 hover:text-gray-800">Sessions</Link> */}
                   <Link to="/guidelines" className="block text-gray-600 hover:text-gray-800">Guidelines</Link>
                   <Link to="/faq" className="block text-gray-600 hover:text-gray-800">FAQ</Link>
                 </div>

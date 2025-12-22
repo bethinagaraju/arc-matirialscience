@@ -331,10 +331,10 @@ const ContactPage: React.FC = () => {
               question="What is the deadline for abstract submission?"
               answer="The abstract submission deadline is March 15, 2026. All submissions will undergo a peer review process, and notifications will be sent by April 30, 2026."
             />
-            <FAQItem
+            {/* <FAQItem
               question="Are there accommodation options near the venue?"
               answer="Yes, the Crowne Plaza offers conference rates for attendees. Additionally, we have partnered with nearby hotels to provide discounted rates for conference participants."
-            />
+            /> */}
             <FAQItem
               question="Will the conference be recorded?"
               answer="Keynote and plenary sessions will be recorded and made available to registered participants for 30 days after the conference. Workshop recordings will be available upon request."

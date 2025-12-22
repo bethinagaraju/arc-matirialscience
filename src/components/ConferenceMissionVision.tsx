@@ -427,7 +427,7 @@ const ConferenceMissionVisionList: React.FC = () => {
       title: "Mission",
       icon: Target,
       desc:
-        "To create a platform for sharing knowledge, research, and innovative ideas among researchers, academicians, and industry experts.",
+        "To create a platform for sharing knowledge, research, and innovative ideas among researchers, academics, and industry experts.",
     },
     {
       title: "Vision",

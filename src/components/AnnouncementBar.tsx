@@ -81,7 +81,7 @@ import { Link } from "react-router-dom";
 
 export default function AnnouncementBar() {
   const announcements = [
-    "Initial Announcement",
+    // "Initial Announcement",
     "First Round of Abstract Submission Closes on December 15, 2025",
     "Early Bird Registration Closes on December 17, 2025",
   ];

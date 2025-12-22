@@ -339,7 +339,7 @@ const SessionTypesSection: React.FC = () => {
           Explore <span className="text-indigo-600">Session Types</span>
         </h2>
         <p className="text-lg text-slate-600 max-w-2xl mx-auto mt-4 leading-relaxed">
-          Each session is designed to foster learning, exchange perspectives, encourage networking, and create a high-value experience for researchers, industry professionals, and students.
+          Each session is designed to poster learning, exchange perspectives, encourage networking, and create a high-value experience for researchers, industry professionals, and students.
         </p>
       </div>
 

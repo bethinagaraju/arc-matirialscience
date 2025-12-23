@@ -1,40 +1,41 @@
 {
   "pricing": [
-    { "planId": "plan_yXp663wSH08sj", "registrationType": "registrationOnly", "presentationType": "Speaker", "nights": 0, "price": 649 },
+
+     { "planId": "plan_2A1Q6jrlA2LkY", "registrationType": "registrationOnly", "presentationType": "Speaker", "nights": 0, "price": 679 },
     { "planId": "plan_RrrnQSesbekY8", "registrationType": "registrationOnly", "presentationType": "Poster", "nights": 0, "price": 499 },
     { "planId": "plan_FG58IgA6BiVZZ", "registrationType": "registrationOnly", "presentationType": "Delegate", "nights": 0, "price": 749 },
     { "planId": "plan_SLouGH0mQ5nnq", "registrationType": "registrationOnly", "presentationType": "Listener", "nights": 0, "price": 749 },
-    { "planId": "plan_yXp663wSH08sj", "registrationType": "registrationOnly", "presentationType": "Student", "nights": 0, "price": 349 },
+    { "planId": "plan_yXp663wSH08sj", "registrationType": "registrationOnly", "presentationType": "Student", "nights": 0, "price": 359 },
 
-    { "planId": "plan_VvfBLk9X23ABq", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 1, "price": 824 },
-    { "planId": "plan_i4qktbsFYEix9", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 2, "price": 999 },
-    { "planId": "plan_B7xxPnMkavNvB", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 3, "price": 1174 },
+    { "planId": "plan_VvfBLk9X23ABq", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 1, "price": 854 },
+    { "planId": "plan_i4qktbsFYEix9", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 2, "price": 979 },
+    { "planId": "plan_B7xxPnMkavNvB", "registrationType": "withAccommodation", "presentationType": "Speaker", "nights": 3, "price": 1154 },
  
 
     { "planId": "plan_zcthi5Z2xrWBA", "registrationType": "withAccommodation", "presentationType": "Poster", "nights": 1, "price": 674 },
-    { "planId": "plan_YOpz5FsAw7LR2", "registrationType": "withAccommodation", "presentationType": "Poster", "nights": 2, "price": 849 },
-    { "planId": "plan_2AZ5HV5jqlCdz", "registrationType": "withAccommodation", "presentationType": "Poster", "nights": 3, "price": 1024 },
+    { "planId": "plan_YOpz5FsAw7LR2", "registrationType": "withAccommodation", "presentationType": "Poster", "nights": 2, "price": 799 },
+    { "planId": "plan_2AZ5HV5jqlCdz", "registrationType": "withAccommodation", "presentationType": "Poster", "nights": 3, "price": 974 },
 
 
     { "planId": "plan_B5cCU42xotgJe", "registrationType": "withAccommodation", "presentationType": "Delegate", "nights": 1, "price": 924 },
-    { "planId": "plan_mqRXzlWXLWbkl", "registrationType": "withAccommodation", "presentationType": "Delegate", "nights": 2, "price": 1099 },
-    { "planId": "plan_QkEgu9Jkqufsb", "registrationType": "withAccommodation", "presentationType": "Delegate", "nights": 3, "price": 1274 },
+    { "planId": "plan_mqRXzlWXLWbkl", "registrationType": "withAccommodation", "presentationType": "Delegate", "nights": 2, "price": 1049 },
+    { "planId": "plan_QkEgu9Jkqufsb", "registrationType": "withAccommodation", "presentationType": "Delegate", "nights": 3, "price": 1224 },
 
 
     { "planId": "plan_vjmS8Q0T0rkNb", "registrationType": "withAccommodation", "presentationType": "Listener", "nights": 1, "price": 924 },
-    { "planId": "plan_AdcQgP8Ydz0tL", "registrationType": "withAccommodation", "presentationType": "Listener", "nights": 2, "price": 1099 },
-    { "planId": "plan_P2vQyYwrkWIMv", "registrationType": "withAccommodation", "presentationType": "Listener", "nights": 3, "price": 1274 },
+    { "planId": "plan_AdcQgP8Ydz0tL", "registrationType": "withAccommodation", "presentationType": "Listener", "nights": 2, "price": 1049 },
+    { "planId": "plan_P2vQyYwrkWIMv", "registrationType": "withAccommodation", "presentationType": "Listener", "nights": 3, "price": 1224 },
 
 
-    { "planId": "plan_MrG0R12QsxhiL", "registrationType": "withAccommodation", "presentationType": "Student", "nights": 1, "price": 524 },
-    { "planId": "plan_i4qktbsFYEix9", "registrationType": "withAccommodation", "presentationType": "Student", "nights": 2, "price": 699 },
-    { "planId": "plan_B7xxPnMkavNvB", "registrationType": "withAccommodation", "presentationType": "Student", "nights": 3, "price": 874 },
+    { "planId": "plan_MrG0R12QsxhiL", "registrationType": "withAccommodation", "presentationType": "Student", "nights": 1, "price": 534 },
+    { "planId": "plan_i4qktbsFYEix9", "registrationType": "withAccommodation", "presentationType": "Student", "nights": 2, "price": 659 },
+    { "planId": "plan_B7xxPnMkavNvB", "registrationType": "withAccommodation", "presentationType": "Student", "nights": 3, "price": 834 },
 
 
-    { "planId": "plan_yXp663wSH08sj", "registrationType": "virtual", "presentationType": "Speaker", "nights": 0, "price": 349 },
-    { "planId": "plan_Zxu7V6EBRxZHY", "registrationType": "virtual", "presentationType": "Poster", "nights": 0, "price": 199 },
-    { "planId": "plan_0TCqbYrV9Iy6R", "registrationType": "virtual", "presentationType": "Delegate", "nights": 0, "price": 449 },
-    { "planId": "plan_iUaESJl6p4uxg", "registrationType": "virtual", "presentationType": "Listener", "nights": 0, "price": 449 },
-    { "planId": "plan_ChDYA3epjZdhP", "registrationType": "virtual", "presentationType": "Student", "nights": 0, "price": 49 }
+    { "planId": "plan_yXp663wSH08sj", "registrationType": "virtual", "presentationType": "Speaker", "nights": 0, "price": 379 },
+    { "planId": "plan_Zxu7V6EBRxZHY", "registrationType": "virtual", "presentationType": "Poster", "nights": 0, "price": 299 },
+    { "planId": "plan_0TCqbYrV9Iy6R", "registrationType": "virtual", "presentationType": "Delegate", "nights": 0, "price": 429 },
+    { "planId": "plan_iUaESJl6p4uxg", "registrationType": "virtual", "presentationType": "Listener", "nights": 0, "price": 399 },
+    { "planId": "plan_ChDYA3epjZdhP", "registrationType": "virtual", "presentationType": "Student", "nights": 0, "price": 199 }
   ]
 }

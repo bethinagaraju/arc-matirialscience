@@ -127,10 +127,10 @@ interface StatisticsSectionProps {
 }
 
 const stats = [
-  { value: 35, label: 'SPEAKERS' },
+  { value: 35, label: 'EXPECTED SPEAKERS' },
   { value: 20, label: 'COUNTRIES REPRESENTED' },
   { value: 150, label: 'PARTICIPANTS' },
-  { value: 25, label: 'PANELS & WORKSHOPS' }
+  { value: 25, label: 'SESSIONS & ACTIVITIES' }
 ];
 
 const StatisticsSection: React.FC<StatisticsSectionProps> = ({ embedded = false }) => {

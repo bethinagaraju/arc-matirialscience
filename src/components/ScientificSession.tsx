@@ -256,43 +256,84 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const ScientificSession: React.FC = () => {
+  // const sessions = [
+  //   "Artificial Intelligence & Machine Learning",
+  //   "Robotics & Process Automation",
+  //   "Deep Learning & Neural Networks",
+  //   "Natural Language Processing (NLP)",
+  //   "Computer Vision & Image Processing",
+  //   "Human-Robot Interaction (HRI)",
+  //   "AI in Healthcare & Medicine",
+  //   "Autonomous Vehicles & Drones",
+  //   "Reinforcement Learning",
+  //   "Generative AI & LLMs",
+  //   "AI Ethics, Policy & Governance",
+  //   "Industrial Robotics (Industry 4.0)",
+  //   "Edge AI & IoT Integration",
+  //   "Cognitive Computing",
+  //   "Swarm Intelligence & Robotics",
+  //   "Big Data Analytics & Data Science",
+  //   "Soft Robotics & Bio-inspired Systems",
+  //   "AI for Cybersecurity",
+  //   "Cloud Robotics",
+  //   "Explainable AI (XAI)",
+  //   "Quantum Artificial Intelligence",
+  //   "Federated Learning & Privacy",
+  //   "Neuromorphic Computing",
+  //   "Digital Twins & Simulation",
+  //   "Brain-Computer Interfaces (BCI)",
+  //   "Agricultural & Service Robotics",
+  //   "Affective Computing (Emotion AI)",
+  //   "Knowledge Graphs & Semantic Web",
+  //   "AI for Sustainability (Green AI)",
+  //   "SLAM & Navigation Systems"
+  // ];
+
+
+
   const sessions = [
-    "Artificial Intelligence & Machine Learning",
-    "Robotics & Process Automation",
-    "Deep Learning & Neural Networks",
-    "Natural Language Processing (NLP)",
-    "Computer Vision & Image Processing",
-    "Human-Robot Interaction (HRI)",
-    "AI in Healthcare & Medicine",
-    "Autonomous Vehicles & Drones",
-    "Reinforcement Learning",
-    "Generative AI & LLMs",
-    "AI Ethics, Policy & Governance",
-    "Industrial Robotics (Industry 4.0)",
-    "Edge AI & IoT Integration",
-    "Cognitive Computing",
-    "Swarm Intelligence & Robotics",
-    "Big Data Analytics & Data Science",
-    "Soft Robotics & Bio-inspired Systems",
-    "AI for Cybersecurity",
-    "Cloud Robotics",
-    "Explainable AI (XAI)",
-    "Quantum Artificial Intelligence",
-    "Federated Learning & Privacy",
-    "Neuromorphic Computing",
-    "Digital Twins & Simulation",
-    "Brain-Computer Interfaces (BCI)",
-    "Agricultural & Service Robotics",
-    "Affective Computing (Emotion AI)",
-    "Knowledge Graphs & Semantic Web",
-    "AI for Sustainability (Green AI)",
-    "SLAM & Navigation Systems"
-  ];
+  // --- Responsible & Applied AI ---
+  "Responsible & Ethical Artificial Intelligence",
+  "Explainable AI (XAI) for Real-World Applications",
+  "AI in Smart Cities and Urban Development",
+  "AI for Healthcare, Diagnosis & Medical Imaging",
+  "AI in Education and Personalized Learning",
+  "Generative AI and Large Language Models (LLMs)",
+  "AI for Cybersecurity and Fraud Detection",
+  "AI in Finance, Banking & FinTech",
+  "Human-Centered AI and Trustworthy Systems",
+
+  // --- Machine Learning & Data Science ---
+  "Deep Learning Architectures & Optimization",
+  "Reinforcement Learning and Decision Making",
+  "Transfer Learning & Few-Shot Learning",
+  "Natural Language Processing (NLP) Applications",
+  "Computer Vision & Image Recognition",
+  "Time-Series Forecasting and Predictive Analytics",
+  "AutoML and Model Optimization Techniques",
+  "Federated Learning & Privacy-Preserving ML",
+  "ML in Big Data and Cloud Computing",
+
+  // --- Robotics & Autonomous Systems ---
+  "Autonomous Robots and Intelligent Systems",
+  "Human-Robot Interaction (HRI)",
+  "AI-Driven Robotics for Industrial Automation",
+  "Service Robots in Healthcare and Hospitality",
+  "Robotics in Agriculture and Smart Farming",
+  "Swarm Robotics and Multi-Robot Systems",
+  "Robotics Vision, Navigation & Control",
+  "Soft Robotics and Bio-Inspired Robots",
+  "Ethical, Safety & Social Impact of Robotics",
+  "Robot Motion Planning and Control",
+  "AI-Powered Drones and Autonomous Vehicles",
+  "Underwater and Space Robotics"
+];
+
 
   return (
     <div className="w-full">
 
-      <h1 className='text-center text-4xl font-semibold mb-8 text-[#2e376c]'>SESSIONS & TRACKS</h1>
+      <h1 className='text-center text-4xl font-semibold mb-8 text-[#2e376c]'>CONFERENCE TOPICS</h1>
 
       {/* SESSION GRID */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
@@ -317,7 +358,7 @@ const ScientificSession: React.FC = () => {
               w-full
             "
           >
-            <span>{index + 1}. {session}</span>
+            <span>{session}</span>
           </div>
         ))}
       </div>
@@ -325,46 +366,48 @@ const ScientificSession: React.FC = () => {
       {/* BUTTON SECTION - MATCHING CARD SIZE */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         
-        <Link to="/register"
-          className="
-            bg-[#3a4c83]
-            text-white
-            text-sm
-            font-semibold
-            px-6
-            py-4
-            rounded-md
-            shadow-sm
-            cursor-pointer
-            transition-all
-            duration-300
-            hover:bg-[#2e376c]
-            hover:shadow-md
-            w-full
-          "
-        >
-          Registration
-        </Link>
-        <Link to="/AbstractSubmission"
-          className="
-            bg-[#3a4c83]
-            text-white
-            text-sm
-            font-semibold
-            px-6
-            py-4
-            rounded-md
-            shadow-sm
-            cursor-pointer
-            transition-all
-            duration-300
-            hover:bg-[#2e376c]
-            hover:shadow-md
-            w-full
-          "
-        >
-          Abstract Submission
-        </Link>
+        <div className="flex justify-center">
+          <Link to="/register"
+            style={{ backgroundImage: 'linear-gradient(90deg, rgb(0, 72, 139) 0%, rgb(15, 133, 255) 100%)' }}
+            className="
+              text-white
+              text-sm
+              font-semibold
+              px-24
+              py-4
+              shadow-sm
+              cursor-pointer
+              transition-all
+              duration-300
+              hover:bg-[#2e376c]
+              hover:shadow-md
+              text-center
+            "
+          >
+            Registration
+          </Link>
+        </div>
+        <div className="flex justify-center">
+          <Link to="/AbstractSubmission"
+            style={{ backgroundImage: 'linear-gradient(90deg, rgb(0, 47, 48) 0%, rgb(0, 0, 48) 100%)' }}
+            className="
+              text-white
+              text-sm
+              font-semibold
+              px-20
+              py-4
+              shadow-sm
+              cursor-pointer
+              transition-all
+              duration-300
+              hover:bg-[#2e376c]
+              hover:shadow-md
+              text-center
+            "
+          >
+            Abstract Submission
+          </Link>
+        </div>
 
       </div>
 

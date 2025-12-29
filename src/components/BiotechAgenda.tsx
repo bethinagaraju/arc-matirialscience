@@ -725,7 +725,7 @@
 //             Sessions & <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Tracks</span>
 //           </h1>
 //           <p className="text-lg md:text-xl text-indigo-200 max-w-2xl mx-auto font-light">
-//             Discover the comprehensive program of ICAMLR 2026 featuring cutting-edge research and innovative sessions.
+//             Discover the comprehensive program of AIMLR 2026 featuring cutting-edge research and innovative sessions.
 //           </p>
 //         </div>
 //       </div>
@@ -776,7 +776,7 @@
 //             Explore <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Session Types</span>
 //           </h2>
 //           <p className="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
-//             ICAMLR 2026 features a dynamic blend of formats designed to maximize knowledge transfer and networking in AI & Robotics.
+//             AIMLR 2026 features a dynamic blend of formats designed to maximize knowledge transfer and networking in AI & Robotics.
 //           </p>
 //         </div>
 
@@ -1086,7 +1086,7 @@ const BiotechAgenda: React.FC = () => {
             Sessions & <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Tracks</span>
           </h1>
           <p className="text-lg md:text-xl text-indigo-200 max-w-2xl mx-auto font-light">
-            Discover the comprehensive program of ICAMLR 2026 featuring cutting-edge research and innovative sessions.
+            Discover the comprehensive program of AIMLR 2026 featuring cutting-edge research and innovative sessions.
           </p>
         </div>
       </div> */}

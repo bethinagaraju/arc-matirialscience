@@ -72,7 +72,7 @@ const TracksPage: React.FC = () => {
               <p className="text-gray-700 mb-3">2 Forbes Road, Woburn, Massachusetts, 01801, USA</p>
 
               <p className="font-semibold text-gray-800 mb-2">Conference Dates:</p>
-              <p className="text-gray-700 mb-4">October 22-24, 2026</p>
+              <p className="text-gray-700 mb-4">July 28-30, 2026</p>
 
               {/* <ul className="list-disc pl-5 text-gray-700 mb-4">
                 <li>The Hotel staff will only provide general information about the hotel and guest rooms; and are not responsible for any specific details about the conference.</li>

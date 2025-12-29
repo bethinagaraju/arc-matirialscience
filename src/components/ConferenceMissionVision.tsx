@@ -427,21 +427,21 @@ const ConferenceMissionVisionList: React.FC = () => {
       title: "Mission",
       icon: Target,
       desc:
-        "To create a platform for sharing knowledge, research, and innovative ideas among researchers, academics, and industry experts.",
+        "To provide a professional platform for sharing research, fostering collaboration, and encouraging innovation in AI, Machine Learning, and Robotics.",
     },
     {
       title: "Vision",
       icon: Globe,
       desc:
-        "To be a trusted global conference that supports research excellence, innovation, and collaboration.",
+        "To become a trusted international forum supporting academic excellence and responsible technological progress.",
     },
   ];
 
   const values = [
-    "Quality and integrity in research",
-    "Collaboration and knowledge sharing",
-    "Innovation and practical impact",
-    "Inclusivity and global participation",
+    "Research integrity and quality",
+    "Open knowledge exchange",
+    "Collaboration across academia and industry",
+    "Global and inclusive participation",
   ];
 
   return (

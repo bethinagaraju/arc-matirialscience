@@ -3,6 +3,8 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import EndFooter from '../components/EndFooter';
 import { Mail, Phone, MapPin, Clock, Send, MessageSquare, ChevronDown, ChevronUp, Users, HelpCircle, Globe, AlertTriangle, FileText } from 'lucide-react';
+import WhatsAppButton from '../components/WhatsAppButton';
+import { FaWhatsapp } from 'react-icons/fa';
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -45,7 +47,7 @@ const ContactPage: React.FC = () => {
             Contact Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-pink-400">Team</span>
           </h1>
           <p className="text-lg md:text-xl text-indigo-200 max-w-2xl mx-auto font-light">
-            Have questions about ICAMLR 2026? We're here to help you every step of the way.
+            Have questions about AIMLR 2026? We're here to help you every step of the way.
           </p>
         </div>
       </div> */}
@@ -112,20 +114,20 @@ const ContactPage: React.FC = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Email</p>
-                      <a href="mailto:info@icamlr2026.com" className="text-indigo-600 hover:text-indigo-800">
-                        info@icamlr2026.com
+                      <a href="mailto:secretary@roboticsaisummit.com" className="text-indigo-600 hover:text-indigo-800">
+                        secretary@roboticsaisummit.com
                       </a>
                     </div>
                   </div>
 
                   <div className="flex items-center gap-4">
                     <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-blue-600" />
+                      <FaWhatsapp className="w-6 h-6 text-blue-600" />
                     </div>
                     <div>
                       <p className="font-semibold text-gray-800">Phone</p>
-                      <a href="tel:+39-06-12345678" className="text-indigo-600 hover:text-indigo-800">
-                        +39 06 1234 5678
+                      <a href="tel:+14436530066" className="text-indigo-600 hover:text-indigo-800">
+                        +1 (443) 653-0066
                       </a>
                     </div>
                   </div>
@@ -244,7 +246,7 @@ const ContactPage: React.FC = () => {
 
 
       {/* Support Team Section */}
-      <div className="py-16 px-4 sm:px-6 lg:px-32 bg-white">
+      {/* <div className="py-16 px-4 sm:px-6 lg:px-32 bg-white">
         <div className="container mx-auto max-w-6xl">
 
           <div className="text-center mb-12">
@@ -299,7 +301,7 @@ const ContactPage: React.FC = () => {
 
           </div>
         </div>
-      </div>
+      </div> */}
 
       {/* Emergency Contacts & Social Media */}
    
@@ -318,7 +320,7 @@ const ContactPage: React.FC = () => {
               Frequently Asked Questions
             </h2>
             <p className="text-gray-600 text-lg">
-              Quick answers to common questions about ICAMLR 2026
+              Quick answers to common questions about AIMLR 2026
             </p>
           </div>
 
@@ -329,7 +331,7 @@ const ContactPage: React.FC = () => {
             />
             <FAQItem
               question="What is the deadline for abstract submission?"
-              answer="The abstract submission deadline is March 15, 2026. All submissions will undergo a peer review process, and notifications will be sent by April 30, 2026."
+              answer="The abstract submission deadline is January 30, 2026. All submissions will undergo a peer review process, and notifications will be sent by March 15, 2026."
             />
             {/* <FAQItem
               question="Are there accommodation options near the venue?"

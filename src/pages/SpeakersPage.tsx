@@ -208,20 +208,13 @@ import EndFooter from "../components/EndFooter";
 
 const speakers = [
 
-    {
-    image: "WhatsApp Image 2025-12-12 at 1.52.43 AM.jpeg",
-    name: "Jan Rosell",
-    title: "Shanghai Jiao Tong University, China",
-    company: "",
-    type:"Speaker"
-  },
 
-      {
+  {
     image: "WhatsApp Image 2025-12-12 at 1.39.44 AM.jpeg",
     name: "Thomas Gärtner",
     title: "Technical University of Vienna ,austria",
     company: "",
-    type:"keynote"
+    type:"Keynote"
   },
 
         {
@@ -244,42 +237,15 @@ const speakers = [
     name: "Petia Radeva",
     title: "Universitat de Barcelona,Spain",
     company: "",
-    type:"keynote"
+    type:"Keynote"
   },
-              {
-    image: "WhatsApp Image 2025-12-12 at 1.57.51 AM.jpeg",
-    name: "Rohit Chadha",
-    title: "university  of missouri,usa",
-    company: "",
-    type:"Speaker"
-  },
-
-
 
                   {
     image: "WhatsApp Image 2025-12-12 at 1.56.23 AM.jpeg",
     name: "Syed Kamrul Islam",
     title: "University of missouri,usa",
     company: "",
-    type:"keynote"
-  },
-
-
-  //                 {
-  //   image: "WhatsApp Image 2025-12-12 at 2.15.19 AM.jpeg",
-  //   name: "XU, Xiaoli",
-  //   title: "Southeast university,china",
-  //   company: "",
-  //   type:"Speaker"
-  // },
-
-
-                    {
-    image: "WhatsApp Image 2025-12-12 at 2.18.06 AM (1).jpeg",
-    name: "LIU, Yurong",
-    title: "Southeast university,china",
-    company: "",
-    type:"Speaker"
+    type:"Keynote"
   },
 
                       {
@@ -290,6 +256,30 @@ const speakers = [
     type:"Keynote"
   },
 
+    {
+    image: "WhatsApp Image 2025-12-12 at 1.52.43 AM.jpeg",
+    name: "Jan Rosell",
+    title: "Shanghai Jiao Tong University, China",
+    company: "",
+    type:"Speaker"
+  },
+
+              {
+    image: "WhatsApp Image 2025-12-12 at 1.57.51 AM.jpeg",
+    name: "Rohit Chadha",
+    title: "university  of missouri,usa",
+    company: "",
+    type:"Speaker"
+  },
+
+                    {
+    image: "WhatsApp Image 2025-12-12 at 2.18.06 AM (1).jpeg",
+    name: "LIU, Yurong",
+    title: "Southeast university,china",
+    company: "",
+    type:"Speaker"
+  },
+
                         {
     image: "WhatsApp Image 2025-12-12 at 1.25.51 AM.jpeg",
     name: "CHEN, Peng",
@@ -297,6 +287,8 @@ const speakers = [
     company: "",
     type:"Speaker"
   },
+
+      
 
 ];
 

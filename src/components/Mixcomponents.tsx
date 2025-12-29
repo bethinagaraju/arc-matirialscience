@@ -193,22 +193,112 @@ function Mixcomponents() {
   // ];
 
 
+//   const speakers = [
+
+//     {
+//     image: "WhatsApp Image 2025-12-12 at 1.52.43 AM.jpeg",
+//     name: "Jan Rosell",
+//     title: "Shanghai Jiao Tong University, China",
+//     company: "",
+//     type:"Speaker"
+//   },
+
+
+
+  
+
+  
+
+//       {
+//     image: "WhatsApp Image 2025-12-12 at 1.39.44 AM.jpeg",
+//     name: "Thomas Gärtner",
+//     title: "Technical University of Vienna ,austria",
+//     company: "",
+//     type:"keynote"
+//   },
+
+//         {
+//     image: "WhatsApp Image 2025-12-12 at 1.33.55 AM.jpeg",
+//     name: "CUI, Tiejun",
+//     title: "southeast universitie china",
+//     company: "",
+//     type:"Keynote"
+//   },
+//           {
+//     image: "WhatsApp Image 2025-12-12 at 2.24.58 AM.jpeg",
+//     name: "Katja Hose",
+//     title: "technical universty of vienna ,austria",
+//     company: "",
+//     type:"Keynote"
+//   },
+
+//                   {
+//     image: "WhatsApp Image 2025-12-12 at 2.17.38 AM.jpeg",
+//     name: "Petia Radeva",
+//     title: "Universitat de Barcelona,Spain",
+//     company: "",
+//     type:"keynote"
+//   },
+//               {
+//     image: "WhatsApp Image 2025-12-12 at 1.57.51 AM.jpeg",
+//     name: "Rohit Chadha",
+//     title: "university  of missouri,usa",
+//     company: "",
+//     type:"Speaker"
+//   },
+
+
+
+//                   {
+//     image: "WhatsApp Image 2025-12-12 at 1.56.23 AM.jpeg",
+//     name: "Syed Kamrul Islam",
+//     title: "University of missouri,usa",
+//     company: "",
+//     type:"keynote"
+//   },
+
+
+//                     {
+//     image: "WhatsApp Image 2025-12-12 at 2.18.06 AM (1).jpeg",
+//     name: "LIU, Yurong",
+//     title: "Southeast university,china",
+//     company: "",
+//     type:"Speaker"
+//   },
+
+//                       {
+//     image: "WhatsApp Image 2025-12-12 at 1.55.32 AM.jpeg",
+//     name: "Alvarado, Noé",
+//     title: "Universitat Politècnica de Catalunya,spain",
+//     company: "",
+//     type:"Keynote"
+//   },
+
+//                         {
+//     image: "WhatsApp Image 2025-12-12 at 1.25.51 AM.jpeg",
+//     name: "CHEN, Peng",
+//     title: "Southeast university ,china",
+//     company: "",
+//     type:"Speaker"
+//   }
+  
+
+  
+
+
+  
+
+// ];
+
   const speakers = [
 
-    {
-    image: "WhatsApp Image 2025-12-12 at 1.52.43 AM.jpeg",
-    name: "Jan Rosell",
-    title: "Shanghai Jiao Tong University, China",
-    company: "",
-    type:"Speaker"
-  },
 
-      {
+  {
     image: "WhatsApp Image 2025-12-12 at 1.39.44 AM.jpeg",
     name: "Thomas Gärtner",
     title: "Technical University of Vienna ,austria",
     company: "",
-    type:"keynote"
+    type:"Keynote"
   },
 
         {
@@ -231,8 +321,33 @@ function Mixcomponents() {
     name: "Petia Radeva",
     title: "Universitat de Barcelona,Spain",
     company: "",
-    type:"keynote"
+    type:"Keynote"
   },
+
+                  {
+    image: "WhatsApp Image 2025-12-12 at 1.56.23 AM.jpeg",
+    name: "Syed Kamrul Islam",
+    title: "University of missouri,usa",
+    company: "",
+    type:"Keynote"
+  },
+
+                      {
+    image: "WhatsApp Image 2025-12-12 at 1.55.32 AM.jpeg",
+    name: "Alvarado, Noé",
+    title: "Universitat Politècnica de Catalunya,spain",
+    company: "",
+    type:"Keynote"
+  },
+
+    {
+    image: "WhatsApp Image 2025-12-12 at 1.52.43 AM.jpeg",
+    name: "Jan Rosell",
+    title: "Shanghai Jiao Tong University, China",
+    company: "",
+    type:"Speaker"
+  },
+
               {
     image: "WhatsApp Image 2025-12-12 at 1.57.51 AM.jpeg",
     name: "Rohit Chadha",
@@ -240,17 +355,6 @@ function Mixcomponents() {
     company: "",
     type:"Speaker"
   },
-
-
-
-                  {
-    image: "WhatsApp Image 2025-12-12 at 1.56.23 AM.jpeg",
-    name: "Syed Kamrul Islam",
-    title: "University of missouri,usa",
-    company: "",
-    type:"keynote"
-  },
-
 
                     {
     image: "WhatsApp Image 2025-12-12 at 2.18.06 AM (1).jpeg",
@@ -260,9 +364,17 @@ function Mixcomponents() {
     type:"Speaker"
   },
 
-];
+                        {
+    image: "WhatsApp Image 2025-12-12 at 1.25.51 AM.jpeg",
+    name: "CHEN, Peng",
+    title: "Southeast university ,china",
+    company: "",
+    type:"Speaker"
+  },
 
-  
+      
+
+];
 
   return (
     <div
@@ -270,7 +382,7 @@ function Mixcomponents() {
       className="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-4 px-4 md:px-6"
     >
       {/* Main Content Only */}
-      <div className="col-span-full p-4">
+      <div className="col-span-full p-0">
 
         <h1
           style={{ fontFamily: "'Manrope', sans-serif", color: '#2e376c', paddingBottom: '0.5rem' }}
@@ -280,8 +392,8 @@ function Mixcomponents() {
         </h1>
 
         {/* Speakers Grid 4x2 */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-8">
-          {speakers.slice(0, 8).map((speaker, idx) => (
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-8">
+          {speakers.map((speaker, idx) => (
             <div key={idx} className="flex-shrink-0">
               {/* <GuestCard
                 imageUrl={speaker.imageUrl}
@@ -307,7 +419,7 @@ function Mixcomponents() {
         </div>
 
         {/* View All Button */}
-        <div className="text-center">
+        <div className="text-center pb-8">
           <a
             href="/speakers"
             className="inline-block bg-[#2e376c] hover:bg-[#1f254b] text-white font-bold py-3 px-8 transition-colors duration-300"

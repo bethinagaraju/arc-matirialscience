@@ -10,7 +10,8 @@ function HighletOne() {
       <div className="w-full md:w-[55vw] flex flex-col gap-4 bg-white shadow-md overflow-hidden">
         <div className="w-full h-auto md:h-[50%]">
           <img
-            src="Gemini_Generated_Image_j5zwdpj5zwdpj5zw.png"
+            // src="Gemini_Generated_Image_j5zwdpj5zwdpj5zw.png"
+            src="newhihletone.jpeg"
             alt="Main highlight"
             className="w-full h-full object-cover lazyload"
           />
@@ -24,13 +25,15 @@ function HighletOne() {
               className="w-full h-full object-cover lazyload"
             />
           </div>
+
           <div className="w-full md:w-1/2 h-auto">
             <img
-              src="Gemini_Generated_Image_szvxggszvxggszvx.png"
+              src="newhighlettwo.jpeg"
               alt="Highlight 2"
               className="w-full h-full object-cover lazyload"
             />
           </div>
+
         </div>
       </div>
 
@@ -45,7 +48,7 @@ function HighletOne() {
         </div>
         <div className="h-auto md:h-[38vh]">
           <img
-            src="20250527-re1_3975.jpg"
+            src="newhighletfour.jpeg"
             alt="Highlight 4"
             className="w-full h-full object-cover lazyload"
           />

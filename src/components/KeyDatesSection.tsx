@@ -29,7 +29,7 @@ const KeyDatesSection: React.FC = () => {
             Key Dates
           </h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Mark your calendar for the most important dates of ICAMLR 2026
+            Mark your calendar for the most important dates of AIMLR 2026
           </p>
         </div>
 

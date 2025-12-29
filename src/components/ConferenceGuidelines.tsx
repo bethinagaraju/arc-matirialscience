@@ -10,7 +10,7 @@
 // //       {/* Registration Section */}
 // //       <div className="space-y-3">
 // //         <h3 className="text-xl font-semibold text-gray-800">Registration</h3>
-// //         <p>Conference Registrations starts @08:00 AM on October 22, 2026 in Boston, Massachusetts, USA.</p>
+// //         <p>Conference Registrations starts @08:00 AM on October 22, 2026 in Crowne Plaza - St. Peter’s Rome, Italy.</p>
 // //         <p>During the conference, the registration desk will be opened from 8 AM onwards.</p>
 // //         <p>
 // //           At the registration desk you will receive your conference kit which includes name tag, program booklet.
@@ -111,7 +111,7 @@
 //       <div className="space-y-4">
 //         <h3 className="text-xl font-semibold text-gray-800">Registration</h3>
 //         <ul className="list-disc pl-6 space-y-2 text-gray-700">
-//           <li>Registrations start at 08:00 AM on October 22, 2026 in Boston, Massachusetts, USA.</li>
+//           <li>Registrations start at 08:00 AM on October 22, 2026 in Crowne Plaza - St. Peter’s Rome, Italy.</li>
 //           <li>The registration desk will remain open from 8 AM during the conference.</li>
 //           <li>You will receive a conference kit with your name tag and program booklet.</li>
 //           <li>On-site coordinators will be available to assist you at all times.</li>
@@ -241,7 +241,7 @@ const ConferenceGuidelines: React.FC = () => {
           </div>
           <ul className="space-y-1 ml-2 md:ml-12">
             {[
-              "Registrations start at 08:00 AM on October 22, 2026 in Boston, Massachusetts, USA.",
+              "Registrations start at 08:00 AM on July 28, 2026 in Crowne Plaza - St. Peter’s Rome, Italy.",
               "The registration desk will remain open from 8 AM during the conference.",
               "You will receive a conference kit with your name tag and program booklet.",
               "On-site coordinators will be available to assist you at all times.",

@@ -1,86 +1,3 @@
-// import React, { useState } from "react";
-
-// interface Testimonial {
-//   name: string;
-//   title: string;
-//   image: string;
-//   message: string;
-// }
-
-// const testimonials: Testimonial[] = [
-//   {
-//     name: "Daryle Wane",
-//     title: "Nurse Consultant-Florida, United States",
-//     image: "/images/daryle.jpg", // Replace with your image path
-//     message: "Thank you for allowing me to participate once again in this NWC 2025 conference. Year after year, it remains an excellent opportunity to share research and connect with colleagues both nationally and internationally.",
-//   },
-//   {
-//     name: "Natalia Cineas",
-//     title: "Mount Sinai St. Luke’s, USA",
-//     image: "/images/natalia.jpg",
-//     message: "I really enjoyed presenting and it looks like my presentation impacted people—thank you for a great time-slot.",
-//   },
-//   {
-//     name: "Sathiyalatha Sarathi",
-//     title: "Nursing Conference",
-//     image: "/images/sathiyalatha.jpg",
-//     message: "Thanks for giving me the opportunity to present in NWC conference on 2019 at London. The conference was well organised. Congratulations and best wishes for the future endeavours.",
-//   },
-// ];
-
-// const Testimonials: React.FC = () => {
-//   const [currentIndex, setCurrentIndex] = useState(0);
-
-//   const prevSlide = () => {
-//     setCurrentIndex((prev) => (prev === 0 ? testimonials.length - 1 : prev - 1));
-//   };
-
-//   const nextSlide = () => {
-//     setCurrentIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
-//   };
-
-//   return (
-//     <section className="bg-blue-900 py-16 px-6">
-//       <div className="max-w-6xl mx-auto text-center text-white mb-12">
-//         <h2 className="text-4xl font-bold">Testimonials</h2>
-//       </div>
-
-//       <div className="relative max-w-5xl mx-auto flex items-center justify-center">
-//         {/* Left Arrow */}
-//         <button
-//           onClick={prevSlide}
-//           className="absolute left-0 text-white text-2xl md:text-3xl font-bold p-2 hover:text-gray-300 transition"
-//         >
-//           &#8249;
-//         </button>
-
-//         {/* Testimonial Card */}
-//         <div className="bg-white text-gray-800 p-6 rounded-md shadow-md w-full md:w-1/2 mx-4">
-//           <div className="flex flex-col items-center">
-//             <img
-//               src={testimonials[currentIndex].image}
-//               alt={testimonials[currentIndex].name}
-//               className="w-20 h-20 rounded-full mb-4"
-//             />
-//             <p className="text-center mb-4">{testimonials[currentIndex].message}</p>
-//             <h3 className="font-bold">{testimonials[currentIndex].name}</h3>
-//             <p className="italic text-gray-600">{testimonials[currentIndex].title}</p>
-//           </div>
-//         </div>
-
-//         {/* Right Arrow */}
-//         <button
-//           onClick={nextSlide}
-//           className="absolute right-0 text-white text-2xl md:text-3xl font-bold p-2 hover:text-gray-300 transition"
-//         >
-//           &#8250;
-//         </button>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Testimonials;
 
 
 
@@ -96,105 +13,64 @@ interface Testimonial {
   message: string;
 }
 
-// const testimonials: Testimonial[] = [
-//   {
-//     id: 1,
-//     name: "Tracey Wilson",
-//     title: "University of Maryland",
-//     location: "USA",
-//     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200&h=200",
-//     message: "Thank you! We are enjoying the conference! The sessions have been incredibly insightful and the networking opportunities are fantastic.",
-//   },
-//   {
-//     id: 2,
-//     name: "Irena Laska, Blerina Duka",
-//     title: "Albanian Order of Nurses",
-//     location: "Albania",
-//     image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200",
-//     message: "Blerina and me (Irena), wanted to thank you very much indeed for giving us opportunity to be active part of NWC in London last week.",
-//   },
-//   {
-//     id: 3,
-//     name: "Aretuza Cruz Vieira",
-//     title: "Albert Einstein Hospital",
-//     location: "Brazil",
-//     image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200",
-//     message: "The Conference was really nice! I appreciated the diverse topics covered and the smooth organization of the entire event.",
-//   },
-//   {
-//     id: 4,
-//     name: "Daryle Wane",
-//     title: "Nurse Consultant",
-//     location: "Florida, United States",
-//     image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=200&h=200",
-//     message: "Thank you for allowing me to participate once again. Year after year, it remains an excellent opportunity to share research.",
-//   },
-//   {
-//     id: 5,
-//     name: "Sarah Jenkins",
-//     title: "Clinical Specialist",
-//     location: "UK",
-//     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=200&h=200",
-//     message: "An outstanding gathering of professionals. The keynote speakers were particularly inspiring this year.",
-//   }
-// ];
 
 const testimonials: Testimonial[] = [
   {
     id: 1,
     name: "Dr. Aisha Raman",
-    title: "Robotics Researcher, IIT Delhi",
+    title: "Faculty Participant, Previous Edition",
     location: "India",
-    image: "WhatsApp Image 2025-12-18 at 15.17.07.jpeg",
+    image: "testone.jpeg",
     message:
-      "Thank youI really enjoyed presenting and it looks like my presentation impacted people-  thank you for a great time-slot"
+      "The conference provided a structured platform for presenting research and engaging in constructive technical discussions with participants from different institutions."
   },
   {
     id: 2,
     name: "Miguel Alvarez",
-    title: "AI Systems Engineer, Barcelona Robotics Lab",
+    title: "Research Participant, Previous Edition",
     location: "Spain",
     image: "WhatsApp Image 2025-12-18 at 15.18.13.jpeg",
     message:
-      "Thank you!  We are enjoying the conference!"
+      "The sessions were well organized and covered a broad range of topics in artificial intelligence, machine learning, and robotics."
   },
   {
     id: 3,
     name: "Dr. Hana Sato",
-    title: "Autonomous Navigation Specialist, Kyoto Tech",
+    title: "Poster Presenter, Previous Edition",
     location: "Japan",
     image: "WhatsApp Image 2025-12-18 at 15.19.20.jpeg",
     message:
-      "I thoroughly enjoyed the conference and am looking to forward those in the future."
+      "I found the opportunity to present my work and receive feedback from peers to be valuable for improving my research."
   },
+
   {
     id: 4,
     name: "Jonathan Miller",
-    title: "Lead Robotics Engineer, RoboNext",
+    title: "Conference Attendee, Previous Edition",
     location: "USA",
-    image: "WhatsApp Image 2025-12-18 at 15.20.51.jpeg",
+    image: "testtwo.jpeg",
     message:
-      "Thank you for a great conference and using me as a Moderator."
+      "The conference created a professional environment for knowledge exchange and interdisciplinary interaction."
   },
 
   {
     id: 5,
-    name: "Emily Carter",
+    name: "Martin Alvarez",
     title: "PhD Scholar in AI & Robotics, University of Manchester",
     location: "UK",
-    image: "WhatsApp Image 2025-12-18 at 15.21.33.jpeg",
+    image: "WhatsApp Image 2025-12-19 at 8.46.47 AM.jpeg",
     message:
-      "It was an excellent conference and I am honoured to have been a part of it. One of the best I have been to."
+      "The hybrid format enabled effective participation and interaction with researchers despite geographical limitations."
   },
 
     {
     id: 6,
-    name: "Emily Carter",
+    name: "Hasan Yilmaz",
     title: "PhD Scholar in AI & Robotics, University of Manchester",
     location: "UK",
-    image: "WhatsApp Image 2025-12-18 at 15.24.34.jpeg",
+    image: "WhatsApp Image 2025-12-19 at 8.50.20 AM.jpeg",
     message:
-      "I did enjoy meeting so many people from different countries with great ideas"
+      "The discussions and networking opportunities contributed positively to research collaboration and idea sharing."
   }
 ];
 
@@ -242,7 +118,7 @@ const Testimonials: React.FC = () => {
         
         {/* Title */}
         <div className="text-center text-white mb-12">
-          <h2 className="text-4xl font-bold">Testimonials</h2>
+          <h2 className="text-4xl font-bold">Participants Feedback</h2>
         </div>
 
         <div className="flex items-center justify-center gap-4">
@@ -285,9 +161,9 @@ const Testimonials: React.FC = () => {
                   <p className="text-gray-500 italic text-sm">
                     {item.title}
                   </p>
-                  <p className="text-gray-500 italic text-sm">
+                  {/* <p className="text-gray-500 italic text-sm">
                     {item.location}
-                  </p>
+                  </p> */}
                 </div>
               </div>
             ))}

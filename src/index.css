@@ -16,12 +16,27 @@
   animation: scroll 30s linear infinite;
 }
 
-.animate-scroll:hover {
+/* Removed hover pause to keep animation continuous */
+/* .animate-scroll:hover {
   animation-play-state: paused;
-}
+} */
 
 
 iframe[title*="chat"], 
 .tawk-min-container {
     display: none !important;
 }
+
+
+
+@keyframes videoFade {
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-videoFade {
+  animation: videoFade 0.6s ease forwards;
+}
+
+

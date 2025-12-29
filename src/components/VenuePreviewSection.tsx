@@ -16,7 +16,7 @@
 // //         </h2>
 
 // //         <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-// //           Join us in beautiful Rome for ICAMLR 2026 — explore venue details, hotel options,
+// //           Join us in beautiful Rome for AIMLR 2026 — explore venue details, hotel options,
 // //           travel routes, and local attractions.
 // //         </p>
 
@@ -86,7 +86,7 @@
 //         </h2>
 
 //         <p className="text-gray-600 text-sm md:text-base max-w-xl mx-auto mb-6 leading-relaxed">
-//           Experience Rome while attending ICAMLR 2026 — discover venue location,
+//           Experience Rome while attending AIMLR 2026 — discover venue location,
 //           travel guidance, and accommodation options.
 //         </p>
 
@@ -145,7 +145,7 @@ const VenuePreviewSection = () => {
         </h2>
 
         <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-          Immerse yourself in the timeless beauty of Rome during ICAMLR 2026. Explore comprehensive venue details, seamless travel arrangements, luxurious accommodation options, and discover the rich cultural attractions that surround our conference location.
+          Immerse yourself in the timeless beauty of Rome during AIMLR 2026. Explore comprehensive venue details, seamless travel arrangements, luxurious accommodation options, and discover the rich cultural attractions that surround our conference location.
         </p>
 
         {/* Expanded Card */}

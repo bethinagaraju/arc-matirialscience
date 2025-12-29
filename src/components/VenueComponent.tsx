@@ -258,59 +258,53 @@ function VenueComponent() {
               Official Venue
             </span>
             <h3 className="text-3xl font-bold text-indigo-900">
-              Crowne Plaza - St. Peter's Rome
+              Crowne Plaza Rome – St. Peter’s, Rome, Italy
             </h3>
           </div>
           
           {/* Action Buttons */}
-          <div className="flex gap-3">
+          {/* <div className="flex gap-3">
             <button className="flex items-center gap-2 bg-indigo-600 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-100 text-sm whitespace-nowrap">
               <Navigation className="w-4 h-4" /> Get Directions
             </button>
             <button className="flex items-center gap-2 border border-gray-200 text-gray-700 px-5 py-2.5 rounded-lg font-semibold hover:bg-gray-50 hover:text-indigo-600 transition-colors text-sm whitespace-nowrap">
               <ExternalLink className="w-4 h-4" /> Visit Website
             </button>
-          </div>
+          </div> */}
         </div>
 
 
 
         {/* Info Section */}
-        <div className="space-y-4 mb-8">
+        <div className="mb-8 flex flex-col sm:flex-row justify-center sm:justify-start gap-4 sm:gap-6">
           {/* Address */}
-          <div className="flex">
-            <div className="flex items-center gap-2 w-full sm:w-80 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition p-0">
-              <div className="p-3">
-                <MapPin className="w-6 h-6 text-indigo-600" />
-              </div>
-              <p className="text-gray-800 text-sm font-medium">
-                Crowne Plaza Rome, Italy
-              </p>
+          <div className="flex items-center gap-2 w-full sm:w-80 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition p-0">
+            <div className="p-3">
+              <MapPin className="w-6 h-6 text-indigo-600" />
             </div>
+            <p className="text-gray-800 text-sm font-medium">
+              Crowne Plaza Rome, Italy
+            </p>
           </div>
 
           {/* Phone */}
-          <div className="flex">
-            <div className="flex items-center gap-2 w-full sm:w-80 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition p-0">
-              <div className="p-3">
-                <Phone className="w-6 h-6 text-indigo-600" />
-              </div>
-              <a href="tel:+390666304000" className="text-gray-800 text-sm font-medium hover:text-indigo-600 transition-colors">
-                +39 06 6630 4000
-              </a>
-            </div>
+          <div className="flex items-center gap-2 p-0">
+              <a href="https://www.google.com/maps?q=Crowne+Plaza+Rome+St+Peter's+Rome+Italy" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-indigo-600 text-white px-5 py-3 rounded-lg font-semibold hover:bg-indigo-700 transition-colors shadow-lg shadow-indigo-100 text-sm whitespace-nowrap p-2">
+              <Navigation className="w-4 h-4" /> Get Directions
+            </a>
           </div>
 
           {/* Email */}
-          <div className="flex">
-            <div className="flex items-center gap-2 w-full sm:w-80 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition p-0">
-              <div className="p-3">
-                <Mail className="w-6 h-6 text-indigo-600" />
-              </div>
-              <a href="mailto:info.rome@crowneplaza.com" className="text-gray-800 text-sm font-medium hover:text-indigo-600 transition-colors break-all">
-                info.rome@crowneplaza.com
-              </a>
+          <div className="flex items-center gap-2 w-full sm:w-80 bg-gray-50 rounded-xl border border-gray-200 hover:shadow-md transition p-0">
+            <div className="p-3">
+              <ExternalLink className="w-5 h-5 text-indigo-600" />
             </div>
+            <a
+              href="mailto:info.rome@crowneplaza.com"
+              className="text-gray-800 text-sm font-medium hover:text-indigo-600 transition-colors break-all"
+            >
+              Visit Website
+            </a>
           </div>
         </div>
 
@@ -327,7 +321,7 @@ function VenueComponent() {
         {/* Additional Conference Info */}
         {/* <div className="p-4 bg-blue-50 border border-blue-200 rounded-xl">
           <p className="text-sm text-blue-900 leading-relaxed">
-            <strong>Conference Dates:</strong> October 22-24, 2026.<br /><br />
+            <strong>Conference Dates:</strong> July 28-30, 2026.<br /><br />
             The Hotel staff will only provide general information about the hotel and guest rooms; and are not responsible for any specific details about the conference. <br /><br />
             Please mention the conference name, dates along with the organizer “Magnus Group”, if you wish to contact the hotel reception.
           </p>

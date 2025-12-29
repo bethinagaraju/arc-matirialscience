@@ -142,6 +142,7 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
   const [hovered, setHovered] = useState<string | null>(null);
   const [conferenceOpen, setConferenceOpen] = useState(false);
   const [programOpen, setProgramOpen] = useState(false);
+  const [callsOpen, setCallsOpen] = useState(false);
   return (
     <>
       {/* Desktop Navbar */}
@@ -164,13 +165,34 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
             <span className="ml-2">HOME</span>
           </Link>
 
+
+                    {/* CALLS DROPDOWN */}
+          <div
+            className="relative"
+            onMouseEnter={() => setHovered("calls")}
+            onMouseLeave={() => setHovered(null)}
+          >
+            <span style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm cursor-pointer flex items-center">
+              CALLS <ChevronDown size={16} />
+            </span>
+            {hovered === "calls" && (
+              <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
+                <Link to="/about-the-call" className="block px-4 py-2 hover:bg-gray-100">Call for Abstracts</Link>
+                <Link to="/call-for-papers" className="block px-4 py-2 hover:bg-gray-100">Call for Papers</Link>
+                <Link to="/call-for-posters" className="block px-4 py-2 hover:bg-gray-100">Call for Posters</Link>
+                <Link to="/call-for-speakers" className="block px-4 py-2 hover:bg-gray-100">Call for Speakers</Link>
+                <Link to="/call-for-reviewers" className="block px-4 py-2 hover:bg-gray-100">Call for Reviewers</Link>
+              </div>
+            )}
+          </div>
+
           {/* CONFERENCE DROPDOWN */}
           <div
             className="relative"
             onMouseEnter={() => setHovered("conference")}
             onMouseLeave={() => setHovered(null)}
           >
-            <span className="tracking-wider hover:text-gray-300 text-sm cursor-pointer flex items-center">
+            <span style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm cursor-pointer flex items-center">
               CONFERENCE <ChevronDown size={16} />
             </span>
             {hovered === "conference" && (
@@ -184,12 +206,12 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
 
            
           
-          <Link to="/sessions" className="tracking-wider hover:text-gray-300 text-sm">
+          <Link to="/sessions" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm">
             SESSIONS
           </Link>
 
           {/* SPEAKERS */}
-          <Link to="/speakers" className="tracking-wider hover:text-gray-300 text-sm">
+          <Link to="/speakers" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm">
             SPEAKERS
           </Link>
 
@@ -217,7 +239,7 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
             onMouseEnter={() => setHovered("program")}
             onMouseLeave={() => setHovered(null)}
           >
-            <span className="tracking-wider hover:text-gray-300 text-sm cursor-pointer flex items-center">
+            <span style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm cursor-pointer flex items-center">
               PROGRAM <ChevronDown size={16} />
             </span>
             {hovered === "program" && (
@@ -236,7 +258,7 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
 
 
 
-          <Link to="/register" className="tracking-wider hover:text-gray-300 text-sm">
+          <Link to="/register" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm">
             REGISTER
           </Link>
 
@@ -284,9 +306,28 @@ const BottomNavbar = ({ menuOpen }: { menuOpen: boolean }) => {
               SPEAKERS
             </Link>
 
-            {/* <Link to="/call-for-papers" className="block text-gray-800 font-semibold">
-              CALL FOR PAPERS
-            </Link> */}
+            {/* CALLS DROPDOWN */}
+            <div>
+              <div
+                onClick={() => setCallsOpen(!callsOpen)}
+                className="flex items-center justify-between cursor-pointer text-gray-800 font-semibold"
+              >
+                CALLS
+                <ChevronDown
+                  className={`transform transition-transform ${callsOpen ? 'rotate-180' : ''}`}
+                  size={16}
+                />
+              </div>
+              {callsOpen && (
+                <div className="ml-4 space-y-2 mt-2">
+                  <Link to="/about-the-call" className="block text-gray-600 hover:text-gray-800">Call for Abstracts</Link>
+                  <Link to="/call-for-papers" className="block text-gray-600 hover:text-gray-800">Call for Papers</Link>
+                  <Link to="/call-for-posters" className="block text-gray-600 hover:text-gray-800">Call for Posters</Link>
+                  <Link to="/call-for-speakers" className="block text-gray-600 hover:text-gray-800">Call for Speakers</Link>
+                  <Link to="/call-for-reviewers" className="block text-gray-600 hover:text-gray-800">Call for Reviewers</Link>
+                </div>
+              )}
+            </div>
 
             {/* PROGRAM DROPDOWN */}
             <div>

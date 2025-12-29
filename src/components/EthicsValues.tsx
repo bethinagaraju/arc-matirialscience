@@ -33,7 +33,7 @@
 // // //             Ethics & Values
 // // //           </h2>
 // // //           <p className="text-gray-600 max-w-3xl mx-auto mt-3">
-// // //             At ICAMLR 2026, we are committed to advancing AI, ML, and robotics in ways that are ethical, inclusive, and beneficial to humanity. Our core values guide every aspect of our work and discussions.
+// // //             At AIMLR 2026, we are committed to advancing AI, ML, and robotics in ways that are ethical, inclusive, and beneficial to humanity. Our core values guide every aspect of our work and discussions.
 // // //           </p>
 // // //         </div>
 
@@ -105,7 +105,7 @@
 // //             Ethics & Values
 // //           </h2>
 // //           <p className="text-gray-600 max-w-3xl mx-auto mt-3">
-// //             At ICAMLR 2026, we are committed to advancing AI, ML, and robotics in ways that are ethical, inclusive, and beneficial to humanity. Our core values guide every aspect of our work and discussions.
+// //             At AIMLR 2026, we are committed to advancing AI, ML, and robotics in ways that are ethical, inclusive, and beneficial to humanity. Our core values guide every aspect of our work and discussions.
 // //           </p>
 // //         </div>
 
@@ -194,7 +194,7 @@
 //             Ethics & Values
 //           </h2>
 //           <p className="text-gray-600 max-w-3xl mx-auto mt-3">
-//             At ICAMLR 2026, we are committed to advancing AI, ML, and robotics in
+//             At AIMLR 2026, we are committed to advancing AI, ML, and robotics in
 //             ways that are ethical, inclusive, and beneficial to humanity. Our
 //             core values guide every aspect of our work and discussions.
 //           </p>
@@ -295,7 +295,7 @@ const EthicsValues: React.FC = () => {
             Ethics & Values
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto mt-4 text-lg">
-            At ICAMLR 2026, we are committed to advancing AI, ML, and robotics in
+            At AIMLR 2026, we are committed to advancing AI, ML, and robotics in
             ways that are ethical, inclusive, and beneficial to humanity.
           </p>
         </div>

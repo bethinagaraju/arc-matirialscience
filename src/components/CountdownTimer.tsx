@@ -148,7 +148,7 @@ const CountdownTimer: React.FC = () => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const conferenceDate = new Date('2026-07-28T00:00:00'); 
+      const conferenceDate = new Date('2026-05-28T00:00:00'); 
       const now = new Date();
       const difference = conferenceDate.getTime() - now.getTime();
 

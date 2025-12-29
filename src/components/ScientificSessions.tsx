@@ -80,26 +80,49 @@ export default function ScientificSessions() {
 //     "Anesthesia & PeriAnesthesia Nursing",
 //   ];
 
+// const sessions = [
+//   "Artificial Intelligence & Machine Learning",
+//   "Deep Learning and Neural Networks",
+//   "Natural Language Processing",
+//   "Robotics and Automation",
+//   "Humanoid and Service Robots",
+//   "Cyber-Physical Systems",
+//   "Swarm Robotics",
+//   "Edge AI and Embedded Systems",
+//   "Human-Robot Interaction (HRI)",
+
+//   "Industry 4.0 and Smart Manufacturing",
+
+
+//   "Reinforcement Learning and Optimization",
+//   "AI for Smart Cities and Urban Systems",
+//   "Digital Twins and Simulation Systems",
+//   "AI in Finance and Autonomous Trading",
+//   "Energy-Efficient AI and Green Computing"
+// ];
+
+
+
 const sessions = [
-  "Artificial Intelligence & Machine Learning",
-  "Deep Learning and Neural Networks",
-  "Natural Language Processing",
-  "Robotics and Automation",
-  "Humanoid and Service Robots",
-  "Cyber-Physical Systems",
-  "Swarm Robotics",
-  "Edge AI and Embedded Systems",
+  "Responsible & Ethical Artificial Intelligence",
+  "Explainable AI (XAI) for Real-World Applications",
+  "Generative AI and Large Language Models (LLMs)",
+  "AI for Healthcare, Diagnosis & Medical Imaging",
+  "AI for Cybersecurity and Fraud Detection",
+  "AI in Smart Cities and Urban Development",
+  "Human-Centered AI and Trustworthy Systems",
+
+  "Deep Learning Architectures & Optimization",
+  "Reinforcement Learning and Decision Making",
+  "Federated Learning & Privacy-Preserving ML",
+
+  "Autonomous Robots and Intelligent Systems",
   "Human-Robot Interaction (HRI)",
-
-  "Industry 4.0 and Smart Manufacturing",
-
-
-  "Reinforcement Learning and Optimization",
-  "AI for Smart Cities and Urban Systems",
-  "Digital Twins and Simulation Systems",
-  "AI in Finance and Autonomous Trading",
-  "Energy-Efficient AI and Green Computing"
+  "AI-Driven Robotics for Industrial Automation",
+  "Swarm Robotics and Multi-Robot Systems",
+  "AI-Powered Drones and Autonomous Vehicles"
 ];
+
 
 
 
@@ -111,7 +134,8 @@ const sessions = [
       <h2 className="text-3xl sm:text-4xl font-semibold text-center text-[#053047] mb-10">
         {/* Scientific Sessions */}
         {/* Conference Topicsss */}
-        SESSIONS & TRACKS
+        {/* SESSIONS & TRACKS */}
+        CONFERENCE TOPICS
       </h2>
 
       {/* Grid including buttons */}

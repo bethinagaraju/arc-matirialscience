@@ -165,10 +165,10 @@ function AboutPage() {
                 Shaping the Intelligent Era
               </h2>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Join the global community of visionaries at the International Conference on Artificial Intelligence, Machine Learning, and Robotics, taking place from July 28–30, 2026, at Crowne Plaza – St. Peter’s Rome, Italy. This event brings together researchers, technologists, industry leaders, and innovators to explore groundbreaking advancements transforming industries and society.
+                The International Conference on Artificial Intelligence, Machine Learning, and Robotics (AIMLR 2026) provides a global forum for researchers, academics, and industry professionals to share ideas, present research, and discuss recent advancements in intelligent systems.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                Engage in insightful discussions and hands-on sessions on deep learning, autonomous systems, generative AI, human–robot collaboration, robotics in healthcare, and ethical AI frameworks. Explore how these technologies are transforming industries, enhancing decision-making, and improving human life through intelligent, adaptive systems. Gain valuable insights from global experts and innovators driving real-world AI and robotics applications. Join this dynamic platform that posters collaboration, discovery, and innovation, shaping the next era of intelligent and sustainable technological progress.
+                The conference encourages knowledge exchange across theoretical research, applied innovations, and interdisciplinary collaboration, supporting the development of responsible and impactful AI and robotics technologies.
               </p>
               {/* <button className="text-blue-600 font-semibold flex items-center gap-2 hover:gap-3 transition-all">
                 Learn more about our mission <ArrowRight className="w-4 h-4" />
@@ -202,9 +202,9 @@ function AboutPage() {
       {/* --- CTA SECTION --- */}
       <div className="py-12 bg-gradient-to-r from-indigo-900 to-blue-900 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">Ready to Shape the Future?</h2>
+          <h2 className="text-3xl font-bold mb-4">JOIN AIMLR 2026</h2>
           <p className="text-lg text-indigo-200 mb-8 max-w-2xl mx-auto">
-            Don't miss this opportunity to be part of the most influential technology gathering of 2026.
+            Participate in an international academic forum dedicated to AI, Machine Learning, and Robotics.
           </p>
           <Link to="/register">
             <button className="bg-white text-indigo-900 font-bold py-3 px-8 rounded-lg hover:bg-blue-50 transform hover:scale-105 transition-all duration-300 shadow-lg">

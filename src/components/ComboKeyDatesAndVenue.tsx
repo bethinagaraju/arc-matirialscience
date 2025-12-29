@@ -7,38 +7,46 @@ const ComboKeyDatesAndVenue: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const conferenceOpenings = [
-    { title: "Abstract Submission Opens", date: "October 30, 2025" },
-    { title: "Registration Opens", date: "October 31, 2025" },
-    { title: "Early Bird Registration", date: "December 17, 2025" },
+    { date: "January 30, 2026" },
+
   ];
 
   const registrationDeadlines = [
-    { title: "Early Bird Registration", date: "December 17, 2025" },
-    { title: "Mid Term Registration", date: "February 28, 2026" },
-    { title: "On Spot Registration", date: "October 22, 2026" },
+    { date: "February 15, 2026" },
+
   ];
 
   const abstractDeadlines = [
-    { title: "First Round Submission", date: "December 15, 2025" },
-    { title: "Second Round Submission", date: "February 26, 2026" },
-    { title: "Final Round Submission", date: "October 14, 2026" },
+    {date: "July 28–30, 2026" },
+
+  ];
+
+    const abstractDeadliness = [
+    { date: "Febrauary 28, 2026" },
+
   ];
 
   const cards = [
+        {
+      title: "Conference Dates",
+      bgColor: "#222222",
+      data: abstractDeadlines,
+    },
     {
-      title: "Conference Openings",
+      title: "Submission Deadline",
       bgColor: "#0c3e61",
       data: conferenceOpenings,
     },  
     {
-      title: "Registration Deadlines",
+      title: "Notification of Acceptance",
       bgColor: "#0087b6",
       data: registrationDeadlines,
     },
-    {
-      title: "Abstract Submission Deadlines",
-      bgColor: "#222222",
-      data: abstractDeadlines,
+
+        {
+      title: "Final Paper Submission",
+      bgColor: "#4C6DA6",
+      data: abstractDeadliness,
     },
   ];
 
@@ -58,7 +66,7 @@ const ComboKeyDatesAndVenue: React.FC = () => {
         </div>
 
         {/* Desktop View */}
-        <div className="hidden md:grid grid-cols-3 gap-8">
+        <div className="hidden md:grid grid-cols-4 gap-4">
           {cards.map((card, index) => (
             <div
               key={index}
@@ -73,10 +81,7 @@ const ComboKeyDatesAndVenue: React.FC = () => {
               <div className="p-6 text-center space-y-5">
                 {card.data.map((item, idx) => (
                   <div key={idx}>
-                    <p className="font-semibold text-gray-800">
-                      {item.title}
-                    </p>
-                    <p className="text-gray-600">{item.date}</p>
+                    <p className="text-gray-600 text-3xl font-bold">{item.date}</p>
                   </div>
                 ))}
               </div>

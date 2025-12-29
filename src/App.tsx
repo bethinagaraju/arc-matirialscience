@@ -147,6 +147,11 @@ import ScrollSchedule from './pages/ScrollSchedule';
 import NEWRegister from './components/NEWRegister';
 import PaymentSuccess from './components/PaymentSuccess';
 import ComboKeyDatesAndVenue from './components/ComboKeyDatesAndVenue';
+import AboutTheCallPage from './pages/AboutTheCallPage';
+import CallForPostersPage from './pages/CallForPostersPage';
+import CallForSpeakersPage from './pages/CallForSpeakersPage';
+import CallForReviewersPage from './pages/CallForReviewersPage';
+import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -212,6 +217,9 @@ function App() {
         <Route path="/committee" element={<CommitteePage />} />
         <Route path="/past-conferences" element={<PastConferencesPage />} />
         <Route path="/call-for-papers" element={<CallForPapersPage />} />
+        <Route path="/call-for-posters" element={<CallForPostersPage />} />
+        <Route path="/call-for-speakers" element={<CallForSpeakersPage />} />
+        <Route path="/call-for-reviewers" element={<CallForReviewersPage />} />
         <Route path="/review-process" element={<ReviewProcessPage />} />
         <Route path="/publication-indexing" element={<PublicationIndexingPage />} />
         <Route path="/program-schedule" element={<ProgramSchedulePage />} />
@@ -226,8 +234,12 @@ function App() {
         <Route path='/schedule' element={<ScrollSchedule />} />
         <Route path='/poster' element={<Posterpage />} />
         <Route path='/importantdates' element={<ComboKeyDatesAndVenue />} />
+        <Route path='/about-the-call' element={<AboutTheCallPage />} />
+        <Route path='/call-for-papers' element={<CallForPapersPage />} />
+
       </Routes>
 
+      <WhatsAppButton />
       {/* <HurryUpModal isOpen={showModal} onClose={() => setShowModal(false)} /> */}
     </Router>
   );

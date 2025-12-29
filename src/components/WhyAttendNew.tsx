@@ -466,7 +466,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
         {title}
       </h3>
       
-      <p className="text-blue-100/70 text-sm leading-relaxed font-light">
+      <p className="text-white text-sm leading-relaxed font-light">
         {description}
       </p>
     </div>
@@ -480,32 +480,32 @@ const WhyAttendNew: React.FC = () => {
     {
       icon: <Cpu />,
       title: "Cutting-Edge Research",
-      description: "Explore the latest breakthroughs in AI, ML, and intelligent systems."
+      description: "Explore recent advances, emerging ideas, and practical innovations across AI, Machine Learning, and Robotics through peer-reviewed presentations."
     },
     {
       icon: <Globe />,
       title: "Global Networking",
-      description: "Connect with professors, researchers, and industry experts worldwide."
+      description: "Connect with researchers, faculty members, students, and industry professionals from around the world in a collaborative academic environment."
     },
     {
       icon: <Mic2 />,
       title: "World-Class Speakers",
-      description: "Learn from internationally recognized leaders and keynote speakers."
+      description: "Gain insights from experienced researchers, technical speakers, and industry practitioners sharing real-world applications and research perspectives."
     },
     {
       icon: <FileText />,
       title: "Publication Opportunities",
-      description: "Present your work with indexed proceedings and global visibility."
+      description: "Present your research, case study, or academic work through oral or poster presentations and receive official conference recognition."
     },
     {
       icon: <Bot />,
       title: "Industry & Innovation",
-      description: "Engage with applied AI, robotics, and real-world case studies."
+      description: "Engage with applied research, emerging technologies, and real-world use cases in AI, robotics, and intelligent systems."
     },
     {
       icon: <Briefcase />,
       title: "Career & Academic Growth",
-      description: "Enhance citations, collaborations, and professional recognition."
+      description: "Strengthen your academic profile, improve presentation skills, receive peer feedback, and expand professional connections."
     }
   ];
 

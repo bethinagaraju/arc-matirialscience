@@ -9,7 +9,7 @@
 // //       <div className="bg-gradient-to-r from-indigo-900 to-blue-500 text-white py-16">
 // //         <div className="container mx-auto px-4 text-center">
 // //           <h1 className="text-4xl font-bold mb-4">Venue & Travel</h1>
-// //           <p className="text-xl">Everything you need to know about attending ICAMLR 2026 in Rome</p>
+// //           <p className="text-xl">Everything you need to know about attending AIMLR 2026 in Rome</p>
 // //         </div>
 // //       </div>
 
@@ -264,7 +264,7 @@
         
 //         <div className="relative container mx-auto px-6 text-center z-10 text-white">
 //           <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs font-bold uppercase tracking-widest mb-4">
-//             ICAMLR 2026
+//             AIMLR 2026
 //           </span>
 //           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">Venue & Travel</h1>
 //           <p className="text-xl text-indigo-100 max-w-2xl mx-auto font-light">
@@ -340,7 +340,7 @@
 //             <div className="text-center mb-12">
 //                <h2 className="text-3xl font-bold text-gray-900 mb-3">Accommodation</h2>
 //                <p className="text-gray-500 max-w-2xl mx-auto">
-//                  We have negotiated special rates with several hotels near the venue. Mention "ICAMLR 2026" when booking.
+//                  We have negotiated special rates with several hotels near the venue. Mention "AIMLR 2026" when booking.
 //                </p>
 //             </div>
             
@@ -577,7 +577,7 @@ function VenueTravelPage() {
       {/* <div className="bg-[#312e81] bg-[url('https://www.transparenttextures.com/patterns/dark-fish-skin.png')] text-white py-16">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl font-bold mb-4">Venue & Travel</h1>
-          <p className="text-xl">Everything you need to know about attending ICAMLR 2026 in Rome</p>
+          <p className="text-xl">Everything you need to know about attending AIMLR 2026 in Rome</p>
         </div>
       </div> */}
 
@@ -632,25 +632,27 @@ function VenueTravelPage() {
             {/* --- 5. IMPROVED TRAVEL & VISA INFO --- */}
             <div className="grid md:grid-cols-2 gap-8">
                {/* Airport Info */}
-               <div className="bg-gray-50 p-8 rounded-lg border border-gray-100">
+               <div className="bg-gray-50 p-8 border border-gray-100">
                   <div className="flex items-start gap-4">
                     <Plane className="w-8 h-8 text-blue-600 mt-1" />
                     <div className="w-full">
                        <h3 className="text-2xl font-bold mb-4 text-gray-900">Nearest Airport</h3>
                        <p className="text-gray-700 mb-4">
-                         <strong>Fiumicino (FCO)</strong> is approx 30 km from the venue.
+                         <strong>Rome Fiumicino Airport (FCO)</strong> is approximately 30 km from the conference venue.
                        </p>
                        <ul className="space-y-3">
-                         <TransportOption label="Taxi (Fixed Rate)" value="~€50" time="45 min" />
-                         <TransportOption label="Leonardo Express" value="€14" time="32 min" />
-                         <TransportOption label="Bus Shuttle" value="€6" time="60 min" />
+                         <TransportOption label="Taxi (Fixed Rate)" value="" time="" />
+                         <TransportOption label="Leonardo Express" value="" time="" />
+                         <TransportOption label="Bus Shuttle" value="" time="" />
                        </ul>
+                      <p className="text-gray-600 mt-4 text-sm">Travel time and fares may vary depending on traffic and service provider.</p>
                     </div>
+                    
                   </div>
                </div>
 
                {/* Local Transport */}
-               <div className="bg-gray-50 p-8 rounded-lg border border-gray-100">
+               <div className="bg-gray-50 p-8 border border-gray-100">
                   <div className="flex items-start gap-4">
                     <Car className="w-8 h-8 text-green-600 mt-1" />
                     <div className="w-full">
@@ -659,10 +661,11 @@ function VenueTravelPage() {
                          Rome offers excellent public transportation.
                        </p>
                        <ul className="space-y-3">
-                         <TransportOption label="Metro/Bus Ticket" value="€1.50" time="100 min" />
-                         <TransportOption label="Roma Pass" value="€33+" time="48/72 hrs" />
-                         <TransportOption label="Rideshare" value="Uber/FreeNow" time="24/7" />
+                         <TransportOption label="Metro/Bus Ticket" value="" time="" />
+                         <TransportOption label="Roma Pass" value="" time="" />
+                         <TransportOption label="Rideshare" value="" time="" />
                        </ul>
+                       <p className="text-gray-600 mt-4 text-sm">Availability and fares depend on provider and duration.</p>
                     </div>
                   </div>
                </div>
@@ -688,6 +691,12 @@ function VenueTravelPage() {
                        <li className="flex items-center gap-2"><Phone className="w-4 h-4 text-indigo-500"/> Support hotline for visa assistance</li>
                     </ul>
                   </div>
+
+                  <div className="md:col-span-2 flex justify-center">
+                    <button className="mt-4 bg-indigo-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-indigo-700 transition-colors">
+                      Request Invitation Letter
+                    </button>
+                  </div>
                </div>
             </div>
 
@@ -699,7 +708,7 @@ function VenueTravelPage() {
                 <div>
                   <h3 className="text-3xl font-bold text-gray-900">Hotel Suggestions</h3>
                   <p className="text-gray-600 mt-2">
-                    We recommend these hotels near the venue. Mention "ICAMLR 2026" for special rates.
+                    We recommend these hotels near the venue. Mention "AIMLR 2026" for special rates.
                   </p>
                 </div>
               </div>
@@ -771,6 +780,14 @@ function VenueTravelPage() {
           </div>
         </div>
       </div>
+      <div className="max-w-6xl mx-auto text-center mt-6 flex justify-center items-center px-4">
+       
+        <p className="text-sm text-gray-600 italic">
+          <strong>NOTE:</strong> Venue details and transportation information are provided for general guidance only. Participants are advised to confirm arrangements independently.
+        </p>
+        
+      </div>
+
       {/* <EndFooter /> */}
     </div>
   );

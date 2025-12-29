@@ -11,7 +11,7 @@
 // // //       <div className="bg-[#312e81] bg-[url('https://www.transparenttextures.com/patterns/fake-brick.png')] py-12">
 // // //         <div className="container mx-auto px-4 text-center">
 // // //           <h1 className="text-4xl font-bold mb-4 text-white">Program Schedule</h1>
-// // //           <p className="text-xl mb-8 text-white">Explore the comprehensive agenda for ICAMLR 2026</p>
+// // //           <p className="text-xl mb-8 text-white">Explore the comprehensive agenda for AIMLR 2026</p>
 // // //           <div className="flex text-white flex-col sm:flex-row justify-center gap-6 text-sm">
 // // //             <div className="flex items-center gap-2">
 // // //               <Calendar className="w-5 h-5" />
@@ -52,7 +52,7 @@
 // //       <div className="bg-[#312e81] bg-[url('https://www.transparenttextures.com/patterns/fake-brick.png')] py-12">
 // //         <div className="container mx-auto px-4 text-center">
 // //           <h1 className="text-4xl font-bold mb-4 text-white">Program Schedule</h1>
-// //           <p className="text-xl mb-8 text-white">Explore the comprehensive agenda for ICAMLR 2026</p>
+// //           <p className="text-xl mb-8 text-white">Explore the comprehensive agenda for AIMLR 2026</p>
 // //           <div className="flex text-white flex-col sm:flex-row justify-center gap-6 text-sm">
 // //             <div className="flex items-center gap-2">
 // //               <Calendar className="w-5 h-5" />
@@ -79,7 +79,7 @@
 // //             <MonitorPlay className="w-6 h-6 text-indigo-600" /> Program Overview
 // //           </h2>
 // //           <p className="text-gray-600 leading-relaxed">
-// //             The ICAMLR 2026 program covers keynote sessions, research presentations, workshops,
+// //             The AIMLR 2026 program covers keynote sessions, research presentations, workshops,
 // //             tutorials, and interactive panel discussions, providing a comprehensive learning
 // //             experience for all attendees.
 // //           </p>
@@ -228,7 +228,7 @@
 //             <div>
 //               <h2 className="text-2xl font-bold text-gray-900 mb-4">Program Overview</h2>
 //               <p className="text-gray-600 leading-relaxed text-lg mb-6">
-//                 ICAMLR 2026 offers a multidisciplinary platform connecting global innovators from academia, industry, and government. 
+//                 AIMLR 2026 offers a multidisciplinary platform connecting global innovators from academia, industry, and government. 
 //                 Our curated program is designed to facilitate knowledge exchange through a blend of 
 //                 formal presentations, interactive workshops, and networking opportunities. 
 //                 Join us for three days of cutting-edge discussions on the latest advancements in applied machine learning and research.
@@ -445,7 +445,7 @@ const ProgramSchedulePage: React.FC = () => {
         <ConferenceActivities />
 
         {/* 7 & 8. PDF Download & Timezone */}
-        <div className="grid lg:grid-cols-2 gap-6">
+        {/* <div className="grid lg:grid-cols-2 gap-6">
           <section className="bg-indigo-600 rounded-xl p-6 text-white shadow-lg shadow-indigo-200 flex flex-col justify-between">
             <div>
               <div className="flex items-center gap-2 mb-2">
@@ -476,7 +476,7 @@ const ProgramSchedulePage: React.FC = () => {
               Current Time: <span className="text-white font-mono font-bold">14:00 CET</span>
             </div>
           </section>
-        </div>
+        </div> */}
 
       </div>
     </div>

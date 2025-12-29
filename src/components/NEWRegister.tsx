@@ -6723,44 +6723,44 @@ const RegistrationPage: React.FC = () => {
 
     // ---------------- PAYMENT VERIFICATION LOGIC ----------------
     // This runs when the page loads (e.g. when user returns from payment gateway)
-    useEffect(() => {
-        const checkPaymentStatus = async () => {
-            const isPending = localStorage.getItem('is_payment_pending');
-            const pendingEmail = localStorage.getItem('pending_payment_email');
+    // useEffect(() => {
+    //     const checkPaymentStatus = async () => {
+    //         const isPending = localStorage.getItem('is_payment_pending');
+    //         const pendingEmail = localStorage.getItem('pending_payment_email');
 
-            // Only check if we explicitly flagged a pending payment and have an email
-            if (isPending === 'true' && pendingEmail) {
-                setVerifyingPayment(true);
-                try {
-                    console.log(`Verifying payment for: ${pendingEmail}`);
-                    const res = await axios.get(`https://backendconf.roboticsaisummit.com/api/registration/status/${pendingEmail}`);
+    //         // Only check if we explicitly flagged a pending payment and have an email
+    //         if (isPending === 'true' && pendingEmail) {
+    //             setVerifyingPayment(true);
+    //             try {
+    //                 console.log(`Verifying payment for: ${pendingEmail}`);
+    //                 const res = await axios.get(`https://backendconf.roboticsaisummit.com/api/registration/status/${pendingEmail}`);
                     
-                    const status = res.data.paymentStatus;
-                    console.log("Payment Status:", status);
+    //                 const status = res.data.paymentStatus;
+    //                 console.log("Payment Status:", status);
 
-                    // Clear flags to prevent infinite checks on reload
-                    localStorage.removeItem('is_payment_pending');
-                    localStorage.removeItem('pending_payment_email');
+    //                 // Clear flags to prevent infinite checks on reload
+    //                 localStorage.removeItem('is_payment_pending');
+    //                 localStorage.removeItem('pending_payment_email');
 
-                    if (status === 'COMPLETED') {
-                        window.location.href = '/thankyou';
-                    } else {
-                        window.location.href = '/payment-fail';
-                    }
-                } catch (error) {
-                    console.error("Error verifying payment:", error);
-                    // On error, we assume fail or let the user retry
-                    localStorage.removeItem('is_payment_pending');
-                    localStorage.removeItem('pending_payment_email');
-                    window.location.href = '/payment-fail';
-                } finally {
-                    setVerifyingPayment(false);
-                }
-            }
-        };
+    //                 if (status === 'COMPLETED') {
+    //                     window.location.href = '/thankyou';
+    //                 } else {
+    //                     window.location.href = '/payment-fail';
+    //                 }
+    //             } catch (error) {
+    //                 console.error("Error verifying payment:", error);
+    //                 // On error, we assume fail or let the user retry
+    //                 localStorage.removeItem('is_payment_pending');
+    //                 localStorage.removeItem('pending_payment_email');
+    //                 window.location.href = '/payment-fail';
+    //             } finally {
+    //                 setVerifyingPayment(false);
+    //             }
+    //         }
+    //     };
 
-        checkPaymentStatus();
-    }, []);
+    //     checkPaymentStatus();
+    // }, []);
 
     // ---- Plan Matching Logic ----
     useEffect(() => {
@@ -6947,17 +6947,17 @@ const RegistrationPage: React.FC = () => {
             )}
 
             <section className="bg-gradient-to-b from-gray-50 pb-8 to-white">
-                <div className="container mx-auto px-4 py-16 max-w-4xl">
-                    <div className="text-center mb-12">
+                <div className="container mx-auto px-4 py-6 max-w-4xl">
+                    <div className="text-center mb-6">
                         <span className="inline-block px-3 py-1 text-sm font-semibold text-black bg-gray-200 rounded-full mb-1">
                             REGISTRATION OPEN
                         </span>
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4 tracking-tight">
+                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-2 tracking-tight">
                             Conference Registration
                         </h2>
-                        <div className="w-24 h-1 bg-black mx-auto mb-6"></div>
+                        <div className="w-24 h-1 bg-black mx-auto mb-2"></div>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                            Register for the AI & Robotics Summit 2026
+                            Register for the AIMLR 2026
                         </p>
                     </div>
 
@@ -7106,7 +7106,7 @@ const RegistrationPage: React.FC = () => {
                             <div>
                                 <label className="block text-sm font-medium text-gray-700 mb-4">Presentation Type *</label>
                                 <div className="radio-group">
-                                    {["Speaker", "Poster", "Delegate", "Listener", "Student", "Exhibitor"].map((type) => (
+                                    {["Speaker", "Poster", "Delegate", "Listener", "Student"].map((type) => (
                                         <label key={type} className="radio-label">
                                             <input
                                                 type="radio"

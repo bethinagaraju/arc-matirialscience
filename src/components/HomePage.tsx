@@ -69,6 +69,7 @@ function HomePage() {
     <div className="min-h-screen bg-white">
       {/* <CookieConsent /> */}
       <Header />
+      
       <WhatsAppButton />
       {/* <AnnouncementBar /> */}
     
@@ -79,7 +80,7 @@ function HomePage() {
       <StatisticsSection />
       {/* <QuickLinksSection /> */}
 
-    
+      <CompanyCarousel />
 
       
       <ContentSection />
@@ -147,6 +148,8 @@ function HomePage() {
       
       <Testimonials />
 
+
+
       <Highletsec/>
 
       <CTARegisterAbstract />
@@ -154,9 +157,6 @@ function HomePage() {
       
       {/* <Footer /> */}
       <EndFooter/>
-
-      
-
 
       
     </div>

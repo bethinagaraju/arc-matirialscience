@@ -98,13 +98,13 @@
 //           <div className="max-w-3xl mx-auto">
 //             <h2 className="text-4xl font-bold mb-6 text-white">Join Us This Year</h2>
 //             <p className="text-xl text-indigo-100 mb-8 leading-relaxed">
-//               Building on the success of our past conferences, ICAMLR 2026 promises to be our most impactful event yet. 
+//               Building on the success of our past conferences, AIMLR 2026 promises to be our most impactful event yet. 
 //               Be part of the next chapter in AI, ML, and Robotics innovation.
 //             </p>
 //             <div className="flex flex-col sm:flex-row gap-4 justify-center">
 //               <Link to="/register">
 //                 <button className="bg-white text-indigo-600 font-bold py-4 px-8 rounded-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg">
-//                   Register for ICAMLR 2026
+//                   Register for AIMLR 2026
 //                 </button>
 //               </Link>
 //               <Link to="/about">
@@ -229,7 +229,7 @@ function PastConferencesPage() {
             Write the Next Chapter With Us
           </h2>
           <p className="text-xl text-indigo-200 mb-4 max-w-2xl mx-auto">
-            ICAMLR 2026 promises to be our most impactful event yet. Don't just watch history happen—be part of the innovation.
+            AIMLR 2026 promises to be our most impactful event yet. Don't just watch history happen—be part of the innovation.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/register">

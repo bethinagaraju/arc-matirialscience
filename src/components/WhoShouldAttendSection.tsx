@@ -299,7 +299,7 @@ const WhoShouldAttendSection: React.FC = () => {
       icon: GraduationCap,
     },
     {
-      title: "PhD, Master’s & Bachelor’s Students",
+      title: "PhD, Master’s & Undergraduate Students",
       description:
         "Learners strengthening their knowledge, presenting work, publishing papers, and connecting with the global research community.",
       icon: School,
@@ -323,7 +323,7 @@ const WhoShouldAttendSection: React.FC = () => {
       icon: Briefcase,
     },
     {
-      title: "Founders & Industry Practitioners",
+      title: "Industry Practitioners & Innovators",
       description:
         "Innovators applying AI and robotics to solve industrial, social, and global challenges through real-world solutions.",
       icon: Rocket,

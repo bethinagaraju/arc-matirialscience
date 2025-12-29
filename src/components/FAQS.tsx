@@ -6,9 +6,9 @@
 // //     {
 // //       title: "When & Where",
 // //       content: `
-// //         NWC 2026 will be held during October 22-24, 2026.
+// //         AIMLR 2026 will be held during July 28-30, 2026.
 // //         The conference will take place in Hybrid mode — participants may join in-person
-// //         at Boston, Massachusetts, USA or virtually from home or work.
+// //         at Crowne Plaza - St. Peter’s Rome, Italy or virtually from home or work.
 // //       `,
 // //     },
 // //     {
@@ -100,12 +100,12 @@
 //         <div className="space-y-4">
 //           <div>
 //             <h4 className="font-bold text-gray-900">When will the conference take place?</h4>
-//             <p>NWC 2026 will be held during <strong>October 22-24, 2026</strong>.</p>
+//             <p>AIMLR 2026 will be held during <strong>July 28-30, 2026</strong>.</p>
 //           </div>
 //           <div>
 //             <h4 className="font-bold text-gray-900">Where will the conference be held?</h4>
 //             <p>
-//               NWC 2026 will be held in Hybrid mode, participants can join <strong>In Person</strong> at <strong>Boston, Massachusetts, USA</strong> or <strong>Virtually</strong> from home or work.
+//               AIMLR 2026 will be held in Hybrid mode, participants can join <strong>In Person</strong> at <strong>Crowne Plaza - St. Peter’s Rome, Italy</strong> or <strong>Virtually</strong> from home or work.
 //             </p>
 //           </div>
 //         </div>
@@ -117,10 +117,10 @@
 //         <div className="space-y-4">
 //           <div>
 //             <h4 className="font-bold text-gray-900">When does registration open?</h4>
-//             <p>Registration for NWC 2026 Conference opens on <strong>October 31, 2025</strong>.</p>
+//             <p>Registration for AIMLR 2026 Conference opens on <strong>October 31, 2025</strong>.</p>
 //           </div>
 //           <div>
-//             <h4 className="font-bold text-gray-900">Where do I go to register for the NWC 2026 conference?</h4>
+//             <h4 className="font-bold text-gray-900">Where do I go to register for the AIMLR 2026 conference?</h4>
 //             <p>You can register for the conference via our <a href="#" className="text-blue-600 hover:underline">online registration form</a>.</p>
 //           </div>
           
@@ -177,7 +177,7 @@
           
 //           <div>
 //              <h4 className="font-bold text-gray-900">How do I get a receipt for my registration?</h4>
-//              <p>You will get the payment receipt from conference secretary within 2 to 4 business days. For further information contact nursing@magnusconference.com</p>
+//              <p>You will get the payment receipt from conference secretary within 2 to 4 business days. For further information contact secretary@roboticsaisummit.com</p>
 //           </div>
 //         </div>
 //       ),
@@ -205,7 +205,7 @@
 //           </div>
 //           <div>
 //             <h4 className="font-bold text-gray-900">When will I know if my paper has been accepted?</h4>
-//             <p>Once you submit the abstract, we will let you know the acceptance in 2-4 business days. If you are not receiving the acceptance of abstract, please contact at: nursing@magnusconference.com</p>
+//             <p>Once you submit the abstract, we will let you know the acceptance in 2-4 business days. If you are not receiving the acceptance of abstract, please contact at: secretary@roboticsaisummit.com</p>
 //           </div>
 //           <div>
 //             <h4 className="font-bold text-gray-900">Can I still present without attending the conference?</h4>
@@ -274,7 +274,7 @@
 
 //            <div>
 //              <h4 className="font-bold text-gray-900">Are there any discounts for group registration?</h4>
-//              <p>Yes, we have discounts for group participants. For information and discount codes please contact conference secretary in email: nursing@magnusconference.com</p>
+//              <p>Yes, we have discounts for group participants. For information and discount codes please contact conference secretary in email: secretary@roboticsaisummit.com</p>
 //            </div>
 
 //            <div>
@@ -343,12 +343,12 @@ const FAQS = () => {
         <div className="space-y-4">
           <div>
             <h4 className="font-bold text-gray-900">When will the conference take place?</h4>
-            <p>NWC 2026 will be held during <strong>October 22-24, 2026</strong>.</p>
+            <p>AIMLR 2026 will be held during <strong>July 28-30, 2026</strong>.</p>
           </div>
           <div>
             <h4 className="font-bold text-gray-900">Where will the conference be held?</h4>
             <p>
-              NWC 2026 will be held in Hybrid mode, participants can join <strong>In Person</strong> at <strong>Boston, Massachusetts, USA</strong> or <strong>Virtually</strong> from home or work.
+              AIMLR 2026 will be held in Hybrid mode, participants can join <strong>In Person</strong> at <strong>Crowne Plaza - St. Peter’s Rome, Italy</strong> or <strong>Virtually</strong> from home or work.
             </p>
           </div>
         </div>
@@ -360,10 +360,10 @@ const FAQS = () => {
         <div className="space-y-4">
           <div>
             <h4 className="font-bold text-gray-900">When does registration open?</h4>
-            <p>Registration for NWC 2026 Conference opens on <strong>October 31, 2025</strong>.</p>
+            <p>Registration for the AIMLR 2026 Conference is <strong>now open</strong>.</p>
           </div>
           <div>
-            <h4 className="font-bold text-gray-900">Where do I go to register for the NWC 2026 conference?</h4>
+            <h4 className="font-bold text-gray-900">Where do I go to register for the AIMLR 2026 conference?</h4>
             <p>You can register for the conference via our <a href="#" className="text-blue-600 hover:underline">online registration form</a>.</p>
           </div>
           
@@ -374,26 +374,42 @@ const FAQS = () => {
                 <thead>
                   <tr className="bg-gray-50">
                     <th className="border border-gray-300 px-4 py-2 text-left">Category</th>
-                    <th className="border border-gray-300 px-4 py-2 text-left">Price in USD</th>
+                    <th className="border border-gray-300 px-4 py-2 text-left">Price (In Person)</th>
+                    <th className="border border-gray-300 px-4 py-2 text-left">Price (Virtual)</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td className="border border-gray-300 px-4 py-2">Presenter (In-Person)</td>
-                    <td className="border border-gray-300 px-4 py-2">739 USD</td>
+                    <td className="border border-gray-300 px-4 py-2">Speaker</td>
+                    <td className="border border-gray-300 px-4 py-2">679 EUR</td>
+                    <td className="border border-gray-300 px-4 py-2">379 EUR</td>
                   </tr>
+
+                   <tr>
+                    <td className="border border-gray-300 px-4 py-2">Poster</td>
+                    <td className="border border-gray-300 px-4 py-2">499 EUR</td>
+                    <td className="border border-gray-300 px-4 py-2">299 EUR</td>
+                  </tr>
+
                   <tr>
-                    <td className="border border-gray-300 px-4 py-2">Listener (In-Person)</td>
-                    <td className="border border-gray-300 px-4 py-2">839 USD</td>
+                    <td className="border border-gray-300 px-4 py-2">Delegate</td>
+                    <td className="border border-gray-300 px-4 py-2">749 EUR</td>
+                    <td className="border border-gray-300 px-4 py-2">399 EUR</td>
                   </tr>
+
+
                   <tr>
-                    <td className="border border-gray-300 px-4 py-2">Presenter (Virtual)</td>
-                    <td className="border border-gray-300 px-4 py-2">439 USD</td>
+                    <td className="border border-gray-300 px-4 py-2">Listener</td>
+                    <td className="border border-gray-300 px-4 py-2">749 EUR</td>
+                    <td className="border border-gray-300 px-4 py-2">399 EUR</td>
                   </tr>
+
                   <tr>
-                    <td className="border border-gray-300 px-4 py-2">Listener (Virtual)</td>
-                    <td className="border border-gray-300 px-4 py-2">539 USD</td>
+                    <td className="border border-gray-300 px-4 py-2">Student</td>
+                    <td className="border border-gray-300 px-4 py-2">359 EUR</td>
+                    <td className="border border-gray-300 px-4 py-2">199 EUR</td>
                   </tr>
+
                 </tbody>
               </table>
             </div>
@@ -402,7 +418,7 @@ const FAQS = () => {
           <div>
             <h4 className="font-bold text-gray-900">How can I reserve a hotel room, and what are the rates?</h4>
             <p>
-              You can reserve hotel from our online registration link, for detailed information visit: <a href="#" className="text-blue-600 hover:underline">Accommodation Page</a>.
+              You can reserve hotel from our online registration link, for detailed information visit: <a href="/register" className="text-blue-600 hover:underline">Accommodation Page</a>.
             </p>
           </div>
 
@@ -420,7 +436,7 @@ const FAQS = () => {
           
           <div>
              <h4 className="font-bold text-gray-900">How do I get a receipt for my registration?</h4>
-             <p>You will get the payment receipt from conference secretary within 2 to 4 business days. For further information contact nursing@magnusconference.com</p>
+             <p>You will get the payment receipt from conference secretary within 2 to 4 business days. For further information contact secretary@roboticsaisummit.com</p>
           </div>
         </div>
       ),
@@ -432,15 +448,15 @@ const FAQS = () => {
           <div>
             <h4 className="font-bold text-gray-900">How to submit an Abstract?</h4>
             <p>Send us your abstracts as per the sample template in Abstract Submission page or you can directly email to conference secretary.</p>
-            <p className="mt-1"><a href="#" className="text-blue-600 hover:underline">Download Abstract Template Here</a></p>
+            <p className="mt-1"><a href="https://roboticsaisummit.com/abstract-submission-sample.pdf" className="text-blue-600 hover:underline">Download Abstract Template Here</a></p>
           </div>
           <div>
             <h4 className="font-bold text-gray-900">Where do I go to submit an abstract?</h4>
-            <p>You may submit proposals online via our Abstract Submission Portal or you can directly email to conference secretary.</p>
+            <p>You may submit proposals online via our <a href="/AbstractSubmission" className="text-blue-600 hover:underline">Abstract Submission Portal</a> or you can directly email to conference secretary.</p>
           </div>
           <div>
             <h4 className="font-bold text-gray-900">Do you have any template for paper submission?</h4>
-            <p>Yes, we have a template for abstract submission. Please <a href="#" className="text-blue-600 hover:underline">download from this link</a>.</p>
+            <p>Yes, we have a template for abstract submission. Please <a href="https://roboticsaisummit.com/abstract-submission-sample.pdf" className="text-blue-600 hover:underline">download from this link</a>.</p>
           </div>
           <div>
             <h4 className="font-bold text-gray-900">May I submit more than one proposal?</h4>
@@ -448,7 +464,7 @@ const FAQS = () => {
           </div>
           <div>
             <h4 className="font-bold text-gray-900">When will I know if my paper has been accepted?</h4>
-            <p>Once you submit the abstract, we will let you know the acceptance in 2-4 business days. If you are not receiving the acceptance of abstract, please contact at: nursing@magnusconference.com</p>
+            <p>Once you submit the abstract, we will let you know the acceptance in 2-4 business days. If you are not receiving the acceptance of abstract, please contact at: secretary@roboticsaisummit.com</p>
           </div>
           <div>
             <h4 className="font-bold text-gray-900">Can I still present without attending the conference?</h4>
@@ -517,7 +533,7 @@ const FAQS = () => {
 
            <div>
              <h4 className="font-bold text-gray-900">Are there any discounts for group registration?</h4>
-             <p>Yes, we have discounts for group participants. For information and discount codes please contact conference secretary in email: nursing@magnusconference.com</p>
+             <p>Yes, we have discounts for group participants. For information and discount codes please contact conference secretary in email: secretary@roboticsaisummit.com</p>
            </div>
 
            <div>
@@ -526,7 +542,7 @@ const FAQS = () => {
                <li>All cancellation requests must be submitted in writing via email to the Conference Secretary.</li>
                <li>Cancellations made <strong>before 90 days</strong> of the conference start date will be eligible for a full refund, minus a $100 administrative fee.</li>
                <li>Cancellations made <strong>within 90 days</strong> of the conference start date are non-refundable. However, the registration may be transferred to a future edition of the conference.</li>
-               <li>Registration transfers are allowed until <strong>October 22, 2026</strong>. No transfer requests will be accepted after this date.</li>
+               <li>Registration transfers are allowed until <strong>May 29, 2026</strong>. No transfer requests will be accepted after this date.</li>
                <li>All approved refunds will be processed during the second week following the conclusion of the conference.</li>
              </ul>
              

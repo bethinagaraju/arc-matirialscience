@@ -105,7 +105,7 @@
 // //         <div className="container mx-auto px-6 text-center relative z-10">
 // //           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Our Sponsors & Partners</h1>
 // //           <p className="text-xl text-indigo-200 max-w-2xl mx-auto font-light">
-// //             Meet the organizations and institutions supporting ICAMLR 2026 and driving innovation in AI, ML, and Robotics.
+// //             Meet the organizations and institutions supporting AIMLR 2026 and driving innovation in AI, ML, and Robotics.
 // //           </p>
 // //         </div>
 // //       </div>
@@ -217,7 +217,7 @@
 //         <div className="container mx-auto px-6 text-center relative z-10">
 //           <h1 className="text-4xl md:text-5xl font-extrabold mb-4">Our Sponsors & Partners</h1>
 //           <p className="text-xl text-indigo-200 max-w-2xl mx-auto font-light">
-//             Meet the organizations and institutions supporting ICAMLR 2026 and driving innovation in AI, ML, and Robotics.
+//             Meet the organizations and institutions supporting AIMLR 2026 and driving innovation in AI, ML, and Robotics.
 //           </p>
 //         </div>
 //       </div>
@@ -390,7 +390,7 @@ function SponsorsPage() {
         <div className="container mx-auto px-6 text-center relative z-10">
           <h1 className="text-3xl md:text-5xl font-extrabold mb-6 tracking-tight">Partner With Innovation</h1>
           <p className="text-xl text-indigo-200 max-w-3xl mx-auto font-light leading-relaxed">
-            Join ICAMLR 2026 as a sponsor or exhibitor. Elevate your brand in the world of Artificial Intelligence and Machine Learning.
+            Join AIMLR 2026 as a sponsor or exhibitor. Elevate your brand in the world of Artificial Intelligence and Machine Learning.
           </p>
           <div className="mt-8">
             <a href="#contact-form" className="inline-block bg-white text-[#2b3267] font-bold px-8 py-3 rounded-full hover:bg-indigo-50 transition-colors">

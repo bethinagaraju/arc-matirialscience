@@ -1010,19 +1010,25 @@
 
 import React from "react";
 import { ScrollText } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // ---------------- DATA ----------------
 
 const committeeMembers = [
-  { name: "Prof. Andrew Y. Ng", affiliation: "Stanford University, USA" },
-  { name: "Prof. Yoshua Bengio", affiliation: "Université de Montréal, Canada" },
-  { name: "Prof. Fei-Fei Li", affiliation: "Stanford University, USA" },
-  { name: "Prof. Geoffrey Hinton", affiliation: "University of Toronto, Canada" },
+  { name: "Prof. Thomas Gartner", affiliation: "Technical University of Vienna, Austria" },
 
-  { name: "Prof. Daniela Rus", affiliation: "Massachusetts Institute of Technology (MIT), USA" },
-  { name: "Prof. Antonio Bicchi", affiliation: "University of Pisa & IIT, Italy" },
-  { name: "Prof. José M. Martínez Montiel", affiliation: "University of Zaragoza, Spain" },
-  { name: "Prof. Hiroshi Ishiguro", affiliation: "Osaka University, Japan" },
+  { name: "Prof. Petia Radeva", affiliation: "Universitat de Barcelona, Spain" },
+
+  { name: "Prof. Syed Kamrul Islam", affiliation: "University of Missouri, USA" },
+
+
+
+  { name: "Prof. Jan Rosell", affiliation: "Shanghai Jiao Tong University, China" },
+
+  { name: "Prof Rohit Chadha", affiliation: "University of Missouri, USA" },
+  { name: "Prof. CHEN, Peng", affiliation: "Southeast University, China" },
+
+
 
 ];
 
@@ -1037,7 +1043,17 @@ function CommitteePage() {
           <CommitteeList members={committeeMembers} />
         </Section>
 
+        <div className="text-center mt-16">
+          <Link
+            to="/contact"
+            className="inline-block bg-[#2e376c] hover:bg-[#1f254b] text-white font-bold py-3 px-8 transition-colors duration-300"
+          >
+            Register for Committee
+          </Link>
+        </div>
+
       </div>
+
     </div>
   );
 }

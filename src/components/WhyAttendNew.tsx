@@ -162,7 +162,6 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
     <div className="
       group relative 
       bg-[#0f172a]/30 backdrop-blur-md 
-      rounded-2xl 
       p-6 sm:p-7 lg:p-8              /* ✅ responsive padding */
       border border-blue-400/30 
       shadow-[0_0_25px_rgba(59,130,246,0.2)]
@@ -211,7 +210,9 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
         text-white/90 
         leading-relaxed 
         font-light
-      ">
+      "
+      style={{ fontFamily: 'sans-serif' }}
+      >
         {description}
       </p>
       

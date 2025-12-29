@@ -298,54 +298,59 @@ import EndFooter from "../components/EndFooter";
 
   {
     image: "thomas-gartner.jpeg",
-    name: "Thomas Gartner",
-    title: "Technical University of Vienna ,austria",
+    name: "Prof. Thomas Gartner",
+    title: "Technical University of Vienna, Austria",
     company: "",
     type:"Keynote"
   },
 
-        {
-    image: "cui-tiejun.jpeg",
-    name: "CUI, Tiejun",
-    title: "southeast universitie china",
+                                      {
+    image: "yanda-li.jpg",
+    name: "Prof. Yanda Li",
+    title: "Tsinghua University, China",
     company: "",
     type:"Keynote"
   },
+
+
           {
     image: "katja-hose.jpeg",
     name: "Katja Hose",
-    title: "technical universty of vienna ,austria",
+    title: "Technical University of Vienna, Austria",
     company: "",
-    type:"Keynote"
+    type:"Speaker"
   },
+
+
+
 
                   {
     image: "petia-radeva.jpeg",
-    name: "Petia Radeva",
-    title: "Universitat de Barcelona,Spain",
+    name: "Prof. Petia Radeva",
+    title: "Universitat de Barcelona, Spain",
     company: "",
-    type:"Keynote"
+    type:"Speaker"
   },
 
                   {
     image: "syed-kamrul-islam.jpeg",
-    name: "Syed Kamrul Islam",
+    name: "Prof. Syed Kamrul Islam",
     title: "University of Missouri, USA",
     company: "",
-    type:"Keynote"
+    type:"Speaker"
   },
 
                       {
     image: "alvarado.jpeg",
     name: "Alvarado, Noe",
-    title: "Universitat Politècnica de Catalunya,spain",
+    title: "Universitat Politècnica de Catalunya, Spain",
     company: "",
-    type:"Keynote"
+    type:"Speaker"
   },
 
     {
     image: "jan-rosell.jpeg",
-    name: "Jan Rosell",
+    name: "Prof. Jan Rosell",
     title: "Shanghai Jiao Tong University, China",
     company: "",
     type:"Speaker"
@@ -355,7 +360,7 @@ import EndFooter from "../components/EndFooter";
 
               {
     image: "rohit-chadha.jpeg",
-    name: "Rohit Chadha",
+    name: "Prof. Rohit Chadha",
     title: "University of Missouri, USA",
     company: "",
     type:"Speaker"
@@ -364,15 +369,15 @@ import EndFooter from "../components/EndFooter";
                     {
     image: "liu-yurong.jpeg",
     name: "LIU, Yurong",
-    title: "Southeast university,china",
+    title: "Southeast University, China",
     company: "",
     type:"Speaker"
   },
 
                         {
     image: "chen-peng.jpeg",
-    name: "CHEN, Peng",
-    title: "Southeast university ,china",
+    name: "Prof. CHEN, Peng",
+    title: "Southeast University, China",
     company: "",
     type:"Speaker"
   },
@@ -397,19 +402,39 @@ import EndFooter from "../components/EndFooter";
 
                               {
     image: "muhammad-bilal-munir.jpeg",
-    name: "Muhammad Bilal Munir",
+    name: "Prof. Muhammad Bilal Munir",
     title: "University of California, San Francisco, USA",
     company: "",
     type:"Speaker"
   },
+
+
+
+                                {
+    image: "jeannette-bohg.png",
+    name: "Jeannette Bohg",
+    title: "Stanford University, USA",
+    company: "",
+    type:"Speaker"
+  },
+
+
+                            {
+    image: "michael-cafarella.webp",
+    name: "Michael Cafarella",
+    title: "Massachusetts Institute of Technology, USA",
+    company: "",
+    type:"Speaker"
+  },
+
       
 
 ];
 const committee = [
-  { image: "commit1.png", name: "Dr. Alan Turing", university: "Oxford University, UK" },
-  { image: "commit2.png", name: "Dr. Ada Lovelace", university: "Cambridge University, UK" },
-  { image: "commit3.png", name: "Dr. Grace Hopper", university: "Yale University, USA" },
-  { image: "commit4.png", name: "Dr. Claude Shannon", university: "MIT, USA" },
+  { image: "commit1.png", name: "Prof. Thomas Gartner", university: "Technical University of Vienna, Austria" },
+  { image: "commit2.png", name: "Prof. Petia Radeva", university: "Universitat de Barcelona, Spain" },
+  { image: "commit3.png", name: "Prof. Syed Kamrul Islam", university: "University of Missouri, USA" },
+  { image: "commit4.png", name: "Prof. Jan Rosell", university: "Shanghai Jiao Tong University, China" },
 ];
 
 function SpeakersPage() {
@@ -447,7 +472,7 @@ function SpeakersPage() {
               <p className="text-sm text-[#292e63] font-semibold">{speaker.type}</p>
             </div>
           ))}
-          <p className="text-sm text-[#2F2C7C] mt-4 col-span-full text-center">Speakers will update soon</p>
+          <p className="text-sm text-[#2F2C7C] mt-4 col-span-full text-center">Additional speakers and session details will be announced shortly</p>
         </div>
 
         {/* Right: Committee - FIXED LAYOUT */}
@@ -462,7 +487,7 @@ function SpeakersPage() {
               className="flex items-center gap-4 bg-[#2e2b7a] p-4 shadow-md hover:shadow-lg transition"
             >
               {/* <User className="w-10 h-10 text-white flex-shrink-0" /> */}
-              <div className="flex gap-4 items-center">
+              <div className=" gap-4 items-center">
                 <h4 className="font-bold text-white">{member.name}</h4>
                 <p className="text-sm text-white">{member.university}</p>
               </div>

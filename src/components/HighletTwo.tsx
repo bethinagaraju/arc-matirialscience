@@ -105,7 +105,7 @@ function HighletTwo() {
       <div className="w-full md:w-[28vw] flex flex-col gap-4">
         <div className="h-auto md:h-[35vh]">
           <img
-            src="aimlr-2025-humanoid-robots.png"
+            src="venue.png"
             alt="Highlight 3"
             className="w-full h-full object-cover lazyload"
           />

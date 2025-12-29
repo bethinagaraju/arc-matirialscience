@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://roboticsaisummit.com/sitemap.xml

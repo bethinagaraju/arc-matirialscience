@@ -11,7 +11,7 @@ function HighletOne() {
         <div className="w-full h-auto md:h-[50%]">
           <img
             // src="Gemini_Generated_Image_j5zwdpj5zwdpj5zw.png"
-            src="aimlr-2025-keynote-session.jpeg"
+            src="speaker-virtual.jpg"
             alt="Main highlight"
             className="w-full h-full object-cover lazyload"
           />

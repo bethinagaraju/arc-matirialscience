@@ -292,57 +292,62 @@ function Mixcomponents() {
 
   const speakers = [
 
-
+      
   {
     image: "thomas-gartner.jpeg",
-    name: "Thomas Gartner",
-    title: "Technical University of Vienna ,austria",
+    name: "Prof. Thomas Gartner",
+    title: "Technical University of Vienna, Austria",
     company: "",
     type:"Keynote"
   },
 
-        {
-    image: "cui-tiejun.jpeg",
-    name: "CUI, Tiejun",
-    title: "southeast universitie china",
+                                      {
+    image: "yanda-li.jpg",
+    name: "Prof. Yanda Li",
+    title: "Tsinghua University, China",
     company: "",
     type:"Keynote"
   },
+
+
           {
     image: "katja-hose.jpeg",
     name: "Katja Hose",
-    title: "technical universty of vienna ,austria",
+    title: "Technical University of Vienna, Austria",
     company: "",
-    type:"Keynote"
+    type:"Speaker"
   },
+
+
+
 
                   {
     image: "petia-radeva.jpeg",
-    name: "Petia Radeva",
-    title: "Universitat de Barcelona,Spain",
+    name: "Prof. Petia Radeva",
+    title: "Universitat de Barcelona, Spain",
     company: "",
-    type:"Keynote"
+    type:"Speaker"
   },
 
                   {
     image: "syed-kamrul-islam.jpeg",
-    name: "Syed Kamrul Islam",
-    title: "University of missouri,usa",
+    name: "Prof. Syed Kamrul Islam",
+    title: "University of Missouri, USA",
     company: "",
-    type:"Keynote"
+    type:"Speaker"
   },
 
                       {
     image: "alvarado.jpeg",
     name: "Alvarado, Noe",
-    title: "Universitat Politècnica de Catalunya,spain",
+    title: "Universitat Politècnica de Catalunya, Spain",
     company: "",
-    type:"Keynote"
+    type:"Speaker"
   },
 
     {
     image: "jan-rosell.jpeg",
-    name: "Jan Rosell",
+    name: "Prof. Jan Rosell",
     title: "Shanghai Jiao Tong University, China",
     company: "",
     type:"Speaker"
@@ -352,8 +357,8 @@ function Mixcomponents() {
 
               {
     image: "rohit-chadha.jpeg",
-    name: "Rohit Chadha",
-    title: "university  of missouri,usa",
+    name: "Prof. Rohit Chadha",
+    title: "University of Missouri, USA",
     company: "",
     type:"Speaker"
   },
@@ -361,20 +366,20 @@ function Mixcomponents() {
                     {
     image: "liu-yurong.jpeg",
     name: "LIU, Yurong",
-    title: "Southeast university,china",
+    title: "Southeast University, China",
     company: "",
     type:"Speaker"
   },
 
                         {
     image: "chen-peng.jpeg",
-    name: "CHEN, Peng",
-    title: "Southeast university ,china",
+    name: "Prof. CHEN, Peng",
+    title: "Southeast University, China",
     company: "",
     type:"Speaker"
   },
 
-      
+
 
 ];
 

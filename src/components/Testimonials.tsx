@@ -68,7 +68,7 @@ const testimonials: Testimonial[] = [
     {
     id: 6,
     name: "Hasan Yilmaz",
-    title: "PhD Scholar in AI & Robotics, University of Manchester",
+    title: "PhD Scholar in AI & Robotics, University of Aberdeen",
     location: "UK",
     image: "hasan-yilmaz.jpeg",
     message:

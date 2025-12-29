@@ -444,7 +444,7 @@ const ContentSection: React.FC = () => {
           <div className="border-2 border-gray-400 aspect-video shadow-xl rounded-sm overflow-hidden bg-black relative">
             <video
               className="w-full h-full object-cover"
-              src="/video-output-final.mp4"
+              src="/aimlr-2026-video.mp4"
               controls
               autoPlay
               muted

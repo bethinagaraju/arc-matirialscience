@@ -427,7 +427,7 @@ const Agenda: React.FC = () => {
   );
 
   return (
-    <section id="agenda-section" className="bg-white py-16 px-4">
+    <section id="agenda-section" className="bg-white py-2 px-4">
       <div className="max-w-6xl mx-auto">
         {/* Title */}
         <h1

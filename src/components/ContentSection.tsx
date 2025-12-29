@@ -464,7 +464,7 @@ const ContentSection: React.FC = () => {
           "
         >
           <h2 className="text-3xl font-bold text-[#00488B] mb-6">
-            About AIMLR 2026: HYBRID EVENT
+            ABOUT AIMLR - 2026  HYBRID EVENT
           </h2>
 
           <p className="mb-3">

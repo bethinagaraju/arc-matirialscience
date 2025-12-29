@@ -206,26 +206,113 @@ import SpeakersBottomSection from "../components/SpeakersBottomSection";
 import { User } from "lucide-react";
 import EndFooter from "../components/EndFooter";
 
-const speakers = [
+// const speakers = [
+
+
+//   {
+//     image: "WhatsApp Image 2025-12-12 at 1.39.44 AM.jpeg",
+//     name: "Thomas Gärtner",
+//     title: "Technical University of Vienna ,austria",
+//     company: "",
+//     type:"Keynote"
+//   },
+
+//         {
+//     image: "WhatsApp Image 2025-12-12 at 1.33.55 AM.jpeg",
+//     name: "CUI, Tiejun",
+//     title: "southeast universitie china",
+//     company: "",
+//     type:"Keynote"
+//   },
+//           {
+//     image: "WhatsApp Image 2025-12-12 at 2.24.58 AM.jpeg",
+//     name: "Katja Hose",
+//     title: "technical universty of vienna ,austria",
+//     company: "",
+//     type:"Keynote"
+//   },
+
+//                   {
+//     image: "WhatsApp Image 2025-12-12 at 2.17.38 AM.jpeg",
+//     name: "Petia Radeva",
+//     title: "Universitat de Barcelona,Spain",
+//     company: "",
+//     type:"Keynote"
+//   },
+
+//                   {
+//     image: "WhatsApp Image 2025-12-12 at 1.56.23 AM.jpeg",
+//     name: "Syed Kamrul Islam",
+//     title: "University of missouri,usa",
+//     company: "",
+//     type:"Keynote"
+//   },
+
+//                       {
+//     image: "WhatsApp Image 2025-12-12 at 1.55.32 AM.jpeg",
+//     name: "Alvarado, Noé",
+//     title: "Universitat Politècnica de Catalunya,spain",
+//     company: "",
+//     type:"Keynote"
+//   },
+
+//     {
+//     image: "WhatsApp Image 2025-12-12 at 1.52.43 AM.jpeg",
+//     name: "Jan Rosell",
+//     title: "Shanghai Jiao Tong University, China",
+//     company: "",
+//     type:"Speaker"
+//   },
+
+//               {
+//     image: "WhatsApp Image 2025-12-12 at 1.57.51 AM.jpeg",
+//     name: "Rohit Chadha",
+//     title: "university  of missouri,usa",
+//     company: "",
+//     type:"Speaker"
+//   },
+
+//                     {
+//     image: "WhatsApp Image 2025-12-12 at 2.18.06 AM (1).jpeg",
+//     name: "LIU, Yurong",
+//     title: "Southeast university,china",
+//     company: "",
+//     type:"Speaker"
+//   },
+
+//                         {
+//     image: "WhatsApp Image 2025-12-12 at 1.25.51 AM.jpeg",
+//     name: "CHEN, Peng",
+//     title: "Southeast university ,china",
+//     company: "",
+//     type:"Speaker"
+//   },
+
+      
+
+// ];
+
+
+ const speakers = [
 
 
   {
-    image: "WhatsApp Image 2025-12-12 at 1.39.44 AM.jpeg",
-    name: "Thomas Gärtner",
+    image: "thomas-gartner.jpeg",
+    name: "Thomas Gartner",
     title: "Technical University of Vienna ,austria",
     company: "",
     type:"Keynote"
   },
 
         {
-    image: "WhatsApp Image 2025-12-12 at 1.33.55 AM.jpeg",
+    image: "cui-tiejun.jpeg",
     name: "CUI, Tiejun",
     title: "southeast universitie china",
     company: "",
     type:"Keynote"
   },
           {
-    image: "WhatsApp Image 2025-12-12 at 2.24.58 AM.jpeg",
+    image: "katja-hose.jpeg",
     name: "Katja Hose",
     title: "technical universty of vienna ,austria",
     company: "",
@@ -233,7 +320,7 @@ const speakers = [
   },
 
                   {
-    image: "WhatsApp Image 2025-12-12 at 2.17.38 AM.jpeg",
+    image: "petia-radeva.jpeg",
     name: "Petia Radeva",
     title: "Universitat de Barcelona,Spain",
     company: "",
@@ -241,39 +328,41 @@ const speakers = [
   },
 
                   {
-    image: "WhatsApp Image 2025-12-12 at 1.56.23 AM.jpeg",
+    image: "syed-kamrul-islam.jpeg",
     name: "Syed Kamrul Islam",
-    title: "University of missouri,usa",
+    title: "University of Missouri, USA",
     company: "",
     type:"Keynote"
   },
 
                       {
-    image: "WhatsApp Image 2025-12-12 at 1.55.32 AM.jpeg",
-    name: "Alvarado, Noé",
+    image: "alvarado.jpeg",
+    name: "Alvarado, Noe",
     title: "Universitat Politècnica de Catalunya,spain",
     company: "",
     type:"Keynote"
   },
 
     {
-    image: "WhatsApp Image 2025-12-12 at 1.52.43 AM.jpeg",
+    image: "jan-rosell.jpeg",
     name: "Jan Rosell",
     title: "Shanghai Jiao Tong University, China",
     company: "",
     type:"Speaker"
   },
 
+
+
               {
-    image: "WhatsApp Image 2025-12-12 at 1.57.51 AM.jpeg",
+    image: "rohit-chadha.jpeg",
     name: "Rohit Chadha",
-    title: "university  of missouri,usa",
+    title: "University of Missouri, USA",
     company: "",
     type:"Speaker"
   },
 
                     {
-    image: "WhatsApp Image 2025-12-12 at 2.18.06 AM (1).jpeg",
+    image: "liu-yurong.jpeg",
     name: "LIU, Yurong",
     title: "Southeast university,china",
     company: "",
@@ -281,17 +370,41 @@ const speakers = [
   },
 
                         {
-    image: "WhatsApp Image 2025-12-12 at 1.25.51 AM.jpeg",
+    image: "chen-peng.jpeg",
     name: "CHEN, Peng",
     title: "Southeast university ,china",
     company: "",
     type:"Speaker"
   },
 
+
+                          {
+    image: "Josef-T.Boronski.jpeg",
+    name: "Josef T. Boronski",
+    title: "Imperial College London, UK",
+    company: "",
+    type:"Speaker"
+  },
+
+                            {
+    image: "charles-romain.jpeg",
+    name: "Charles Romain",
+    title: "Imperial College London, UK",
+    company: "",
+    type:"Speaker"
+  },
+
+
+                              {
+    image: "muhammad-bilal-munir.jpeg",
+    name: "Muhammad Bilal Munir",
+    title: "University of California, San Francisco, USA",
+    company: "",
+    type:"Speaker"
+  },
       
 
 ];
-
 const committee = [
   { image: "commit1.png", name: "Dr. Alan Turing", university: "Oxford University, UK" },
   { image: "commit2.png", name: "Dr. Ada Lovelace", university: "Cambridge University, UK" },
@@ -305,13 +418,22 @@ function SpeakersPage() {
       <Header />
 
       {/* Hero Section */}
-      <SpeakersBanner />
+      {/* <SpeakersBanner /> */}
 
       {/* Speakers + Committee */}
       <div className="container mx-auto px-6 py-16 grid md:grid-cols-3 gap-10">
+        
 
         {/* Left: Speakers */}
-        <div className="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-10">
+        <div className="md:col-span-2 grid grid-cols-2 sm:grid-cols-3 gap-10 text-center">
+          {/* <h1 className="text-3xl font-bold text-gray-800 mb-8 col-span-full">
+            AIMLR-2026 SPEAKERS
+          </h1> */}
+
+            <h2 className="text-3xl font-bold text-[#00488B] mb-6 col-span-full">
+            {/* ABOUT AIMLR - 2026  HYBRID EVENT */}
+            AIMLR-2026 SPEAKERS
+          </h2>
           {speakers.map((speaker, i) => (
             <div key={i} className="text-center">
               <img
@@ -339,8 +461,8 @@ function SpeakersPage() {
               key={i}
               className="flex items-center gap-4 bg-[#2e2b7a] p-4 shadow-md hover:shadow-lg transition"
             >
-              <User className="w-10 h-10 text-white flex-shrink-0" />
-              <div>
+              {/* <User className="w-10 h-10 text-white flex-shrink-0" /> */}
+              <div className="flex gap-4 items-center">
                 <h4 className="font-bold text-white">{member.name}</h4>
                 <p className="text-sm text-white">{member.university}</p>
               </div>

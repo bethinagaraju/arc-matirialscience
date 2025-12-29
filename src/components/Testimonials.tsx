@@ -20,25 +20,27 @@ const testimonials: Testimonial[] = [
     name: "Dr. Aisha Raman",
     title: "Faculty Participant, Previous Edition",
     location: "India",
-    image: "testone.jpeg",
+    image: "aisha-raman.jpeg",
     message:
       "The conference provided a structured platform for presenting research and engaging in constructive technical discussions with participants from different institutions."
   },
+
   {
     id: 2,
     name: "Miguel Alvarez",
     title: "Research Participant, Previous Edition",
     location: "Spain",
-    image: "WhatsApp Image 2025-12-18 at 15.18.13.jpeg",
+    image: "miguel-alvarez.jpeg",
     message:
       "The sessions were well organized and covered a broad range of topics in artificial intelligence, machine learning, and robotics."
   },
+
   {
     id: 3,
     name: "Dr. Hana Sato",
     title: "Poster Presenter, Previous Edition",
     location: "Japan",
-    image: "WhatsApp Image 2025-12-18 at 15.19.20.jpeg",
+    image: "hana-sato.jpeg",
     message:
       "I found the opportunity to present my work and receive feedback from peers to be valuable for improving my research."
   },
@@ -48,7 +50,7 @@ const testimonials: Testimonial[] = [
     name: "Jonathan Miller",
     title: "Conference Attendee, Previous Edition",
     location: "USA",
-    image: "testtwo.jpeg",
+    image: "jonathan-miller.jpeg",
     message:
       "The conference created a professional environment for knowledge exchange and interdisciplinary interaction."
   },
@@ -58,7 +60,7 @@ const testimonials: Testimonial[] = [
     name: "Martin Alvarez",
     title: "PhD Scholar in AI & Robotics, University of Manchester",
     location: "UK",
-    image: "WhatsApp Image 2025-12-19 at 8.46.47 AM.jpeg",
+    image: "martin-alvarez.jpeg",
     message:
       "The hybrid format enabled effective participation and interaction with researchers despite geographical limitations."
   },
@@ -68,7 +70,7 @@ const testimonials: Testimonial[] = [
     name: "Hasan Yilmaz",
     title: "PhD Scholar in AI & Robotics, University of Manchester",
     location: "UK",
-    image: "WhatsApp Image 2025-12-19 at 8.50.20 AM.jpeg",
+    image: "hasan-yilmaz.jpeg",
     message:
       "The discussions and networking opportunities contributed positively to research collaboration and idea sharing."
   }

@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="/WhatsApp Video 2025-10-11 at 12.47.18_e854abaa.mp4"
+        src="/aimlr-banner-video.mp4"
         autoPlay
         loop
         muted
@@ -36,7 +36,7 @@ const HeroSection: React.FC = () => {
               July 28–30, 2026 | Crowne Plaza – St. Peter's Rome, Italy
             </p>
 
-            <div className="flex flex-col sm:flex-row items-center lg:items-start justify-center lg:justify-center gap-3 sm:gap-4 w-full">
+            <div className="flex flex-row items-center lg:items-start justify-center lg:justify-center gap-3 sm:gap-4 w-full">
 
 
               <Link to="/register">
@@ -65,6 +65,9 @@ const HeroSection: React.FC = () => {
 
               </Link>
             </div>
+
+
+
           </div>
 
           {/* RIGHT SIDE QUICK LINKS */}

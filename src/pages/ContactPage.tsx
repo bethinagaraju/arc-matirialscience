@@ -53,7 +53,7 @@ const ContactPage: React.FC = () => {
       </div> */}
 
       {/* Contact Information & Form */}
-      <div className="py-16 px-4 sm:px-6 lg:px-32">
+      <div className="py-12 px-4 sm:px-6 lg:px-32">
         <div className="container mx-auto max-w-6xl">
 
           {/* Header */}

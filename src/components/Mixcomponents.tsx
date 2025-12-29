@@ -294,22 +294,22 @@ function Mixcomponents() {
 
 
   {
-    image: "WhatsApp Image 2025-12-12 at 1.39.44 AM.jpeg",
-    name: "Thomas Gärtner",
+    image: "thomas-gartner.jpeg",
+    name: "Thomas Gartner",
     title: "Technical University of Vienna ,austria",
     company: "",
     type:"Keynote"
   },
 
         {
-    image: "WhatsApp Image 2025-12-12 at 1.33.55 AM.jpeg",
+    image: "cui-tiejun.jpeg",
     name: "CUI, Tiejun",
     title: "southeast universitie china",
     company: "",
     type:"Keynote"
   },
           {
-    image: "WhatsApp Image 2025-12-12 at 2.24.58 AM.jpeg",
+    image: "katja-hose.jpeg",
     name: "Katja Hose",
     title: "technical universty of vienna ,austria",
     company: "",
@@ -317,7 +317,7 @@ function Mixcomponents() {
   },
 
                   {
-    image: "WhatsApp Image 2025-12-12 at 2.17.38 AM.jpeg",
+    image: "petia-radeva.jpeg",
     name: "Petia Radeva",
     title: "Universitat de Barcelona,Spain",
     company: "",
@@ -325,7 +325,7 @@ function Mixcomponents() {
   },
 
                   {
-    image: "WhatsApp Image 2025-12-12 at 1.56.23 AM.jpeg",
+    image: "syed-kamrul-islam.jpeg",
     name: "Syed Kamrul Islam",
     title: "University of missouri,usa",
     company: "",
@@ -333,23 +333,25 @@ function Mixcomponents() {
   },
 
                       {
-    image: "WhatsApp Image 2025-12-12 at 1.55.32 AM.jpeg",
-    name: "Alvarado, Noé",
+    image: "alvarado.jpeg",
+    name: "Alvarado, Noe",
     title: "Universitat Politècnica de Catalunya,spain",
     company: "",
     type:"Keynote"
   },
 
     {
-    image: "WhatsApp Image 2025-12-12 at 1.52.43 AM.jpeg",
+    image: "jan-rosell.jpeg",
     name: "Jan Rosell",
     title: "Shanghai Jiao Tong University, China",
     company: "",
     type:"Speaker"
   },
 
+
+
               {
-    image: "WhatsApp Image 2025-12-12 at 1.57.51 AM.jpeg",
+    image: "rohit-chadha.jpeg",
     name: "Rohit Chadha",
     title: "university  of missouri,usa",
     company: "",
@@ -357,7 +359,7 @@ function Mixcomponents() {
   },
 
                     {
-    image: "WhatsApp Image 2025-12-12 at 2.18.06 AM (1).jpeg",
+    image: "liu-yurong.jpeg",
     name: "LIU, Yurong",
     title: "Southeast university,china",
     company: "",
@@ -365,7 +367,7 @@ function Mixcomponents() {
   },
 
                         {
-    image: "WhatsApp Image 2025-12-12 at 1.25.51 AM.jpeg",
+    image: "chen-peng.jpeg",
     name: "CHEN, Peng",
     title: "Southeast university ,china",
     company: "",

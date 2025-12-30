@@ -114,7 +114,7 @@
 //                 ["Home", "/"],
 //                 ["Speakers", "/speakers"],
 //                 ["Call for Speakers", "/call-for-speakers"],
-//                 ["Important Dates", "/importantdates"],
+//                 ["Important Dates", "/important-dates"],
 //                 ["Privacy Policy", "/privacy-policy"],
 
 //                 ["About Conference", "/about"],
@@ -399,7 +399,7 @@ const EndFooter: React.FC = () => {
                 ["Home", "/"],
                 ["Speakers", "/speakers"],
                 ["Call for Speakers", "/call-for-speakers"],
-                ["Important Dates", "/importantdates"],
+                ["Important Dates", "/important-dates"],
                 ["Privacy Policy", "/privacy-policy"],
 
                 ["About Conference", "/about"],

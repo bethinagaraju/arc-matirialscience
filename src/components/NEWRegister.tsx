@@ -6434,6 +6434,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
 import { FaSyncAlt } from 'react-icons/fa';
 import pricingData from "./pricing.json"; 
+import { countries } from './AbstractSubmission';
 
 // ---------------- TYPES ----------------
 
@@ -7064,15 +7065,7 @@ const RegistrationPage: React.FC = () => {
                                         ref={countryRef}
                                     >
                                         <option value="">Select your country</option>
-                                        <option value="United States">United States</option>
-                                        <option value="United Kingdom">United Kingdom</option>
-                                        <option value="Canada">Canada</option>
-                                        <option value="Australia">Australia</option>
-                                        <option value="Italy">Italy</option>
-                                        <option value="Germany">Germany</option>
-                                        <option value="France">France</option>
-                                        <option value="India">India</option>
-                                        <option value="China">China</option>
+                                        {countries.map(country => <option key={country} value={country}>{country}</option>)}
                                     </select>
                                     {errors.country && <p className="error-text">{errors.country}</p>}
                                 </div>

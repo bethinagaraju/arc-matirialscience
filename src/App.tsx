@@ -133,9 +133,9 @@ function App() {
         <Route path='/schedule' element={<ScrollSchedule />} />
 
 
-        
+
         <Route path='/poster' element={<Posterpage />} />
-        <Route path='/importantdates' element={<ComboKeyDatesAndVenue />} />
+        <Route path='/important-dates' element={<ComboKeyDatesAndVenue />} />
         <Route path='/call-for-abstract' element={<AboutTheCallPage />} />
         {/* <Route path='/call-for-papers' element={<CallForPapersPage />} /> */}
 

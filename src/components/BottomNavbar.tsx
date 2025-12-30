@@ -140,7 +140,7 @@ const BottomNavbar = ({ menuOpen, setMenuOpen, headerRef }: { menuOpen: boolean,
                 <Link to="/schedule" className="block px-4 py-2 hover:bg-gray-100">Program Schedule</Link>
                 <Link to="/venue" className="block px-4 py-2 hover:bg-gray-100">Venue</Link>
                 {/* <Link to="/sessions" className="block px-4 py-2 hover:bg-gray-100">Sessions</Link> */}
-                <Link to="/importantdates" className="block px-4 py-2 hover:bg-gray-100">Important Dates</Link>
+                <Link to="/important-dates" className="block px-4 py-2 hover:bg-gray-100">Important Dates</Link>
 
                 {/* Newly Added */}
                 <Link to="/guidelines" className="block px-4 py-2 hover:bg-gray-100">Guidelines</Link>
@@ -244,6 +244,7 @@ const BottomNavbar = ({ menuOpen, setMenuOpen, headerRef }: { menuOpen: boolean,
                   <Link to="/venue" className="block text-gray-600 hover:text-gray-800">Venue</Link>
                   {/* <Link to="/sessions" className="block text-gray-600 hover:text-gray-800">Sessions</Link> */}
                   <Link to="/guidelines" className="block text-gray-600 hover:text-gray-800">Guidelines</Link>
+                  <Link to="/important-dates" className="block text-gray-600 hover:text-gray-800">Important Dates</Link>
                   <Link to="/faq" className="block text-gray-600 hover:text-gray-800">FAQ</Link>
                 </div>
               )}

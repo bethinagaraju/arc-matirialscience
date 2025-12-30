@@ -1442,12 +1442,12 @@ const AbstractSubmission: React.FC = () => {
           <div className="bg-white p-6 rounded-lg shadow-sm">
             <Award className="mx-auto mb-3" size={32} style={{ color: '#344177' }} />
             <h3 className="font-bold text-lg text-gray-800">Abstract Deadline</h3>
-            <p className="text-gray-600">March 15, 2026</p>
+            <p className="text-gray-600">January 30, 2026</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-sm">
             <Bell className="mx-auto mb-3" size={32} style={{ color: '#344177' }} />
-            <h3 className="font-bold text-lg text-gray-800">Notification</h3>
-            <p className="text-gray-600">March 25, 2026</p>
+            <h3 className="font-bold text-lg text-gray-800">Notification of Acceptance</h3>
+            <p className="text-gray-600">February 15, 2026</p>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-sm">
             <FileText className="mx-auto mb-3" size={32} style={{ color: '#344177' }} />

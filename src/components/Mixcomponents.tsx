@@ -91,31 +91,57 @@ const speakers = [
     type: "Keynote",
   },
 
-      {
-    image: "Felisa-Baynes-Ross.jpeg",
-    alt: "Prof. Felisa Baynes-Ross – Speaker at AIMLR 2026 | Yale University, USA",
-    name: "Prof. Felisa Baynes-Ross",
-    title: "Yale University, USA",
-    company: "",
-    type: "Keynote",
-  },
-  {
-    image: "Athanasios-Paschalis.jpeg",
-    alt: "Prof. Athanasios Paschalis – Speaker at AIMLR 2026 | Imperial College London, UK",
-    name: "Prof. Athanasios Paschalis",
-    title: "Professor, Imperial College London, UK",
+
+    {
+    image: "michael-cafarella.webp",
+    alt: "Prof. Michael Cafarella – Speaker at AIMLR 2026 | Massachusetts Institute of Technology, USA",
+    name: "Prof. Michael Cafarella",
+    title: "Massachusetts Institute of Technology, USA",
     company: "",
     type: "Keynote",
   },
 
+
+      {
+    image: "Shashank-V.Joshi.jpeg",
+    alt: "Shashank V. Joshi – Professor at Stanford University",
+    name: "Prof. Shashank V. Joshi",
+    title: "Stanford University",
+    company: "",
+    type: "Keynote",
+  },
+
+      {
+    image: "michael-goetjen.jpeg",
+    alt: "Prof. Michael Goetjen – Keynote Speaker at AIMLR 2026 | Yale University, USA",
+    name: "Prof. Michael Goetjen",
+    title:"Massachusetts Institute of Technology (MIT), USA",
+    company: "",
+    type: "Keynote",
+  },
+
+  
+
   {
-    image: "michael-cafarella.webp",
-    alt: "Dr. Michael Cafarella – Speaker at AIMLR 2026 | Massachusetts Institute of Technology, USA",
-    name: "Dr. Michael Cafarella",
-    title: "Massachusetts Institute of Technology, USA",
+    image: "Felisa-Baynes-Ross.jpeg",
+    alt: "Dr. Felisa Baynes-Ross – Speaker at AIMLR 2026 | Yale University, USA",
+    name: "Dr. Felisa Baynes-Ross",
+    title: "Yale University, USA",
     company: "",
     type: "Speaker",
   },
+  {
+    image: "Athanasios-Paschalis.jpeg",
+    alt: "Dr. Athanasios Paschalis – Speaker at AIMLR 2026 | Imperial College London, UK",
+    name: "Dr. Athanasios Paschalis",
+    title: "Imperial College London, UK",
+    company: "",
+    type: "Speaker",
+  },
+
+
+
+
 
 
 
@@ -138,7 +164,6 @@ const speakers = [
     type: "Speaker",
   },
 
-
   {
     image: "charles-romain.jpeg",
     alt: "Dr. Charles Romain – Speaker at AIMLR 2026 | Imperial College London, UK",
@@ -148,13 +173,22 @@ const speakers = [
     type: "Speaker",
   },
 
-
-
   {
     image: "James-Berger.jpeg",
     alt: "Dr. James Berger – Keynote Speaker at AIMLR 2026 | Yale University, USA",
     name: "Dr. James Berger",
     title: "Yale University, USA",
+    company: "",
+    type: "Speaker",
+  },
+
+
+
+  {
+    image: "Subini-Ancy-Annamma.jpeg",
+    alt: "Subini Ancy Annamma – Associate Professor at Stanford University",
+    name: "Dr. Subini Ancy Annamma",
+    title: "Associate Professor, Stanford University",
     company: "",
     type: "Speaker",
   },

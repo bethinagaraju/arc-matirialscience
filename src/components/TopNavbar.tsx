@@ -54,8 +54,8 @@ const TopNavbar = ({ menuOpen, setMenuOpen }: { menuOpen: boolean; setMenuOpen: 
         <div className="hidden md:flex items-center gap-4 ml-12">
           <Link to="/register" title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference">
             <button 
-              style={{ backgroundImage: "linear-gradient(90deg, rgba(0,72,139,1) 0%, rgba(15,133,255,1) 100%)" }} 
-              className="w-[120px] text-white font-bold py-2 hover:bg-[#425a92] transition-colors duration-300"
+              // style={{ backgroundImage: "linear-gradient(90deg, rgba(201, 171, 99, 0.92) 0%, rgba(201, 171, 99, 0.92) 39%, rgba(201, 171, 99, 0.5) 100%, rgba(201, 171, 99, 0.93) 65%)" }} 
+              className="bg-[#C9AB63] w-[120px] text-white font-bold py-2 hover:bg-[#425a92] transition-colors duration-300"
               title="Register for AIMLR 2026 Conference"
               aria-label="Register for AIMLR 2026 Conference"
             >

@@ -1,278 +1,490 @@
+// // import React, { useState } from 'react';
+// // import { User } from 'lucide-react';
+// // import { Link } from 'react-router-dom';
+
+// // // Defines the type for a single event in the schedule
+// // interface ScheduleItem {
+// //   time: string;
+// //   title: string;
+// //   description: string;
+// //   speaker: string | null; // Speaker can be a string or null if not applicable
+// //   room: string | null; // Room can be a string or null if not applicable
+// // }
+
+// // // Defines the type for the entire schedule object
+// // interface ScheduleData {
+// //   day1: ScheduleItem[];
+// //   day2: ScheduleItem[];
+// //   day3: ScheduleItem[];
+// // }
+
+
+
+
+
+// // const scheduleData: ScheduleData = {
+// //   day1: [
+// //     {
+// //       time: '08:00 - 09:00',
+// //       title: 'Registration & Welcome Coffee',
+// //       description: 'Check-in, collect your conference materials, and meet fellow AI, ML, and robotics enthusiasts over coffee.',
+// //       speaker: null,
+// //       room: 'Lobby',
+// //     },
+// //     {
+// //       time: '09:00 - 10:00',
+// //       title: 'Keynote: The Dawn of Intelligent Systems',
+// //       description: 'An inspiring keynote on how Artificial Intelligence and Machine Learning are redefining industries and human potential.',
+// //       speaker: 'Dr. Aris Thorne, Director of Global AI Research Institute',
+// //       room: 'Main Hall',
+// //     },
+// //     {
+// //       time: '10:00 - 11:30',
+// //       title: 'Panel: The Future of Robotics and Automation',
+// //       description: 'Industry leaders discuss the role of robotics in transforming manufacturing, healthcare, and everyday life.',
+// //       speaker: 'Moderated by Dr. Lena Hanson, Robotics Vision Lab',
+// //       room: 'Conference Room 1',
+// //     },
+// //     {
+// //       time: '11:30 - 12:00',
+// //       title: 'Coffee & Networking Break',
+// //       description: 'Network with researchers, engineers, and entrepreneurs in the AI and robotics ecosystem.',
+// //       speaker: null,
+// //       room: 'Lobby',
+// //     },
+// //     {
+// //       time: '12:00 - 13:30',
+// //       title: 'Track 1: Deep Learning & Neural Network Innovations',
+// //       description: 'Explore cutting-edge models and frameworks driving today’s breakthroughs in AI applications.',
+// //       speaker: 'Prof. Kenji Tanaka, Tokyo Institute of AI Research',
+// //       room: 'Workshop Room A',
+// //     },
+// //     {
+// //       time: '13:30 - 14:30',
+// //       title: 'Networking Lunch',
+// //       description: 'Enjoy a buffet lunch while discussing ideas and collaborations.',
+// //       speaker: null,
+// //       room: 'Dining Hall',
+// //     },
+// //     {
+// //       time: '14:30 - 16:00',
+// //       title: 'Track 2: Robotics and Human-Machine Interaction',
+// //       description: 'A deep dive into adaptive robotics, motion planning, and the integration of human intuition in automation.',
+// //       speaker: 'Dr. Isabella Rossi, Lead Robotics Scientist, RoboMind Labs',
+// //       room: 'Workshop Room B',
+// //     },
+// //   ],
+// //   day2: [
+// //     {
+// //       time: '08:30 - 09:00',
+// //       title: 'Morning Coffee & Networking',
+// //       description: 'Start the day with fresh coffee and meet leading professionals in AI and robotics research.',
+// //       speaker: null,
+// //       room: 'Lobby',
+// //     },
+// //     {
+// //       time: '09:00 - 10:00',
+// //       title: 'Keynote: AI & Robotics Shaping the Next Industrial Revolution',
+// //       description: 'A visionary talk on how AI-driven robotics will redefine productivity, creativity, and global economies.',
+// //       speaker: 'Dr. Samuel Chen, CEO of RoboAI Systems',
+// //       room: 'Main Hall',
+// //     },
+// //     {
+// //       time: '10:00 - 11:30',
+// //       title: 'Panel: From Research to Real-World AI Applications',
+// //       description: 'Experts and investors discuss challenges in commercializing AI models, from startups to enterprise adoption.',
+// //       speaker: 'Featuring panelists from NeuralTech Ventures & AI Innovate',
+// //       room: 'Conference Room 1',
+// //     },
+// //     {
+// //       time: '11:30 - 12:00',
+// //       title: 'Coffee & Networking Break',
+// //       description: 'A perfect time to connect with keynote speakers and panelists.',
+// //       speaker: null,
+// //       room: 'Lobby',
+// //     },
+// //     {
+// //       time: '12:00 - 13:30',
+// //       title: 'Workshop: Building Ethical and Responsible AI Systems',
+// //       description: 'A practical session focusing on transparency, bias reduction, and fairness in machine learning systems.',
+// //       speaker: 'Dr. Maria Flores, Lead Data Ethics Researcher, BioSignal Lab',
+// //       room: 'Workshop Room A',
+// //     },
+// //     {
+// //       time: '13:30 - 14:30',
+// //       title: 'Networking Lunch',
+// //       description: 'Collaborate with AI engineers, roboticists, and data scientists over lunch.',
+// //       speaker: null,
+// //       room: 'Dining Hall',
+// //     },
+// //     {
+// //       time: '14:30 - 16:00',
+// //       title: 'Closing Keynote: The Road Ahead for Machine Intelligence',
+// //       description: 'A reflection on the evolution of AI and robotics and what lies beyond today’s technological horizon.',
+// //       speaker: 'Conference Chair, Global AI Alliance',
+// //       room: 'Main Hall',
+// //     },
+// //   ],
+// //   day3: [
+// //     {
+// //       time: '09:00 - 09:30',
+// //       title: 'Welcome & Recap of Key Highlights',
+// //       description: 'A quick recap of insights and breakthroughs from previous sessions.',
+// //       speaker: 'Event Coordinator',
+// //       room: 'Main Hall',
+// //     },
+// //     {
+// //       time: '09:30 - 11:00',
+// //       title: 'Panel: AI and Robotics in Everyday Life',
+// //       description: 'Experts discuss how autonomous systems and generative AI are shaping transportation, education, and smart cities.',
+// //       speaker: 'Panelists from DeepMind, OpenBotics, and UrbanAI Labs',
+// //       room: 'Conference Room 1',
+// //     },
+// //     {
+// //       time: '11:00 - 11:30',
+// //       title: 'Coffee & Networking Break',
+// //       description: 'Relax and chat with fellow researchers and innovators.',
+// //       speaker: null,
+// //       room: 'Lobby',
+// //     },
+// //     {
+// //       time: '11:30 - 13:00',
+// //       title: 'Workshop: Hands-On with Autonomous Agents',
+// //       description: 'Interactive session on training and simulating autonomous agents for robotics and reinforcement learning.',
+// //       speaker: 'Dr. Nina Alvarez, Robotics Research Lab, MIT',
+// //       room: 'Workshop Room A',
+// //     },
+// //     {
+// //       time: '13:00 - 14:00',
+// //       title: 'Lunch & Networking',
+// //       description: 'Connect with attendees over lunch to discuss collaborative opportunities.',
+// //       speaker: null,
+// //       room: 'Dining Hall',
+// //     },
+// //     {
+// //       time: '14:00 - 15:30',
+// //       title: 'Innovation Showcase & Awards',
+// //       description: 'Live demos of AI-driven robots and startup pitches, followed by the AI Excellence Awards ceremony.',
+// //       speaker: 'Conference Committee',
+// //       room: 'Main Hall',
+// //     },
+// //     {
+// //       time: '15:30 - 16:00',
+// //       title: 'Farewell & Closing Speech',
+// //       description: 'Official closing with acknowledgments and announcements for next year’s AI, ML & Robotics Conference.',
+// //       speaker: 'Conference Chair',
+// //       room: 'Main Hall',
+// //     },
+// //   ],
+// // };
+
+
+
+
+// // const Agenda: React.FC = () => {
+// //   const [activeDay, setActiveDay] = useState<number>(1);
+// //   const themeColor = '#2e366c';
+
+// //   const renderSchedule = (day: ScheduleItem[]) =>
+// //     day.map((item, index) => (
+// //       <div key={index} className="flex flex-col sm:flex-row border-t border-gray-200 py-3">
+// //         <div className="w-full sm:w-1/4 pr-4 mb-2 sm:mb-0 sm:text-right">
+// //           <p className="font-bold text-base" style={{ color: themeColor }}>
+// //             {item.time}
+// //           </p>
+// //         </div>
+// //         <div className="w-full sm:w-3/4 pl-4 sm:border-l border-gray-200">
+// //           <h3 className="text-base font-bold text-gray-800 text-base" style={{ fontFamily: "'Manrope', sans-serif" }}>{item.title}</h3>
+// //           <p className="text-gray-600 mt-1 " style={{ fontFamily: "'Manrope', sans-serif" }}>{item.description}</p>
+// //           {item.room && (
+// //             <div className="mt-2 text-sm text-gray-500">
+// //               <strong>Room:</strong> {item.room}
+// //             </div>
+// //           )}
+// //           {/* {item.speaker && (
+// //             <div className="flex items-center mt-3 text-gray-500">
+// //               <User size={16} className="mr-2 flex-shrink-0" />
+// //               <span className="text-sm font-medium">{item.speaker}</span>
+// //             </div>
+// //           )} */}
+// //         </div>
+// //       </div>
+// //     ));
+
+// //   return (
+// //     <div>
+// //       <section id='agenda-section' className="bg-white py-16 px-4">
+// //         <div className="max-w-6xl mx-auto">
+// //           <h1
+// //             style={{ fontFamily: "'Manrope', sans-serif", color: '#2e376c' }}
+// //             className="text-2xl md:text-4xl font-bold text-center mb-4"
+// //           >
+// //             CONFERENCE AGENDA
+// //           </h1>
+
+// //           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto" style={{ fontSize: '1rem', font: "sans-serif" }}>
+// //             Experience three days of inspiring keynotes, hands-on workshops, and cutting-edge innovations in AI, ML, and Robotics.
+// //           </p>
+
+// //           {/* Day Toggle Buttons */}
+// //           <div className="flex justify-center mb-10 gap-2 sm:gap-4 p-1 bg-gray-100 max-w-sm mx-auto rounded-full">
+// //             {[1, 2, 3].map((day) => (
+// //               <button
+// //                 key={day}
+// //                 onClick={() => setActiveDay(day)}
+// //                 className={`w-full px-5 py-3 text-sm sm:text-base font-bold rounded-full transition-all duration-300 ${
+// //                   activeDay === day
+// //                     ? 'text-white shadow-md'
+// //                     : 'text-gray-600 hover:bg-gray-200'
+// //                 }`}
+// //                 style={{ backgroundColor: activeDay === day ? themeColor : '' }}
+// //               >
+// //                 Day {day}
+// //               </button>
+// //             ))}
+// //           </div>
+
+// //           {/* Schedule Display */}
+// //           <div className="transition-opacity duration-500 ease-in-out">
+// //             {activeDay === 1
+// //               ? renderSchedule(scheduleData.day1)
+// //               : activeDay === 2
+// //               ? renderSchedule(scheduleData.day2)
+// //               : renderSchedule(scheduleData.day3)}
+// //           </div>
+
+// //           <p className="text-start text-gray-600 mt-8 max-w-2xl" style={{ fontSize: '1rem', font: "sans-serif" }}>
+// //             The agenda is subject to change. More sessions and speakers will be announced soon.
+// //           </p>
+
+// //           {/* Register Button */}
+// //           <div className="flex justify-center mt-10">
+// //             <Link to="/register">
+// //               <a
+// //                 className="bg-[#2e366c] hover:bg-[#4967a0] text-white px-6 py-2 font-semibold text-sm transition-colors"
+// //               >
+// //                 Register Now
+// //               </a>
+// //             </Link>
+// //           </div>
+// //         </div>
+
+        
+
+// //       </section>
+// //     </div>
+// //   );
+// // };
+
+// // export default Agenda;
+
+
+
+
 // import React, { useState } from 'react';
-// import { User } from 'lucide-react';
 // import { Link } from 'react-router-dom';
 
-// // Defines the type for a single event in the schedule
+// /* =======================
+//    Types
+// ======================= */
 // interface ScheduleItem {
 //   time: string;
 //   title: string;
 //   description: string;
-//   speaker: string | null; // Speaker can be a string or null if not applicable
-//   room: string | null; // Room can be a string or null if not applicable
+//   speaker: string | null;
+//   room: string | null;
 // }
 
-// // Defines the type for the entire schedule object
 // interface ScheduleData {
 //   day1: ScheduleItem[];
 //   day2: ScheduleItem[];
 //   day3: ScheduleItem[];
 // }
 
-
-
-
-
+// /* =======================
+//    Schedule Data
+// ======================= */
 // const scheduleData: ScheduleData = {
 //   day1: [
 //     {
 //       time: '08:00 - 09:00',
 //       title: 'Registration & Welcome Coffee',
-//       description: 'Check-in, collect your conference materials, and meet fellow AI, ML, and robotics enthusiasts over coffee.',
+//       description:
+//         'Check-in, collect your conference materials, and meet fellow AI, ML, and robotics enthusiasts over coffee.',
 //       speaker: null,
 //       room: 'Lobby',
 //     },
 //     {
 //       time: '09:00 - 10:00',
 //       title: 'Keynote: The Dawn of Intelligent Systems',
-//       description: 'An inspiring keynote on how Artificial Intelligence and Machine Learning are redefining industries and human potential.',
+//       description:
+//         'An inspiring keynote on how Artificial Intelligence and Machine Learning are redefining industries and human potential.',
 //       speaker: 'Dr. Aris Thorne, Director of Global AI Research Institute',
 //       room: 'Main Hall',
 //     },
 //     {
 //       time: '10:00 - 11:30',
 //       title: 'Panel: The Future of Robotics and Automation',
-//       description: 'Industry leaders discuss the role of robotics in transforming manufacturing, healthcare, and everyday life.',
+//       description:
+//         'Industry leaders discuss the role of robotics in transforming manufacturing, healthcare, and everyday life.',
 //       speaker: 'Moderated by Dr. Lena Hanson, Robotics Vision Lab',
 //       room: 'Conference Room 1',
 //     },
 //     {
 //       time: '11:30 - 12:00',
 //       title: 'Coffee & Networking Break',
-//       description: 'Network with researchers, engineers, and entrepreneurs in the AI and robotics ecosystem.',
+//       description:
+//         'Network with researchers, engineers, and entrepreneurs in the AI and robotics ecosystem.',
 //       speaker: null,
 //       room: 'Lobby',
 //     },
 //     {
 //       time: '12:00 - 13:30',
 //       title: 'Track 1: Deep Learning & Neural Network Innovations',
-//       description: 'Explore cutting-edge models and frameworks driving today’s breakthroughs in AI applications.',
+//       description:
+//         'Explore cutting-edge models and frameworks driving today’s breakthroughs in AI applications.',
 //       speaker: 'Prof. Kenji Tanaka, Tokyo Institute of AI Research',
 //       room: 'Workshop Room A',
 //     },
 //     {
 //       time: '13:30 - 14:30',
 //       title: 'Networking Lunch',
-//       description: 'Enjoy a buffet lunch while discussing ideas and collaborations.',
+//       description:
+//         'Enjoy a buffet lunch while discussing ideas and collaborations.',
 //       speaker: null,
 //       room: 'Dining Hall',
 //     },
 //     {
 //       time: '14:30 - 16:00',
 //       title: 'Track 2: Robotics and Human-Machine Interaction',
-//       description: 'A deep dive into adaptive robotics, motion planning, and the integration of human intuition in automation.',
+//       description:
+//         'A deep dive into adaptive robotics, motion planning, and the integration of human intuition in automation.',
 //       speaker: 'Dr. Isabella Rossi, Lead Robotics Scientist, RoboMind Labs',
 //       room: 'Workshop Room B',
 //     },
 //   ],
-//   day2: [
-//     {
-//       time: '08:30 - 09:00',
-//       title: 'Morning Coffee & Networking',
-//       description: 'Start the day with fresh coffee and meet leading professionals in AI and robotics research.',
-//       speaker: null,
-//       room: 'Lobby',
-//     },
-//     {
-//       time: '09:00 - 10:00',
-//       title: 'Keynote: AI & Robotics Shaping the Next Industrial Revolution',
-//       description: 'A visionary talk on how AI-driven robotics will redefine productivity, creativity, and global economies.',
-//       speaker: 'Dr. Samuel Chen, CEO of RoboAI Systems',
-//       room: 'Main Hall',
-//     },
-//     {
-//       time: '10:00 - 11:30',
-//       title: 'Panel: From Research to Real-World AI Applications',
-//       description: 'Experts and investors discuss challenges in commercializing AI models, from startups to enterprise adoption.',
-//       speaker: 'Featuring panelists from NeuralTech Ventures & AI Innovate',
-//       room: 'Conference Room 1',
-//     },
-//     {
-//       time: '11:30 - 12:00',
-//       title: 'Coffee & Networking Break',
-//       description: 'A perfect time to connect with keynote speakers and panelists.',
-//       speaker: null,
-//       room: 'Lobby',
-//     },
-//     {
-//       time: '12:00 - 13:30',
-//       title: 'Workshop: Building Ethical and Responsible AI Systems',
-//       description: 'A practical session focusing on transparency, bias reduction, and fairness in machine learning systems.',
-//       speaker: 'Dr. Maria Flores, Lead Data Ethics Researcher, BioSignal Lab',
-//       room: 'Workshop Room A',
-//     },
-//     {
-//       time: '13:30 - 14:30',
-//       title: 'Networking Lunch',
-//       description: 'Collaborate with AI engineers, roboticists, and data scientists over lunch.',
-//       speaker: null,
-//       room: 'Dining Hall',
-//     },
-//     {
-//       time: '14:30 - 16:00',
-//       title: 'Closing Keynote: The Road Ahead for Machine Intelligence',
-//       description: 'A reflection on the evolution of AI and robotics and what lies beyond today’s technological horizon.',
-//       speaker: 'Conference Chair, Global AI Alliance',
-//       room: 'Main Hall',
-//     },
-//   ],
-//   day3: [
-//     {
-//       time: '09:00 - 09:30',
-//       title: 'Welcome & Recap of Key Highlights',
-//       description: 'A quick recap of insights and breakthroughs from previous sessions.',
-//       speaker: 'Event Coordinator',
-//       room: 'Main Hall',
-//     },
-//     {
-//       time: '09:30 - 11:00',
-//       title: 'Panel: AI and Robotics in Everyday Life',
-//       description: 'Experts discuss how autonomous systems and generative AI are shaping transportation, education, and smart cities.',
-//       speaker: 'Panelists from DeepMind, OpenBotics, and UrbanAI Labs',
-//       room: 'Conference Room 1',
-//     },
-//     {
-//       time: '11:00 - 11:30',
-//       title: 'Coffee & Networking Break',
-//       description: 'Relax and chat with fellow researchers and innovators.',
-//       speaker: null,
-//       room: 'Lobby',
-//     },
-//     {
-//       time: '11:30 - 13:00',
-//       title: 'Workshop: Hands-On with Autonomous Agents',
-//       description: 'Interactive session on training and simulating autonomous agents for robotics and reinforcement learning.',
-//       speaker: 'Dr. Nina Alvarez, Robotics Research Lab, MIT',
-//       room: 'Workshop Room A',
-//     },
-//     {
-//       time: '13:00 - 14:00',
-//       title: 'Lunch & Networking',
-//       description: 'Connect with attendees over lunch to discuss collaborative opportunities.',
-//       speaker: null,
-//       room: 'Dining Hall',
-//     },
-//     {
-//       time: '14:00 - 15:30',
-//       title: 'Innovation Showcase & Awards',
-//       description: 'Live demos of AI-driven robots and startup pitches, followed by the AI Excellence Awards ceremony.',
-//       speaker: 'Conference Committee',
-//       room: 'Main Hall',
-//     },
-//     {
-//       time: '15:30 - 16:00',
-//       title: 'Farewell & Closing Speech',
-//       description: 'Official closing with acknowledgments and announcements for next year’s AI, ML & Robotics Conference.',
-//       speaker: 'Conference Chair',
-//       room: 'Main Hall',
-//     },
-//   ],
+//   day2: [],
+//   day3: [],
 // };
 
-
-
-
+// /* =======================
+//    Agenda Component
+// ======================= */
 // const Agenda: React.FC = () => {
 //   const [activeDay, setActiveDay] = useState<number>(1);
 //   const themeColor = '#2e366c';
 
+//   /* Render Schedule */
 //   const renderSchedule = (day: ScheduleItem[]) =>
 //     day.map((item, index) => (
-//       <div key={index} className="flex flex-col sm:flex-row border-t border-gray-200 py-3">
+//       <div
+//         key={index}
+//         className="flex flex-col sm:flex-row border-t border-gray-200 py-3 max-w-3xl mx-auto"
+//       >
 //         <div className="w-full sm:w-1/4 pr-4 mb-2 sm:mb-0 sm:text-right">
 //           <p className="font-bold text-base" style={{ color: themeColor }}>
 //             {item.time}
 //           </p>
 //         </div>
+
 //         <div className="w-full sm:w-3/4 pl-4 sm:border-l border-gray-200">
-//           <h3 className="text-base font-bold text-gray-800 text-base" style={{ fontFamily: "'Manrope', sans-serif" }}>{item.title}</h3>
-//           <p className="text-gray-600 mt-1 " style={{ fontFamily: "'Manrope', sans-serif" }}>{item.description}</p>
+//           <h3
+//             className="text-base font-bold text-gray-800"
+//             style={{ fontFamily: "'Manrope', sans-serif" }}
+//           >
+//             {item.title}
+//           </h3>
+
+//           {/* <p
+//             className="text-gray-600 mt-1"
+//             style={{ fontFamily: "'Manrope', sans-serif" }}
+//           >
+//             {item.description}
+//           </p> */}
+
 //           {item.room && (
 //             <div className="mt-2 text-sm text-gray-500">
 //               <strong>Room:</strong> {item.room}
 //             </div>
 //           )}
-//           {/* {item.speaker && (
-//             <div className="flex items-center mt-3 text-gray-500">
-//               <User size={16} className="mr-2 flex-shrink-0" />
-//               <span className="text-sm font-medium">{item.speaker}</span>
-//             </div>
-//           )} */}
 //         </div>
 //       </div>
 //     ));
 
+//   /* Coming Soon UI */
+//   const ComingSoon = ({ day }: { day: number }) => (
+//     <div className="text-center py-20">
+//       <h2
+//         className="text-2xl md:text-3xl font-bold mb-4"
+//         style={{ color: themeColor, fontFamily: "'Manrope', sans-serif" }}
+//       >
+//         Day {day} Agenda
+//       </h2>
+//       <p className="text-gray-600 text-lg">
+//         Coming soon. Stay tuned for exciting sessions and speakers!
+//       </p>
+//     </div>
+//   );
+
 //   return (
-//     <div>
-//       <section id='agenda-section' className="bg-white py-16 px-4">
-//         <div className="max-w-6xl mx-auto">
-//           <h1
-//             style={{ fontFamily: "'Manrope', sans-serif", color: '#2e376c' }}
-//             className="text-2xl md:text-4xl font-bold text-center mb-4"
-//           >
-//             CONFERENCE AGENDA
-//           </h1>
+//     <section id="agenda-section" className="bg-white py-2 px-4">
+//       <div className="max-w-6xl mx-auto">
+//         {/* Title */}
+//         <h1
+//           className="text-2xl md:text-4xl font-bold text-center mb-4"
+//           style={{ fontFamily: "'Manrope', sans-serif", color: themeColor }}
+//         >
+//           CONFERENCE AGENDA
+//         </h1>
 
-//           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto" style={{ fontSize: '1rem', font: "sans-serif" }}>
-//             Experience three days of inspiring keynotes, hands-on workshops, and cutting-edge innovations in AI, ML, and Robotics.
-//           </p>
+//         <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+//           Experience three days of inspiring keynotes, hands-on workshops, and
+//           cutting-edge innovations in AI, ML, and Robotics.
+//         </p>
 
-//           {/* Day Toggle Buttons */}
-//           <div className="flex justify-center mb-10 gap-2 sm:gap-4 p-1 bg-gray-100 max-w-sm mx-auto rounded-full">
-//             {[1, 2, 3].map((day) => (
-//               <button
-//                 key={day}
-//                 onClick={() => setActiveDay(day)}
-//                 className={`w-full px-5 py-3 text-sm sm:text-base font-bold rounded-full transition-all duration-300 ${
-//                   activeDay === day
-//                     ? 'text-white shadow-md'
-//                     : 'text-gray-600 hover:bg-gray-200'
-//                 }`}
-//                 style={{ backgroundColor: activeDay === day ? themeColor : '' }}
-//               >
-//                 Day {day}
-//               </button>
-//             ))}
-//           </div>
-
-//           {/* Schedule Display */}
-//           <div className="transition-opacity duration-500 ease-in-out">
-//             {activeDay === 1
-//               ? renderSchedule(scheduleData.day1)
-//               : activeDay === 2
-//               ? renderSchedule(scheduleData.day2)
-//               : renderSchedule(scheduleData.day3)}
-//           </div>
-
-//           <p className="text-start text-gray-600 mt-8 max-w-2xl" style={{ fontSize: '1rem', font: "sans-serif" }}>
-//             The agenda is subject to change. More sessions and speakers will be announced soon.
-//           </p>
-
-//           {/* Register Button */}
-//           <div className="flex justify-center mt-10">
-//             <Link to="/register">
-//               <a
-//                 className="bg-[#2e366c] hover:bg-[#4967a0] text-white px-6 py-2 font-semibold text-sm transition-colors"
-//               >
-//                 Register Now
-//               </a>
-//             </Link>
-//           </div>
+//         {/* Day Tabs */}
+//         <div className="flex justify-center mb-10 gap-2 p-1 bg-gray-100 max-w-sm mx-auto rounded-full">
+//           {[1, 2, 3].map((day) => (
+//             <button
+//               key={day}
+//               onClick={() => setActiveDay(day)}
+//               className={`w-full px-5 py-3 text-sm sm:text-base font-bold rounded-full transition-all ${
+//                 activeDay === day
+//                   ? 'text-white shadow-md'
+//                   : 'text-gray-600 hover:bg-gray-200'
+//               }`}
+//               style={{
+//                 backgroundColor: activeDay === day ? themeColor : '',
+//               }}
+//             >
+//               Day {day}
+//             </button>
+//           ))}
 //         </div>
 
-        
+//         {/* Content */}
+//         <div className="transition-opacity duration-500">
+//           {activeDay === 1 && renderSchedule(scheduleData.day1)}
+//           {activeDay === 2 && <ComingSoon day={2} />}
+//           {activeDay === 3 && <ComingSoon day={3} />}
+//         </div>
 
-//       </section>
-//     </div>
+//         <p className="text-gray-600 mt-8 max-w-2xl text-center mx-auto">
+//           The agenda is subject to change. More sessions and speakers will be
+//           announced soon.
+//         </p>
+
+//         {/* Register Button */}
+//         <div className="flex justify-center mt-10">
+//           <Link
+//             to="/register"
+//             className="bg-[#2e366c] hover:bg-[#4967a0] text-white px-6 py-2 font-semibold text-sm transition-colors"
+//           >
+//             Register Now
+//           </Link>
+//         </div>
+//       </div>
+//     </section>
 //   );
 // };
 
@@ -281,8 +493,9 @@
 
 
 
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 /* =======================
    Types
@@ -307,60 +520,58 @@ interface ScheduleData {
 const scheduleData: ScheduleData = {
   day1: [
     {
-      time: '08:00 - 09:00',
-      title: 'Registration & Welcome Coffee',
+      time: "08:00 – 09:00",
+      title: "Registration & Welcome Coffee",
       description:
-        'Check-in, collect your conference materials, and meet fellow AI, ML, and robotics enthusiasts over coffee.',
+        "Check-in, collect your conference materials, and meet fellow AI, ML, and robotics enthusiasts.",
       speaker: null,
-      room: 'Lobby',
+      room: "Lobby",
     },
     {
-      time: '09:00 - 10:00',
-      title: 'Keynote: The Dawn of Intelligent Systems',
+      time: "09:00 – 10:00",
+      title: "Keynote: The Dawn of Intelligent Systems",
       description:
-        'An inspiring keynote on how Artificial Intelligence and Machine Learning are redefining industries and human potential.',
-      speaker: 'Dr. Aris Thorne, Director of Global AI Research Institute',
-      room: 'Main Hall',
+        "How Artificial Intelligence and Machine Learning are redefining industries and human potential.",
+      speaker: "Dr. Aris Thorne",
+      room: "Main Hall",
     },
     {
-      time: '10:00 - 11:30',
-      title: 'Panel: The Future of Robotics and Automation',
+      time: "10:00 – 11:30",
+      title: "Panel: The Future of Robotics & Automation",
       description:
-        'Industry leaders discuss the role of robotics in transforming manufacturing, healthcare, and everyday life.',
-      speaker: 'Moderated by Dr. Lena Hanson, Robotics Vision Lab',
-      room: 'Conference Room 1',
+        "Industry leaders discuss robotics in manufacturing, healthcare, and society.",
+      speaker: "Moderated Panel",
+      room: "Conference Room 1",
     },
     {
-      time: '11:30 - 12:00',
-      title: 'Coffee & Networking Break',
-      description:
-        'Network with researchers, engineers, and entrepreneurs in the AI and robotics ecosystem.',
+      time: "11:30 – 12:00",
+      title: "Networking Break",
+      description: "Coffee & discussions with delegates.",
       speaker: null,
-      room: 'Lobby',
+      room: "Lobby",
     },
     {
-      time: '12:00 - 13:30',
-      title: 'Track 1: Deep Learning & Neural Network Innovations',
+      time: "12:00 – 13:30",
+      title: "Track: Deep Learning Innovations",
       description:
-        'Explore cutting-edge models and frameworks driving today’s breakthroughs in AI applications.',
-      speaker: 'Prof. Kenji Tanaka, Tokyo Institute of AI Research',
-      room: 'Workshop Room A',
+        "Neural networks, architectures, and applied AI breakthroughs.",
+      speaker: "Prof. Kenji Tanaka",
+      room: "Workshop Room A",
     },
     {
-      time: '13:30 - 14:30',
-      title: 'Networking Lunch',
-      description:
-        'Enjoy a buffet lunch while discussing ideas and collaborations.',
+      time: "13:30 – 14:30",
+      title: "Lunch Break",
+      description: "Networking lunch for all participants.",
       speaker: null,
-      room: 'Dining Hall',
+      room: "Dining Hall",
     },
     {
-      time: '14:30 - 16:00',
-      title: 'Track 2: Robotics and Human-Machine Interaction',
+      time: "14:30 – 16:00",
+      title: "Track: Robotics & Human–Machine Interaction",
       description:
-        'A deep dive into adaptive robotics, motion planning, and the integration of human intuition in automation.',
-      speaker: 'Dr. Isabella Rossi, Lead Robotics Scientist, RoboMind Labs',
-      room: 'Workshop Room B',
+        "Adaptive robotics, motion planning, and human-centered automation.",
+      speaker: "Dr. Isabella Rossi",
+      room: "Workshop Room B",
     },
   ],
   day2: [],
@@ -372,117 +583,124 @@ const scheduleData: ScheduleData = {
 ======================= */
 const Agenda: React.FC = () => {
   const [activeDay, setActiveDay] = useState<number>(1);
-  const themeColor = '#2e366c';
 
   /* Render Schedule */
   const renderSchedule = (day: ScheduleItem[]) =>
     day.map((item, index) => (
       <div
         key={index}
-        className="flex flex-col sm:flex-row border-t border-gray-200 py-3 max-w-3xl mx-auto"
+        className="flex flex-col md:flex-row gap-6 py-6 border-b border-[#E5E7EB] max-w-4xl mx-auto"
       >
-        <div className="w-full sm:w-1/4 pr-4 mb-2 sm:mb-0 sm:text-right">
-          <p className="font-bold text-base" style={{ color: themeColor }}>
+        {/* Time */}
+        <div className="md:w-1/4">
+            <span className="text-sm font-bold text-[#E6C670]">
             {item.time}
-          </p>
+          </span>
         </div>
 
-        <div className="w-full sm:w-3/4 pl-4 sm:border-l border-gray-200">
-          <h3
-            className="text-base font-bold text-gray-800"
-            style={{ fontFamily: "'Manrope', sans-serif" }}
-          >
+        {/* Content */}
+        <div className="md:w-3/4">
+          <h3 className="text-lg font-semibold text-[#1F2327] mb-1">
             {item.title}
           </h3>
 
-          {/* <p
-            className="text-gray-600 mt-1"
-            style={{ fontFamily: "'Manrope', sans-serif" }}
-          >
+          {/* Description intentionally subtle */}
+          {/* <p className="text-sm text-[#6B6F74] leading-relaxed">
             {item.description}
           </p> */}
 
-          {item.room && (
-            <div className="mt-2 text-sm text-gray-500">
-              <strong>Room:</strong> {item.room}
-            </div>
-          )}
+          <div className="flex flex-wrap gap-6 mt-3 text-xs text-[#6B6F74]">
+            {/* {item.speaker && (
+              <span>
+                <strong>Speaker:</strong> {item.speaker}
+              </span>
+            )} */}
+            {item.room && (
+              <span>
+                <strong>Room:</strong> {item.room}
+              </span>
+            )}
+          </div>
         </div>
       </div>
     ));
 
-  /* Coming Soon UI */
+  /* Coming Soon */
   const ComingSoon = ({ day }: { day: number }) => (
     <div className="text-center py-20">
-      <h2
-        className="text-2xl md:text-3xl font-bold mb-4"
-        style={{ color: themeColor, fontFamily: "'Manrope', sans-serif" }}
-      >
+      <h2 className="text-2xl font-semibold text-[#1F2327] mb-3">
         Day {day} Agenda
       </h2>
-      <p className="text-gray-600 text-lg">
-        Coming soon. Stay tuned for exciting sessions and speakers!
+      <p className="text-[#6B6F74] text-base">
+        Detailed schedule will be announced soon.
       </p>
     </div>
   );
 
   return (
-    <section id="agenda-section" className="bg-white py-2 px-4">
+    <section className="bg-white py-6 px-6">
       <div className="max-w-6xl mx-auto">
-        {/* Title */}
-        <h1
-          className="text-2xl md:text-4xl font-bold text-center mb-4"
-          style={{ fontFamily: "'Manrope', sans-serif", color: themeColor }}
-        >
-          CONFERENCE AGENDA
-        </h1>
 
-        <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-          Experience three days of inspiring keynotes, hands-on workshops, and
-          cutting-edge innovations in AI, ML, and Robotics.
-        </p>
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#1F2327] mb-4">
+            Conference Agenda
+          </h1>
+          <p className="text-[#6B6F74] max-w-2xl mx-auto">
+            Three days of keynote talks, technical sessions, workshops, and
+            academic exchange in AI, Machine Learning, and Robotics.
+          </p>
+        </div>
 
         {/* Day Tabs */}
-        <div className="flex justify-center mb-10 gap-2 p-1 bg-gray-100 max-w-sm mx-auto rounded-full">
-          {[1, 2, 3].map((day) => (
-            <button
-              key={day}
-              onClick={() => setActiveDay(day)}
-              className={`w-full px-5 py-3 text-sm sm:text-base font-bold rounded-full transition-all ${
-                activeDay === day
-                  ? 'text-white shadow-md'
-                  : 'text-gray-600 hover:bg-gray-200'
-              }`}
-              style={{
-                backgroundColor: activeDay === day ? themeColor : '',
-              }}
-            >
-              Day {day}
-            </button>
-          ))}
+        <div className="flex justify-center mb-4">
+          <div className="inline-flex border border-[#E5E7EB] rounded-full overflow-hidden">
+            {[1, 2, 3].map((day) => (
+              <button
+                key={day}
+                onClick={() => setActiveDay(day)}
+                className={`
+                  px-8 py-3 text-sm font-semibold transition
+                  ${
+                    activeDay === day
+                      ? "bg-[#1F2327] text-white"
+                      : "text-[#6B6F74] hover:bg-[#F3F4F6]"
+                  }
+                `}
+              >
+                Day {day}
+              </button>
+            ))}
+          </div>
         </div>
 
-        {/* Content */}
-        <div className="transition-opacity duration-500">
-          {activeDay === 1 && renderSchedule(scheduleData.day1)}
-          {activeDay === 2 && <ComingSoon day={2} />}
-          {activeDay === 3 && <ComingSoon day={3} />}
-        </div>
+        {/* Agenda Content */}
+        {activeDay === 1 && renderSchedule(scheduleData.day1)}
+        {activeDay === 2 && <ComingSoon day={2} />}
+        {activeDay === 3 && <ComingSoon day={3} />}
 
-        <p className="text-gray-600 mt-8 max-w-2xl text-center mx-auto">
-          The agenda is subject to change. More sessions and speakers will be
-          announced soon.
+        {/* Footer Note */}
+        <p className="text-center text-sm text-[#6B6F74] mt-12">
+          Agenda subject to updates. Additional sessions will be announced.
         </p>
 
-        {/* Register Button */}
-        <div className="flex justify-center mt-10">
+        {/* CTA */}
+        <div className="flex justify-center mt-12">
           <Link
             to="/register"
-            className="bg-[#2e366c] hover:bg-[#4967a0] text-white px-6 py-2 font-semibold text-sm transition-colors"
+            className="
+              px-8 py-4
+              bg-[#C9AB63]
+              text-[#1F2327]
+              font-semibold
+              hover:bg-[#D4B46A]
+              transition
+            "
           >
             Register Now
           </Link>
         </div>
+
       </div>
     </section>
   );

@@ -1,86 +1,195 @@
 
+// import React from "react";
+
+// function Mixcomponents() {
+
+
+// const speakers = [
+
+//   {
+//     image: "yanda-li.jpg",
+//     alt: "Prof. Yanda Li – Keynote Speaker at AIMLR 2026 | Tsinghua University, China",
+//     name: "Prof. Yanda Li",
+//     title: "Tsinghua University, China",
+//     company: "",
+//     type: "Keynote",
+//   },
+
+
+//     {
+//     image: "michael-cafarella.webp",
+//     alt: "Prof. Michael Cafarella – Speaker at AIMLR 2026 | Massachusetts Institute of Technology, USA",
+//     name: "Prof. Michael Cafarella",
+//     title: "Massachusetts Institute of Technology, USA",
+//     company: "",
+//     type: "Keynote",
+//   },
+
+
+//       {
+//     image: "Shashank-V.Joshi.jpeg",
+//     alt: "Shashank V. Joshi – Professor at Stanford University",
+//     name: "Prof. Shashank V. Joshi",
+//     title: "Stanford University",
+//     company: "",
+//     type: "Keynote",
+//   },
+
+//       {
+//     image: "michael-goetjen.jpeg",
+//     alt: "Prof. Michael Goetjen – Keynote Speaker at AIMLR 2026 | Yale University, USA",
+//     name: "Prof. Michael Goetjen",
+//     title:"Massachusetts Institute of Technology (MIT), USA",
+//     company: "",
+//     type: "Keynote",
+//   },
+
+  
+
+//   {
+//     image: "Felisa-Baynes-Ross.jpeg",
+//     alt: "Dr. Felisa Baynes-Ross – Speaker at AIMLR 2026 | Yale University, USA",
+//     name: "Dr. Felisa Baynes-Ross",
+//     title: "Yale University, USA",
+//     company: "",
+//     type: "Speaker",
+//   },
+//   {
+//     image: "Athanasios-Paschalis.jpeg",
+//     alt: "Dr. Athanasios Paschalis – Speaker at AIMLR 2026 | Imperial College London, UK",
+//     name: "Dr. Athanasios Paschalis",
+//     title: "Imperial College London, UK",
+//     company: "",
+//     type: "Speaker",
+//   },
+
+
+
+//   {
+//     image: "liu-yurong.jpeg",
+//     alt: "Yurong Liu – Speaker at AIMLR 2026 | Southeast University, China",
+//     name: "LIU, Yurong",
+//     title: "Southeast University, China",
+//     company: "",
+//     type: "Speaker",
+//   },
+
+//   {
+//     image: "charles-romain.jpeg",
+//     alt: "Dr. Charles Romain – Speaker at AIMLR 2026 | Imperial College London, UK",
+//     name: "Dr. Charles Romain",
+//     title: "Imperial College London, UK",
+//     company: "",
+//     type: "Speaker",
+//   },
+
+//   {
+//     image: "James-Berger.jpeg",
+//     alt: "Dr. James Berger – Keynote Speaker at AIMLR 2026 | Yale University, USA",
+//     name: "Dr. James Berger",
+//     title: "Yale University, USA",
+//     company: "",
+//     type: "Speaker",
+//   },
+
+
+
+//   {
+//     image: "Subini-Ancy-Annamma.jpeg",
+//     alt: "Subini Ancy Annamma – Associate Professor at Stanford University",
+//     name: "Dr. Subini Ancy Annamma",
+//     title: "Associate Professor, Stanford University",
+//     company: "",
+//     type: "Speaker",
+//   },
+
+
+
+// ];
+
+
+
+//   return (
+//     <section
+//       id="speakers-section"
+//       className="container mx-auto px-4 md:px-6 py-10"
+//     >
+//       {/* Heading */}
+//       <h2 className="text-2xl md:text-3xl font-bold text-[#00488B] mb-8 text-center">
+//         AIMLR 2026 SPEAKERS
+//       </h2>
+
+//       {/* Speakers Grid */}
+//       <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-8">
+//         {speakers.slice(0, 6).map((speaker, idx) => (
+//           <div key={idx} className="text-center">
+//             <img
+//               src={speaker.image}
+//               alt={speaker.alt}
+//               className="w-24 h-24 md:w-32 md:h-32 object-cover rounded-full mx-auto mb-3"
+//             />
+
+//             <h3 className="font-semibold text-sm md:text-base">
+//               {speaker.name}
+//             </h3>
+
+//             <p className="text-xs md:text-sm text-gray-600 leading-snug">
+//               {speaker.title}
+//             </p>
+
+//             <p className="text-xs md:text-sm text-[#292e63] font-semibold mt-1">
+//               {speaker.type}
+//             </p>
+//           </div>
+//         ))}
+
+//         {speakers.slice(6).map((speaker, idx) => (
+//           <div key={`desktop-${idx}`} className="hidden md:block text-center">
+//             <img
+//               src={speaker.image}
+//               alt={speaker.alt}
+//               className="w-32 h-32 object-cover rounded-full mx-auto mb-3"
+//             />
+
+//             <h3 className="font-semibold">{speaker.name}</h3>
+
+//             <p className="text-sm text-gray-600 leading-snug">
+//               {speaker.title}
+//             </p>
+
+//             <p className="text-sm text-[#292e63] font-semibold mt-1">
+//               {speaker.type}
+//             </p>
+//           </div>
+//         ))}
+//       </div>
+
+//       {/* View All Button (especially useful on mobile) */}
+//       <div className="text-center">
+//         <a
+//           href="/speakers"
+//           className="inline-block bg-[#2e376c] hover:bg-[#1f254b] text-white font-bold py-3 px-8 transition-colors duration-300 rounded"
+//           title="View all speakers at AIMLR 2026 Conference"
+//           aria-label="View all speakers at AIMLR 2026 Conference"
+//         >
+//           View All Speakers
+//         </a>
+//       </div>
+//     </section>
+//   );
+// }
+
+// export default Mixcomponents;
+
+
+
+
 import React from "react";
 
 function Mixcomponents() {
-  // const speakers = [
-  //   {
-  //     image: "thomas-gartner.jpeg",
-  //     name: "Prof. Thomas Gartner",
-  //     title: "Technical University of Vienna, Austria",
-  //     company: "",
-  //     type: "Keynote",
-  //   },
-  //   {
-  //     image: "yanda-li.jpg",
-  //     name: "Prof. Yanda Li",
-  //     title: "Tsinghua University, China",
-  //     company: "",
-  //     type: "Keynote",
-  //   },
-
-    
-  //                               {
-  //   image: "jeannette-bohg.png",
-  //   name: "Jeannette Bohg",
-  //   title: "Stanford University, USA",
-  //   company: "",
-  //   type:"Speaker"
-  // },
 
 
-  //                           {
-  //   image: "michael-cafarella.webp",
-  //   name: "Michael Cafarella",
-  //   title: "Massachusetts Institute of Technology, USA",
-  //   company: "",
-  //   type:"Speaker"
-  // },
-  //   {
-  //     image: "katja-hose.jpeg",
-  //     name: "Katja Hose",
-  //     title: "Technical University of Vienna, Austria",
-  //     company: "",
-  //     type: "Speaker",
-  //   },
-  //   {
-  //     image: "petia-radeva.jpeg",
-  //     name: "Prof. Petia Radeva",
-  //     title: "Universitat de Barcelona, Spain",
-  //     company: "",
-  //     type: "Speaker",
-  //   },
-  //   {
-  //     image: "syed-kamrul-Islam.jpg",
-  //     name: "Prof. Syed Kamrul Islam",
-  //     title: "University of Missouri, USA",
-  //     company: "",
-  //     type: "Speaker",
-  //   },
-  //   {
-  //     image: "alvarado.jpeg",
-  //     name: "Alvarado, Noe",
-  //     title: "Universitat Politècnica de Catalunya, Spain",
-  //     company: "",
-  //     type: "Speaker",
-  //   },
-  //   {
-  //     image: "jan-rosell.jpeg",
-  //     name: "Prof. Jan Rosell",
-  //     title: "Shanghai Jiao Tong University, China",
-  //     company: "",
-  //     type: "Speaker",
-  //   },
-  //   {
-  //     image: "rohit-chadha.jpeg",
-  //     name: "Prof. Rohit Chadha",
-  //     title: "University of Missouri, USA",
-  //     company: "",
-  //     type: "Speaker",
-  //   },
-
-  // ];
-
-const speakers = [
+  const speakers = [
 
   {
     image: "yanda-li.jpg",
@@ -142,19 +251,6 @@ const speakers = [
 
 
 
-
-
-
-
-  // {
-  //   image: "jan-rosell.jpeg",
-  //   alt: "Dr. Jan Rosell – Speaker at AIMLR 2026 | Shanghai Jiao Tong University, China",
-  //   name: "Dr. f. Jan Rosell",
-  //   title: "Shanghai Jiao Tong University, China",
-  //   company: "",
-  //   type: "Speaker",
-  // },
-
   {
     image: "liu-yurong.jpeg",
     alt: "Yurong Liu – Speaker at AIMLR 2026 | Southeast University, China",
@@ -197,74 +293,60 @@ const speakers = [
 
 ];
 
-
-
   return (
-    <section
-      id="speakers-section"
-      className="container mx-auto px-4 md:px-6 py-10"
-    >
+    <section className="max-w-[1400px] mx-auto px-6 py-16">
       {/* Heading */}
-      <h2 className="text-2xl md:text-3xl font-bold text-[#00488B] mb-8 text-center">
-        AIMLR 2026 SPEAKERS
+      <h2 className="text-3xl font-semibold text-center mb-12 text-[#111]">
+        AIMLR 2026 Speakers
       </h2>
 
       {/* Speakers Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-6 mb-8">
-        {speakers.slice(0, 6).map((speaker, idx) => (
-          <div key={idx} className="text-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
+        {speakers.map((speaker, idx) => (
+          <div key={idx} className="relative group overflow-hidden">
+            {/* Image */}
             <img
               src={speaker.image}
               alt={speaker.alt}
-              className="w-24 h-24 md:w-32 md:h-32 object-cover rounded-full mx-auto mb-3"
+              className="w-[300px] h-[300px] object-cover transition-all duration-300 group-hover:scale-110 group-hover:grayscale"
             />
 
-            <h3 className="font-semibold text-sm md:text-base">
-              {speaker.name}
-            </h3>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
 
-            <p className="text-xs md:text-sm text-gray-600 leading-snug">
-              {speaker.title}
-            </p>
-
-            <p className="text-xs md:text-sm text-[#292e63] font-semibold mt-1">
-              {speaker.type}
-            </p>
-          </div>
-        ))}
-
-        {speakers.slice(6).map((speaker, idx) => (
-          <div key={`desktop-${idx}`} className="hidden md:block text-center">
-            <img
-              src={speaker.image}
-              alt={speaker.alt}
-              className="w-32 h-32 object-cover rounded-full mx-auto mb-3"
-            />
-
-            <h3 className="font-semibold">{speaker.name}</h3>
-
-            <p className="text-sm text-gray-600 leading-snug">
-              {speaker.title}
-            </p>
-
-            <p className="text-sm text-[#292e63] font-semibold mt-1">
-              {speaker.type}
-            </p>
+            {/* Text */}
+            <div className="absolute bottom-0 left-0 p-4 text-white">
+              <h3 className="text-sm font-semibold leading-tight">
+                {speaker.name}
+              </h3>
+              <p className="text-xs opacity-90">
+                {speaker.title}
+              </p>
+              {speaker.company && (
+                <p className="text-xs opacity-80">
+                  {speaker.company}
+                </p>
+              )}
+            </div>
           </div>
         ))}
       </div>
 
-      {/* View All Button (especially useful on mobile) */}
-      <div className="text-center">
+      {/* View All */}
+      <div className="text-center mt-14">
         <a
           href="/speakers"
-          className="inline-block bg-[#2e376c] hover:bg-[#1f254b] text-white font-bold py-3 px-8 transition-colors duration-300 rounded"
-          title="View all speakers at AIMLR 2026 Conference"
-          aria-label="View all speakers at AIMLR 2026 Conference"
+          className="inline-block text-white font-semibold tracking-wide px-8 py-4 text-sm  transition"
+          style={{ backgroundImage: "linear-gradient(90deg, rgba(201, 170, 99, 0.99) 0%, rgba(201, 170, 99, 0.94) 39%, rgba(201, 170, 99, 0.77) 100%, rgba(201, 170, 99, 0.95) 65%)" }}
         >
           View All Speakers
         </a>
+
+
+                  
       </div>
+
+      
     </section>
   );
 }

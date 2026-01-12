@@ -178,28 +178,52 @@ const ComboKeyDatesAndVenue: React.FC = () => {
   const abstractDeadlines = [{ date: "July 28–30, 2026" }];
   const finalPaperDeadlines = [{ date: "February 28, 2026" }];
 
+  // const cards = [
+  //   {
+  //     title: "Conference Dates",
+  //     bgColor: "#222222",
+  //     data: abstractDeadlines,
+  //   },
+  //   {
+  //     title: "Submission Deadline",
+  //     bgColor: "#0c3e61",
+  //     data: conferenceOpenings,
+  //   },
+  //   {
+  //     title: "Notification of Acceptance",
+  //     bgColor: "#0087b6",
+  //     data: registrationDeadlines,
+  //   },
+  //   {
+  //     title: "Final Paper Submission",
+  //     bgColor: "#4C6DA6",
+  //     data: finalPaperDeadlines,
+  //   },
+  // ];
+
   const cards = [
-    {
-      title: "Conference Dates",
-      bgColor: "#222222",
-      data: abstractDeadlines,
-    },
-    {
-      title: "Submission Deadline",
-      bgColor: "#0c3e61",
-      data: conferenceOpenings,
-    },
-    {
-      title: "Notification of Acceptance",
-      bgColor: "#0087b6",
-      data: registrationDeadlines,
-    },
-    {
-      title: "Final Paper Submission",
-      bgColor: "#4C6DA6",
-      data: finalPaperDeadlines,
-    },
-  ];
+  {
+    title: "Conference Dates",
+    bgColor: "#1F2327", // Primary charcoal
+    data: abstractDeadlines,
+  },
+  {
+    title: "Submission Deadline",
+    bgColor: "#2F3439", // Secondary dark gray
+    data: conferenceOpenings,
+  },
+  {
+    title: "Notification of Acceptance",
+    bgColor: "#c9aa63c8", // Premium gold highlight
+    data: registrationDeadlines,
+  },
+  {
+    title: "Final Paper Submission",
+    bgColor: "#6B6F74", // Muted neutral
+    data: finalPaperDeadlines,
+  },
+];
+
 
   return (
     <section>
@@ -208,7 +232,7 @@ const ComboKeyDatesAndVenue: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Page Header */}
         <div className="text-center mb-12 pt-6">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#2E376C]">
+          <h2 className="text-3xl sm:text-4xl font-bold text-black-900">
             Important Dates
           </h2>
           <p className="text-gray-600 max-w-xl mx-auto mt-2 text-sm sm:text-base">

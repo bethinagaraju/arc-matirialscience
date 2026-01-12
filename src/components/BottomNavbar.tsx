@@ -61,10 +61,9 @@ const BottomNavbar = ({ menuOpen, setMenuOpen, headerRef }: { menuOpen: boolean,
       {/* Desktop Navbar */}
       <nav
         className="hidden md:flex w-full h-[50px] flex items-center"
-        style={{
-          backgroundImage:
-            "linear-gradient(90deg, rgba(35,35,87,1) 0%, rgba(76,109,166,1) 100%)",
-        }}
+style={{
+  backgroundImage: "linear-gradient(180deg, #3F444A 0%, #3A3F45 100%)",
+}}
       >
         <div className="container mx-auto px-4 hidden md:flex items-center justify-center gap-6 text-white font-semibold text-[14px]">
           

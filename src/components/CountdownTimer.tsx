@@ -205,7 +205,7 @@ const CountdownTimer: React.FC = () => {
 // Sub-component for individual time blocks
 const TimeUnit = ({ value, label, isActive = false }: { value: string | number, label: string, isActive?: boolean }) => (
   <div className="flex flex-col items-center">
-    <div className={`text-4xl md:text-6xl font-extrabold tabular-nums ${isActive ? 'text-indigo-600' : 'text-slate-900'}`}>
+    <div className={`text-4xl md:text-6xl font-extrabold tabular-nums ${isActive ? 'text-[#c9ab63]' : 'text-slate-900'}`}>
       {value}
     </div>
     <span className="text-xs md:text-sm uppercase tracking-widest text-slate-500 mt-2 font-medium">

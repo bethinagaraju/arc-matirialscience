@@ -566,7 +566,10 @@ const FAQS = () => {
           <div key={index} className="border border-gray-200 shadow-sm overflow-hidden">
             {/* Header - Now just a static div, not a button */}
             <div
-              className="w-full flex justify-between items-center px-4 py-3 text-left font-bold text-white bg-[#3a4f8f]"
+              className="w-full flex justify-between items-center px-4 py-3 text-left font-bold text-white"
+              style={{
+              background: "linear-gradient(90deg,rgba(47, 52, 57, 0.92) 0%, rgba(58, 63, 67, 0.92) 39%, rgba(71, 75, 79, 0.5) 100%, rgba(24, 28, 31, 0.93) 65%)"
+              }}
             >
               <span className="uppercase tracking-wide">{item.title}</span>
             </div>

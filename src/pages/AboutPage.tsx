@@ -166,7 +166,7 @@ function AboutPage() {
      
   <main>
       {/* --- HERO SECTION --- */}
-      <div className="relative bg-indigo-900 text-white overflow-hidden">
+      {/* <div className="relative bg-indigo-900 text-white overflow-hidden">
       
         <div className="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
         
@@ -200,7 +200,7 @@ function AboutPage() {
 
 
 
-      </div>
+      </div> */}
 
       {/* --- ABOUT SECTION (Split Layout) --- */}
       <div className="py-20 bg-white">
@@ -276,7 +276,7 @@ function AboutPage() {
       
 
       {/* --- CTA SECTION --- */}
-      <div className="py-12 bg-gradient-to-r from-indigo-900 to-blue-900 text-white">
+      {/* <div className="py-12 bg-gradient-to-r from-indigo-900 to-blue-900 text-white">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-3xl font-bold mb-4">JOIN AIMLR 2026</h2>
           <p className="text-lg text-indigo-200 mb-8 max-w-2xl mx-auto">
@@ -288,7 +288,52 @@ function AboutPage() {
             </button>
           </Link>
         </div>
+      </div> */}
+
+
+      <section
+      className="py-6"
+      style={{
+        background:
+          "linear-gradient(90deg, #1c1f23ce 0%, #2f3439b3 60%, #24282d81 100%)",
+      }}
+    >
+      <div className="max-w-5xl mx-auto px-6 text-center text-white">
+
+        {/* Accent */}
+        <div className="w-16 h-[2px] bg-[#C9AB63] mx-auto mb-6" />
+
+        {/* Heading */}
+        <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+          Join AIMLR 2026
+        </h2>
+
+        {/* Description */}
+        <p className="text-[#FFFFFF] text-lg leading-relaxed max-w-2xl mx-auto mb-10">
+          Be part of a global academic forum dedicated to advancing research,
+          collaboration, and innovation in Artificial Intelligence,
+          Machine Learning, and Robotics.
+        </p>
+
+        {/* CTA */}
+        <Link to="/register">
+          <button
+            className="
+              inline-flex items-center justify-center
+              px-10 py-3
+              font-semibold tracking-wide
+              bg-[#C9AB63] text-[#1C1F23]
+              hover:bg-[#D4B46A]
+              transition-all duration-300
+              shadow-lg hover:shadow-xl
+            "
+          >
+            Register Now
+          </button>
+        </Link>
+
       </div>
+    </section>
       
 </main>
 

@@ -327,7 +327,7 @@ function HomePage() {
           
           <HeroSection />
           
-          <StatisticsSection />
+          {/* <StatisticsSection /> */}
           
           {/* Note: Ensure CompanyCarousel returns a <section> tag internally for SEO */}
           <CompanyCarousel />

@@ -294,10 +294,10 @@ function Mixcomponents() {
 ];
 
   return (
-    <section className="max-w-[1400px] mx-auto px-6 py-16">
+    <section className="max-w-[1400px] mx-auto px-6 py-16 pt-2">
       {/* Heading */}
       <h2 className="text-3xl font-semibold text-center mb-12 text-[#111]">
-        AIMLR 2026 Speakers
+        AIMLR 2026 SPEAKERS
       </h2>
 
       {/* Speakers Grid */}

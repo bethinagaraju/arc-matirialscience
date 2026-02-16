@@ -1104,7 +1104,7 @@ const committeeMembers = [
 function CommitteePage() {
   return (
     <section className="bg-white text-[#1F2327]">
-      <div className="max-w-6xl mx-auto px-6 py-16">
+      <div className="max-w-6xl mx-auto px-6 py-16 pb-2 mb-4">
 
         <Section title="Scientific Committee Members">
           <CommitteeList members={committeeMembers} />
@@ -1114,7 +1114,8 @@ function CommitteePage() {
         <div className="text-center mt-20">
           <Link
             to="/contact"
-            className="inline-flex items-center justify-center px-8 py-3 border border-[#C9AB63] text-[#1F2327] font-semibold tracking-wide hover:bg-[#C9AB63]/10 transition"
+            className="inline-flex items-center justify-center px-8 py-3 border border-[#C9AB63] text-[#1F2327] font-semibold tracking-wide hover:bg-[#C9AB63]/10 transition text-white"
+            style={{ backgroundImage: "linear-gradient(90deg, rgba(201, 170, 99, 0.99) 0%, rgba(201, 170, 99, 0.94) 39%, rgba(201, 170, 99, 0.77) 100%, rgba(201, 170, 99, 0.95) 65%)" }}
           >
             Apply to Join the Committee
           </Link>

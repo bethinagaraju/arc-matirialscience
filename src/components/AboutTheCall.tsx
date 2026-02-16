@@ -541,7 +541,7 @@ const AboutTheCall: React.FC = () => {
         />
       </Helmet>
 
-      <section className="bg-[#FAFAFA] py-8">
+      <section className="py-8">
         <div className="max-w-5xl mx-auto px-6 text-[#2F3439]">
 
           {/* Header */}
@@ -674,7 +674,7 @@ const AboutTheCall: React.FC = () => {
 
             <Link
               to="/AbstractSubmission"
-              className="inline-flex items-center justify-center gap-2 px-10 py-4 border border-[#2F3439] text-[#2F3439] font-semibold hover:bg-[#2F3439] hover:text-white transition"
+              className="inline-flex items-center justify-center gap-2 px-10 py-4 border border-[#C9AB63] text-[#1C1F23] font-semibold hover:bg-[#C9AB63] hover:text-black transition"
             >
               Abstract Submission
             </Link>

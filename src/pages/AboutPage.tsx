@@ -237,7 +237,7 @@ function AboutPage() {
             
             {/* Text Side */}
             <div className="lg:w-1/2">
-              <h2 className="text-3xl font-bold mb-6 text-gray-900 border-l-4 border-blue-600 pl-4">
+              <h2 className="text-3xl font-bold mb-6 text-gray-900 border-l-4 border-[#c9ab63] pl-4">
                 Shaping the Intelligent Era
               </h2>
               <p className="text-gray-600 mb-8 leading-relaxed">

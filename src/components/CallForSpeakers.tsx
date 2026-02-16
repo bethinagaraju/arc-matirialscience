@@ -213,7 +213,7 @@ const List = ({ items }: { items: string[] }) => (
 
 const CallForSpeakers: React.FC = () => {
   return (
-    <section className="bg-[#FAFAFA] py-8">
+    <section className="py-8">
       <div className="max-w-5xl mx-auto px-6 text-[#2A2E33]">
 
         {/* Header */}

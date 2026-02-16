@@ -557,7 +557,7 @@ const Card = ({ title, description }: CardItem) => (
       <h3 className="text-3xl font-semibold text-white mb-4">
         {title}
       </h3>
-      <p className="text-sm text-[#D1D5D8] leading-relaxed max-w-md">
+      <p className="text-base text-[#E0E4E7] leading-relaxed max-w-md">
         {description}
       </p>
     </div>
@@ -584,7 +584,7 @@ const WhyAttendNew: React.FC = () => {
       <div className="max-w-[1400px] mx-auto">
 
         {/* Section Title */}
-        <h2 className="text-4xl font-semibold text-[#2F3439] mb-12">
+        <h2 className="text-3xl uppercase font-semibold text-[#2F3439] mb-12">
           Why Attend at AIMLR 2026
         </h2>
 

@@ -85,7 +85,7 @@ const CTARegisterAbstract: React.FC = () => {
     >
       <div className="max-w-6xl mx-auto">
 
-        <div className="bg-[#3F444A] px-8 py-8 md:px-14 md:py-8 flex flex-col lg:flex-row items-center gap-10">
+        <div className="px-8 py-8 md:px-14 md:py-8 flex flex-col lg:flex-row items-center gap-10" style={{ background: "linear-gradient(90deg, rgba(63, 68, 74, 1) 0%, rgba(63, 68, 74, 0.83) 49%, rgba(63, 68, 74, 0.56) 99%)" }}>
 
           {/* Text Block */}
           <div className="flex-1 text-center lg:text-left">

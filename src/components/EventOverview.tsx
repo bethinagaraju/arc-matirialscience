@@ -9,7 +9,7 @@ const EventOverview = () => {
       id: 1,
       imageUrl: "ilias-photo.png",
       
-      quote: "RoboticsWorldSummit.com for the World Summit and Expo on Robotics, AI, and Machine Learning (ROBOTICS-2026), I am excited to participate in this prestigious event, which brings together global leaders to address the latest advancements and challenges in AI, machine learning, and robotics. I believe this conference offers a unique platform for knowledge sharing, collaboration, and driving innovation in the field of AI and robotics.",
+      quote: "RoboticsWorldSummit.com for the World Summit and Expo on Robotics, AI, and Machine Learning (Pharma Tech-2026), I am excited to participate in this prestigious event, which brings together global leaders to address the latest advancements and challenges in AI, machine learning, and robotics. I believe this conference offers a unique platform for knowledge sharing, collaboration, and driving innovation in the field of AI and robotics.",
       name: "DR. ROGER ACHKAR",
       title: "General Manager\nPath Robotics",
       companyLogoUrl: "Untitled-path.png",
@@ -17,7 +17,7 @@ const EventOverview = () => {
     {
       id: 2,
       imageUrl: "roger-achkar-photo-mar-2025-crop.jpg",
-      quote: "GWCN is proud to support the World Conference on Robotics, AI, and Machine Learning (ROBOTICS-2026), a prestigious event uniting leaders to tackle AI and robotics challenges. At GWCN, we advance technological innovation and believe this conference offers an invaluable platform for knowledge sharing, collaboration, and intelligent automation. We're excited for the impactful discussions and solutions ahead, and look forward to contributing to this transformative dialogue.",
+      quote: "GWCN is proud to support the World Conference on Robotics, AI, and Machine Learning (Pharma Tech-2026), a prestigious event uniting leaders to tackle AI and robotics challenges. At GWCN, we advance technological innovation and believe this conference offers an invaluable platform for knowledge sharing, collaboration, and intelligent automation. We're excited for the impactful discussions and solutions ahead, and look forward to contributing to this transformative dialogue.",
       name: "Dr. Roger Achkar",
       title: "Founder\nkodiak-robotics",
       companyLogoUrl: "kodik.png",

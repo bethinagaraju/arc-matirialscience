@@ -148,7 +148,7 @@
 // //       </h1> */}
 
 // //       <h2 className="text-3xl font-bold text-[#00488B] mb-6 text-center">
-// //             WHO'S PARTICIPATING IN AIMLR 2026 CONFERENCE
+// //             WHO'S PARTICIPATING IN PharmaTech 2026 CONFERENCE
 // //       </h2>
       
 // //       {/* Top Row */}
@@ -316,7 +316,7 @@
 
 //         {/* Title */}
 //         <h2 className="text-3xl font-semibold text-center text-[#111]">
-//           WHO’S PARTICIPATING IN AIMLR 2026
+//           WHO’S PARTICIPATING IN PharmaTech 2026
 //         </h2>
 
 //         {/* Top Row */}
@@ -493,7 +493,7 @@ export default function Dashboard() {
 
         {/* Title */}
         <h2 className="text-3xl font-semibold text-center text-[#111]">
-          WHO’S PARTICIPATING IN AIMLR 2026
+          WHO’S PARTICIPATING IN PharmaTech 2026
         </h2>
 
         {/* Top Row */}

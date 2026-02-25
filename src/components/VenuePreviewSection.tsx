@@ -16,7 +16,7 @@
 // //         </h2>
 
 // //         <p className="text-gray-600 max-w-2xl mx-auto mb-10">
-// //           Join us in beautiful Rome for AIMLR 2026 — explore venue details, hotel options,
+// //           Join us in beautiful Rome for PharmaTech 2026 — explore venue details, hotel options,
 // //           travel routes, and local attractions.
 // //         </p>
 
@@ -86,7 +86,7 @@
 //         </h2>
 
 //         <p className="text-gray-600 text-sm md:text-base max-w-xl mx-auto mb-6 leading-relaxed">
-//           Experience Rome while attending AIMLR 2026 — discover venue location,
+//           Experience Rome while attending PharmaTech 2026 — discover venue location,
 //           travel guidance, and accommodation options.
 //         </p>
 
@@ -145,7 +145,7 @@ const VenuePreviewSection = () => {
         </h2>
 
         <p className="text-gray-600 text-base md:text-lg max-w-3xl mx-auto mb-10 leading-relaxed">
-          Immerse yourself in the timeless beauty of Rome during AIMLR 2026. Explore comprehensive venue details, seamless travel arrangements, luxurious accommodation options, and discover the rich cultural attractions that surround our conference location.
+          Immerse yourself in the timeless beauty of Rome during PharmaTech 2026. Explore comprehensive venue details, seamless travel arrangements, luxurious accommodation options, and discover the rich cultural attractions that surround our conference location.
         </p>
 
         {/* Expanded Card */}
@@ -189,8 +189,8 @@ const VenuePreviewSection = () => {
           <Link
             to="/venue-travel"
             className="inline-flex items-center gap-3 bg-indigo-600 text-white px-10 py-4 hover:bg-indigo-700 transition-all duration-300 text-lg md:text-xl whitespace-nowrap rounded-lg shadow-lg hover:shadow-xl"
-            title="View detailed venue and travel information for AIMLR 2026 Conference in Rome"
-            aria-label="View detailed venue and travel information for AIMLR 2026 Conference in Rome"
+            title="View detailed venue and travel information for PharmaTech 2026 Conference in Rome"
+            aria-label="View detailed venue and travel information for PharmaTech 2026 Conference in Rome"
           >
             View Venue Details
             <ArrowRight className="w-6 h-6"/>

@@ -106,26 +106,26 @@ function AboutPage() {
   return (
     <>
     <Helmet>
-        <title>About AIMLR 2026 | AI, ML & Robotics Conference Rome</title>
+        <title>About PharmaTech 2026 | AI, ML & Robotics Conference Rome</title>
         
         <meta 
           name="description" 
-          content="Learn about AIMLR 2026, the premier International Conference on Artificial Intelligence, Machine Learning & Robotics in Rome. Discover our mission, vision, and global impact." 
+          content="Learn about PharmaTech 2026, the premier International Conference on Artificial Intelligence, Machine Learning & Robotics in Rome. Discover our mission, vision, and global impact." 
         />
         
         <meta 
           name="keywords" 
-          content="About AIMLR, AI Conference Mission, Robotics Conference Vision, AI Summit Rome, Machine Learning Event Goals, Future of AI" 
+          content="About PharmaTech, AI Conference Mission, Robotics Conference Vision, AI Summit Rome, Machine Learning Event Goals, Future of AI" 
         />
 
         <link rel="canonical" href="https://roboticsaisummit.com/about" />
         
         {/* Robots & Author */}
         <meta name="robots" content="index, follow, max-image-preview:large" />
-        <meta name="author" content="AIMLR Organizing Committee" />
+        <meta name="author" content="PharmaTech Organizing Committee" />
 
         {/* Open Graph / Facebook */}
-        <meta property="og:title" content="About AIMLR 2026 - The Future of AI & Robotics" />
+        <meta property="og:title" content="About PharmaTech 2026 - The Future of AI & Robotics" />
         <meta property="og:description" content="Join us in Rome, July 2026. Uniting global minds for intelligent, sustainable innovation in AI and Robotics." />
         <meta property="og:url" content="https://roboticsaisummit.com/about" />
         <meta property="og:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
@@ -133,7 +133,7 @@ function AboutPage() {
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="About AIMLR 2026 | Rome Conference" />
+        <meta name="twitter:title" content="About PharmaTech 2026 | Rome Conference" />
         <meta name="twitter:description" content="Discover the mission and vision of the 3rd Global Conference on AI, ML & Robotics." />
         <meta name="twitter:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
 
@@ -143,7 +143,7 @@ function AboutPage() {
             {
               "@context": "https://schema.org",
               "@type": "Organization",
-              "name": "AIMLR 2026",
+              "name": "PharmaTech 2026",
               "url": "https://roboticsaisummit.com",
               "logo": "https://roboticsaisummit.com/aimllogo.jpg",
               "description": "The International Conference on Artificial Intelligence, Machine Learning, and Robotics.",
@@ -211,8 +211,8 @@ function AboutPage() {
 
             {/* <div className="lg:w-1/2 relative">
               <video 
-              src="aimlr-2026-video.mp4" 
-              alt="AIMLR 2026 Video" 
+              src="PharmaTech-2026-video.mp4" 
+              alt="PharmaTech 2026 Video" 
               className="relative shadow-2xl w-full object-cover h-[400px] rounded-2xl"
               controls
               autoPlay
@@ -223,14 +223,14 @@ function AboutPage() {
 
             <div className="lg:w-1/2 relative overflow-hidden">
   <video
-    src="aimlr-2026-video.mp4"
+    src="PharmaTech-2026-video.mp4"
     className="w-full h-[320px] object-cover aspect-video"
     autoPlay
     muted
     loop
     playsInline
     controls
-    poster="/aimlr-2026-video-poster.jpg"
+    poster="/PharmaTech-2026-video-poster.jpg"
   />
 </div>
 
@@ -241,7 +241,7 @@ function AboutPage() {
                 Shaping the Intelligent Era
               </h2>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                The International Conference on Artificial Intelligence, Machine Learning, and Robotics (AIMLR 2026) provides a global forum for researchers, academics, and industry professionals to share ideas, present research, and discuss recent advancements in intelligent systems.
+                The International Conference on Artificial Intelligence, Machine Learning, and Robotics (PharmaTech 2026) provides a global forum for researchers, academics, and industry professionals to share ideas, present research, and discuss recent advancements in intelligent systems.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
                 The conference encourages knowledge exchange across theoretical research, applied innovations, and interdisciplinary collaboration, supporting the development of responsible and impactful AI and robotics technologies.
@@ -278,7 +278,7 @@ function AboutPage() {
       {/* --- CTA SECTION --- */}
       {/* <div className="py-12 bg-gradient-to-r from-indigo-900 to-blue-900 text-white">
         <div className="container mx-auto px-6 text-center">
-          <h2 className="text-3xl font-bold mb-4">JOIN AIMLR 2026</h2>
+          <h2 className="text-3xl font-bold mb-4">JOIN PharmaTech 2026</h2>
           <p className="text-lg text-indigo-200 mb-8 max-w-2xl mx-auto">
             Participate in an international academic forum dedicated to AI, Machine Learning, and Robotics.
           </p>
@@ -305,7 +305,7 @@ function AboutPage() {
 
         {/* Heading */}
         <h2 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
-          Join AIMLR 2026
+          Join PharmaTech 2026
         </h2>
 
         {/* Description */}

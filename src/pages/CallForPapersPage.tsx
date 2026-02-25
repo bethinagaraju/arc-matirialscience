@@ -13,13 +13,13 @@ const CallForPapersPage: React.FC = () => {
       <title>Call for Abstracts | AI, ML & Robotics Conference 2026 Rome</title>
       <meta 
         name="description" 
-        content="Submit your abstract for AIMLR 2026. Join global researchers in AI, Machine Learning & Robotics in Rome, July 28-30. Deadline: Jan 30, 2026." 
+        content="Submit your abstract for PharmaTech 2026. Join global researchers in AI, Machine Learning & Robotics in Rome, July 28-30. Deadline: Jan 30, 2026." 
       />
 
       {/* 2. Targeted Keywords for Research Submission */}
       <meta 
         name="keywords" 
-        content="Call for Abstracts AI, Submit Paper Robotics Conference, AIMLR Abstract Submission, AI Research Call for Papers, Rome Conference Submission, Machine Learning Abstract" 
+        content="Call for Abstracts AI, Submit Paper Robotics Conference, PharmaTech Abstract Submission, AI Research Call for Papers, Rome Conference Submission, Machine Learning Abstract" 
       />
 
       {/* 3. Canonical Link (Prevents duplicate content issues) */}
@@ -27,19 +27,19 @@ const CallForPapersPage: React.FC = () => {
 
       {/* 4. Robots & Authorship */}
       <meta name="robots" content="index, follow, max-image-preview:large" />
-      <meta name="author" content="AIMLR Organizing Committee" />
+      <meta name="author" content="PharmaTech Organizing Committee" />
       <meta name="publisher" content="Robotics & AI Summit" />
 
       {/* 5. Open Graph (Facebook/LinkedIn Sharing) */}
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://roboticsaisummit.com/call-for-abstract" />
-      <meta property="og:title" content="Call for Abstracts - AIMLR 2026 Rome" />
+      <meta property="og:title" content="Call for Abstracts - PharmaTech 2026 Rome" />
       <meta property="og:description" content="We invite researchers to submit abstracts for the 3rd Global Conference on AI, ML & Robotics. Share your work with international experts." />
       <meta property="og:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
 
       {/* 6. Twitter Card */}
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:title" content="Call for Abstracts | AIMLR 2026" />
+      <meta name="twitter:title" content="Call for Abstracts | PharmaTech 2026" />
       <meta name="twitter:description" content="Submit your research for the premier AI, ML & Robotics conference in Rome." />
       <meta name="twitter:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
     </Helmet>

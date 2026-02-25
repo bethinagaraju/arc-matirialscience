@@ -7,8 +7,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ConferenceProvider } from './contexts/ConferenceContext';
 import HomePage from './components/HomePage';
-// import BiotechAgenda from './components/BiotechAgenda';
 import AbstractSubmission from './components/AbstractSubmission';
 import RegisterPage from './pages/RegisterPage';
 import AbstractSubmissionPage from './pages/AbstractSubmissionPage';
@@ -48,6 +48,7 @@ import CallForPostersPage from './pages/CallForPostersPage';
 import CallForSpeakersPage from './pages/CallForSpeakersPage';
 import CallForReviewersPage from './pages/CallForReviewersPage';
 import WhatsAppButton from './components/WhatsAppButton';
+import SpeakerDetailPage from './pages/SpeakerDetailPage';
 
 function App() {
   const [showModal, setShowModal] = useState(false);
@@ -91,61 +92,65 @@ function App() {
   }, []);
 
   return (
-    <Router>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        {/* <Route path="/register" element={<RegisterPage />} /> */}
-        <Route path="/register" element={<RegisterPasses />} />
+    <ConferenceProvider>
+      <Router>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          {/* <Route path="/register" element={<RegisterPage />} /> */}
+          <Route path="/register" element={<RegisterPasses />} />
 
-        <Route path='/AbstractSubmission' element={<AbstractSubmissionPage />} />
-        <Route path="/payment-success" element={<PaymentSuccess />} />
-        <Route path='/thankyou' element={<ThankyouPage />} />
-        <Route path='/terms-and-conditions' element={<TermsAndConditionsPage />} />
-
-
-        <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
-        <Route path='/cookie-policy' element={<CookiePolicyPage />} />
-
-        {/* <Route path="/agenda" element={<BiotechAgenda />} /> */}
-        <Route path="/speakers" element={<SpeakersPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        {/* <Route path="/committee" element={<CommitteePage />} /> */}
-        {/* <Route path="/past-conferences" element={<PastConferencesPage />} /> */}
-
-        <Route path="/call-for-papers" element={<CallForPapersPage />} />
-        <Route path="/call-for-posters" element={<CallForPostersPage />} />
-        <Route path="/call-for-speakers" element={<CallForSpeakersPage />} />
-        <Route path="/call-for-reviewers" element={<CallForReviewersPage />} />
-
-      
-        
-
-        <Route path="/contact" element={<ContactPage />} />
-        <Route path='/sessions' element={<ScrollbarPage />} />
-        <Route path='/venue' element={<ScrollVenuePage />} />
+          <Route path='/AbstractSubmission' element={<AbstractSubmissionPage />} />
+          <Route path="/payment-success" element={<PaymentSuccess />} />
+          <Route path='/thankyou' element={<ThankyouPage />} />
+          <Route path='/terms-and-conditions' element={<TermsAndConditionsPage />} />
 
 
-        <Route path='/guidelines' element={<ScrollGuidelines />} />
+          <Route path='/privacy-policy' element={<PrivacyPolicyPage />} />
+          <Route path='/cookie-policy' element={<CookiePolicyPage />} />
+
+          {/* <Route path="/agenda" element={<BiotechAgenda />} /> */}
+          <Route path="/speakers" element={<SpeakersPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          {/* <Route path="/committee" element={<CommitteePage />} /> */}
+          {/* <Route path="/past-conferences" element={<PastConferencesPage />} /> */}
+
+          <Route path="/call-for-papers" element={<CallForPapersPage />} />
+          <Route path="/call-for-posters" element={<CallForPostersPage />} />
+          <Route path="/call-for-speakers" element={<CallForSpeakersPage />} />
+          <Route path="/call-for-reviewers" element={<CallForReviewersPage />} />
 
         
-        <Route path='/faq' element={<ScrollFaq />} />
+          
 
-        <Route path='/committee' element={<ScrollCommiteePage />} />
-        <Route path='/schedule' element={<ScrollSchedule />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path='/sessions' element={<ScrollbarPage />} />
+          <Route path='/venue' element={<ScrollVenuePage />} />
+
+
+          <Route path='/guidelines' element={<ScrollGuidelines />} />
+
+          
+          <Route path='/faq' element={<ScrollFaq />} />
+
+          <Route path='/committee' element={<ScrollCommiteePage />} />
+          <Route path='/schedule' element={<ScrollSchedule />} />
 
 
 
-        {/* <Route path='/poster' element={<Posterpage />} /> */}
-        <Route path='/important-dates' element={<ComboKeyDatesAndVenue />} />
-        <Route path='/call-for-abstract' element={<AboutTheCallPage />} />
-        {/* <Route path='/call-for-papers' element={<CallForPapersPage />} /> */}
+          {/* <Route path='/poster' element={<Posterpage />} /> */}
+          <Route path='/important-dates' element={<ComboKeyDatesAndVenue />} />
+          <Route path='/call-for-abstract' element={<AboutTheCallPage />} />
+          {/* <Route path='/call-for-papers' element={<CallForPapersPage />} /> */}
 
-      </Routes>
+          <Route path='/speakers/:id' element={<SpeakerDetailPage />} />
 
-      <WhatsAppButton />
-      {/* <HurryUpModal isOpen={showModal} onClose={() => setShowModal(false)} /> */}
-    </Router>
+        </Routes>
+
+        <WhatsAppButton />
+        {/* <HurryUpModal isOpen={showModal} onClose={() => setShowModal(false)} /> */}
+      </Router>
+    </ConferenceProvider>
   );
 }
 

@@ -50,28 +50,28 @@
 
 // <Helmet>
 //   {/* 1. Primary SEO Tags */}
-//   <title>AIMLR 2026 | 3rd International Conference on AI, ML & Robotics | Rome</title>
+//   <title>PharmaTech 2026 | 3rd International Conference on AI, ML & Robotics | Rome</title>
 //   <meta 
 //     name="description" 
-//     content="Join the premier AI & Robotics Conference (AIMLR 2026) in Rome, Italy, July 28–30, 2026. A hybrid global forum for researchers and industry leaders in Artificial Intelligence and Machine Learning. Register or submit abstracts now." 
+//     content="Join the premier AI & Robotics Conference (PharmaTech 2026) in Rome, Italy, July 28–30, 2026. A hybrid global forum for researchers and industry leaders in Artificial Intelligence and Machine Learning. Register or submit abstracts now." 
 //   />
 //   <meta 
 //     name="keywords" 
-//     content="AIMLR 2026, AI Conference Rome, Robotics Conference Italy, Machine Learning Summit, Artificial Intelligence Research, Hybrid Conference 2026, Call for Papers AI" 
+//     content="PharmaTech 2026, AI Conference Rome, Robotics Conference Italy, Machine Learning Summit, Artificial Intelligence Research, Hybrid Conference 2026, Call for Papers AI" 
 //   />
 //   <link rel="canonical" href="https://roboticsaisummit.com/" />
 
 //   {/* 2. Open Graph / Facebook (Critical for social sharing) */}
 //   <meta property="og:type" content="website" />
 //   <meta property="og:url" content="https://roboticsaisummit.com/" />
-//   <meta property="og:title" content="AIMLR 2026 | International AI, ML & Robotics Conference" />
+//   <meta property="og:title" content="PharmaTech 2026 | International AI, ML & Robotics Conference" />
 //   <meta property="og:description" content="Join us in Rome (July 28-30, 2026) for the 3rd Global Conference on AI & Robotics. Submit your abstract or register for the hybrid event today." />
 //   <meta property="og:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
-//   <meta property="og:site_name" content="AIMLR 2026" />
+//   <meta property="og:site_name" content="PharmaTech 2026" />
 
 //   {/* 3. Twitter Cards (Optimized for Twitter/X sharing) */}
 //   <meta name="twitter:card" content="summary_large_image" />
-//   <meta name="twitter:title" content="AIMLR 2026 | AI & Robotics Conference Rome" />
+//   <meta name="twitter:title" content="PharmaTech 2026 | AI & Robotics Conference Rome" />
 //   <meta name="twitter:description" content="The premier global platform for AI, ML, and robotics collaboration. July 2026 in Rome, Italy." />
 //   <meta name="twitter:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
 
@@ -81,7 +81,7 @@
 //       {
 //         "@context": "https://schema.org",
 //         "@type": "Event",
-//         "name": "3rd Global Conference on AI, ML & Robotics (AIMLR 2026)",
+//         "name": "3rd Global Conference on AI, ML & Robotics (PharmaTech 2026)",
 //         "startDate": "2026-07-28T09:00",
 //         "endDate": "2026-07-30T18:00",
 //         "eventStatus": "https://schema.org/EventScheduled",
@@ -100,7 +100,7 @@
 //         "image": [
 //           "https://roboticsaisummit.com/aimllogo.jpg"
 //         ],
-//         "description": "The International Conference on Artificial Intelligence, Machine Learning & Robotics (AIMLR 2026) brings together researchers and industry professionals.",
+//         "description": "The International Conference on Artificial Intelligence, Machine Learning & Robotics (PharmaTech 2026) brings together researchers and industry professionals.",
 //         "offers": {
 //           "@type": "Offer",
 //           "url": "https://roboticsaisummit.com/register",
@@ -111,7 +111,7 @@
 //         },
 //         "organizer": {
 //           "@type": "Organization",
-//           "name": "AIMLR Organizing Committee",
+//           "name": "PharmaTech Organizing Committee",
 //           "url": "https://roboticsaisummit.com"
 //         }
 //       }
@@ -228,14 +228,14 @@ function HomePage() {
       <Helmet>
         {/* ✅ 1. KEYWORD-FIRST TITLE: Optimized for "AI Conference" searches */}
         <title>
-          Artificial Intelligence, Machine Learning & Robotics Conference 2026 | AIMLR Rome
+          Artificial Intelligence, Machine Learning & Robotics Conference 2026 | PharmaTech Rome
         </title>
 
 
 
         <meta 
           name="description" 
-  content="Join the premier AI, Machine Learning & Robotics Conference (AIMLR 2026) in Rome, July 28-30. Submit abstracts and register for the global hybrid summit." 
+  content="Join the premier AI, Machine Learning & Robotics Conference (PharmaTech 2026) in Rome, July 28-30. Submit abstracts and register for the global hybrid summit." 
 />
 
         {/* ✅ 3. BROAD KEYWORDS: Matches what users actually type */}
@@ -255,10 +255,10 @@ function HomePage() {
         {/* 4. Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://roboticsaisummit.com/" />
-        <meta property="og:title" content="AI, Machine Learning & Robotics Conference 2026 (AIMLR)" />
+        <meta property="og:title" content="AI, Machine Learning & Robotics Conference 2026 (PharmaTech)" />
         <meta property="og:description" content="Join the leading global AI and Robotics Conference in Rome. Submit your abstract or register for the 2026 summit." />
         <meta property="og:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
-        <meta property="og:site_name" content="AIMLR 2026" />
+        <meta property="og:site_name" content="PharmaTech 2026" />
 
         {/* 5. Twitter Cards */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -267,7 +267,7 @@ function HomePage() {
         <meta name="twitter:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
 
         <meta name="robots" content="index, follow, max-image-preview:large" />
-        <meta name="author" content="AIMLR Organizing Committee" />
+        <meta name="author" content="PharmaTech Organizing Committee" />
         <meta name="publisher" content="Robotics & AI Summit" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="7 days" />
@@ -278,7 +278,7 @@ function HomePage() {
             {
               "@context": "https://schema.org",
               "@type": "Event",
-              "name": "AI, Machine Learning & Robotics Conference 2026 (AIMLR)",
+              "name": "AI, Machine Learning & Robotics Conference 2026 (PharmaTech)",
               "startDate": "2026-07-28T09:00",
               "endDate": "2026-07-30T18:00",
               "eventStatus": "https://schema.org/EventScheduled",
@@ -308,7 +308,7 @@ function HomePage() {
               },
               "organizer": {
                 "@type": "Organization",
-                "name": "AIMLR Organizing Committee",
+                "name": "PharmaTech Organizing Committee",
                 "url": "https://roboticsaisummit.com"
               }
             }

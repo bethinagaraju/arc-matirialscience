@@ -17,7 +17,7 @@
 //           {/* Left text */}
 //           <div className="flex-1 text-center md:text-left">
 //             <h2 className="text-2xl md:text-3xl font-bold mb-2" style={{ fontFamily: "'Manrope', sans-serif" }}>
-//               Ready to join AIMLR 2026?
+//               Ready to join PharmaTech 2026?
 //             </h2>
 //             <p className="text-indigo-100 text-sm md:text-base max-w-2xl">
 //               Secure your spot today or submit your research — two quick actions to become part of the global AI, ML & Robotics community.
@@ -26,27 +26,27 @@
 
 //           {/* Buttons */}
 //           <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-4">
-//             <Link to="/register" className="w-full sm:w-auto" title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference">
+//             <Link to="/register" className="w-full sm:w-auto" title="Register for PharmaTech 2026 Conference" aria-label="Register for PharmaTech 2026 Conference">
 //               <motion.button
 //                 whileHover={{ scale: 1.02 }}
 //                 whileTap={{ scale: 0.98 }}
 //                 className="flex items-center gap-3 justify-center px-5 py-3 font-semibold bg-white text-indigo-800 shadow hover:shadow-md transition-all w-full sm:w-auto"
-//                 title="Register for AIMLR 2026 Conference"
-//                 aria-label="Register for AIMLR 2026 Conference"
+//                 title="Register for PharmaTech 2026 Conference"
+//                 aria-label="Register for PharmaTech 2026 Conference"
 //               >
-//                 <UserPlus className="w-5 h-5 text-indigo-700" title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference" />
+//                 <UserPlus className="w-5 h-5 text-indigo-700" title="Register for PharmaTech 2026 Conference" aria-label="Register for PharmaTech 2026 Conference" />
 //                 <span>Register</span>
-//                 <ArrowRight className="w-4 h-4 text-indigo-700 ml-1" title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference" />
+//                 <ArrowRight className="w-4 h-4 text-indigo-700 ml-1" title="Register for PharmaTech 2026 Conference" aria-label="Register for PharmaTech 2026 Conference" />
 //               </motion.button>
 //             </Link>
 
-//             <Link to="/AbstractSubmission" className="w-full sm:w-auto" title="Submit Abstract for AIMLR 2026 Conference" aria-label="Submit Abstract for AIMLR 2026 Conference">
+//             <Link to="/AbstractSubmission" className="w-full sm:w-auto" title="Submit Abstract for PharmaTech 2026 Conference" aria-label="Submit Abstract for PharmaTech 2026 Conference">
 //               <motion.button
 //                 whileHover={{ scale: 1.02 }}
 //                 whileTap={{ scale: 0.98 }}
 //                 className="flex items-center gap-3 justify-center px-5 py-3 font-semibold bg-transparent border border-white text-white hover:bg-white/10 transition-all w-full sm:w-auto"
-//                 title="Submit Abstract for AIMLR 2026 Conference"
-//                 aria-label="Submit Abstract for AIMLR 2026 Conference"
+//                 title="Submit Abstract for PharmaTech 2026 Conference"
+//                 aria-label="Submit Abstract for PharmaTech 2026 Conference"
 //               >
 //                 <FileText className="w-5 h-5 text-white/90" />
 //                 <span>Abstract Submission</span>
@@ -90,13 +90,11 @@ const CTARegisterAbstract: React.FC = () => {
           {/* Text Block */}
           <div className="flex-1 text-center lg:text-left">
             <h2 className="text-3xl font-semibold text-white mb-4">
-              Ready to join AIMLR 2026?
+              Ready to Join PHARMATECH 2026?
             </h2>
 
             <p className="text-[#D1D5D8] text-lg max-w-xl">
-              Secure your place at AIMLR 2026 or submit your research and
-              contribute to the global discussion on Artificial Intelligence,
-              Machine Learning, and Robotics.
+              Secure your spot at one of the most influential pharmaceutical conferences of the year.
             </p>
           </div>
 
@@ -106,8 +104,8 @@ const CTARegisterAbstract: React.FC = () => {
             {/* Register */}
             <Link
               to="/register"
-              title="Register for AIMLR 2026 Conference"
-              aria-label="Register for AIMLR 2026 Conference"
+              title="Register for PharmaTech 2026 Conference"
+              aria-label="Register for PharmaTech 2026 Conference"
             >
               <motion.span
                 whileHover={{ y: -2 }}
@@ -131,8 +129,8 @@ const CTARegisterAbstract: React.FC = () => {
             {/* Abstract */}
             <Link
               to="/AbstractSubmission"
-              title="Submit Abstract for AIMLR 2026 Conference"
-              aria-label="Submit Abstract for AIMLR 2026 Conference"
+              title="Submit Abstract for PharmaTech 2026 Conference"
+              aria-label="Submit Abstract for PharmaTech 2026 Conference"
             >
               <motion.span
                 whileHover={{ y: -2 }}

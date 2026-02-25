@@ -58,7 +58,7 @@
 
 
 //           <h2 className="text-3xl font-bold text-[#00488B] mb-10 text-center">
-//             AIMLR 2026 CONFERENCE TOPICS
+//             PharmaTech 2026 CONFERENCE TOPICS
 //           </h2>
 
 //       {/* Grid including buttons */}
@@ -74,22 +74,22 @@
 //         ))}
 
 
-// <Link to="/AbstractSubmission" className="w-full md:w-auto" title="Submit Abstract for AIMLR 2026 Conference" aria-label="Submit Abstract for AIMLR 2026 Conference">
-//   <button className="p-4 w-full text-center font-semibold bg-[#053047] text-white hover:bg-[#07456a] transition" title="Submit Abstract for AIMLR 2026 Conference" aria-label="Submit Abstract for AIMLR 2026 Conference">
+// <Link to="/AbstractSubmission" className="w-full md:w-auto" title="Submit Abstract for PharmaTech 2026 Conference" aria-label="Submit Abstract for PharmaTech 2026 Conference">
+//   <button className="p-4 w-full text-center font-semibold bg-[#053047] text-white hover:bg-[#07456a] transition" title="Submit Abstract for PharmaTech 2026 Conference" aria-label="Submit Abstract for PharmaTech 2026 Conference">
 //     Submit Abstract
 //   </button>
 // </Link>
 
 // {/* Button 2 */}
-// <Link to="/sessions" className="w-full md:w-auto" title="View All Sessions at AIMLR 2026 Conference" aria-label="View All Sessions at AIMLR 2026 Conference">
-//   <button className="p-4 w-full text-center font-semibold border border-[#053047] bg-[#394a81] text-white hover:bg-[#2e3b6b] transition" title="View All Sessions at AIMLR 2026 Conference" aria-label="View All Sessions at AIMLR 2026 Conference">
+// <Link to="/sessions" className="w-full md:w-auto" title="View All Sessions at PharmaTech 2026 Conference" aria-label="View All Sessions at PharmaTech 2026 Conference">
+//   <button className="p-4 w-full text-center font-semibold border border-[#053047] bg-[#394a81] text-white hover:bg-[#2e3b6b] transition" title="View All Sessions at PharmaTech 2026 Conference" aria-label="View All Sessions at PharmaTech 2026 Conference">
 //     View All Sessions
 //   </button>
 // </Link>
 
 // {/* Button 3 */}
-// <Link to="/register" className="w-full md:w-auto" title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference">
-//   <button className="p-4 w-full text-center font-semibold bg-[#0282b8] text-white hover:bg-[#036a97] transition" title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference">
+// <Link to="/register" className="w-full md:w-auto" title="Register for PharmaTech 2026 Conference" aria-label="Register for PharmaTech 2026 Conference">
+//   <button className="p-4 w-full text-center font-semibold bg-[#0282b8] text-white hover:bg-[#036a97] transition" title="Register for PharmaTech 2026 Conference" aria-label="Register for PharmaTech 2026 Conference">
 //     Register
 //   </button>
 // </Link>
@@ -108,9 +108,12 @@
 
 
 import { Link } from "react-router-dom";
+import { useConference } from "../contexts/ConferenceContext";
 
 export default function ScientificSessions() {
-  const sessions = [
+  const { data, loading, error } = useConference();
+
+  const defaultSessions = [
     "Responsible & Ethical Artificial Intelligence",
     "Explainable AI (XAI) for Real-World Applications",
     "Generative AI and Large Language Models (LLMs)",
@@ -128,18 +131,36 @@ export default function ScientificSessions() {
     "AI-Powered Drones and Autonomous Vehicles",
   ];
 
+  const topics = (data?.topics?.map((t: any) => t.topicName) ?? defaultSessions).slice(0, 15);
+
+  if (loading) {
+    return (
+      <section className="bg-[#FFFFFF] py-20 px-6">
+        <div className="max-w-6xl mx-auto text-center">Loading topics...</div>
+      </section>
+    );
+  }
+
+  if (error) {
+    return (
+      <section className="bg-[#FFFFFF] py-20 px-6">
+        <div className="max-w-6xl mx-auto text-center text-red-600">Error loading topics: {error}</div>
+      </section>
+    );
+  }
+
   return (
     <section className="bg-[#FFFFFF] py-20 px-6">
       <div className="max-w-6xl mx-auto">
 
         {/* Heading */}
         <h2 className="text-3xl font-semibold text-[#111] mb-12 text-center">
-          AIMLR 2026 CONFERENCE TOPICS
+          PharmaTech 2026 CONFERENCE TOPICS
         </h2>
 
         {/* Topics Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-14">
-          {sessions.map((item, idx) => (
+          {topics.map((item, idx) => (
             <div
               key={idx}
               className="

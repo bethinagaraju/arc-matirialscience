@@ -17,7 +17,7 @@
 //       {/* Page Header */}
 //       <div className="mb-12 border-b-2 border-[#304278] pb-4">
 //         <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
-//           CALL FOR POSTERS – AIMLR 2026
+//           CALL FOR POSTERS – PharmaTech 2026
 //         </h2>
 //         <p className="mt-2 text-gray-500 text-lg">
 //           Submit your research and join the global conversation on AI, ML and Robotics.
@@ -141,8 +141,8 @@
 //         <Link
 //           to="/register"
 //           className="flex items-center justify-center gap-2 px-8 py-3 bg-[#304278] text-white font-semibold rounded hover:bg-[#304278] transition-colors"
-//           title="Register for the AIMLR 2026 Conference in Rome"
-//           aria-label="Register for the AIMLR 2026 Conference in Rome"
+//           title="Register for the PharmaTech 2026 Conference in Rome"
+//           aria-label="Register for the PharmaTech 2026 Conference in Rome"
 //         >
 //           Register Now <ArrowRight className="w-4 h-4" />
 //         </Link>
@@ -150,8 +150,8 @@
 //         <Link
 //           to="/AbstractSubmission"
 //           className="flex items-center justify-center gap-2 px-8 py-3 border-2 border-gray-200 text-gray-700 font-semibold rounded hover:border-[#0091b5] hover:text-[#0091b5] transition-colors"
-//           title="Submit your poster abstract for AIMLR 2026 Conference"
-//           aria-label="Submit your poster abstract for AIMLR 2026 Conference"
+//           title="Submit your poster abstract for PharmaTech 2026 Conference"
+//           aria-label="Submit your poster abstract for PharmaTech 2026 Conference"
 //         >
 //           Submit Poster Abstract
 //         </Link>
@@ -226,7 +226,7 @@ const CallForPosters: React.FC = () => {
         {/* Header */}
         <header className="mb-16">
           <h1 className="text-4xl font-bold text-[#1C1F23]">
-            Call for Posters – AIMLR 2026
+            Call for Posters – PharmaTech 2026
           </h1>
           <p className="mt-4 text-lg text-[#6B7280] max-w-3xl">
             Present early-stage research, innovative ideas, and preliminary

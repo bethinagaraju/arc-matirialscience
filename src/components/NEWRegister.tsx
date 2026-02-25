@@ -6435,6 +6435,7 @@ import axios from 'axios';
 import { FaSyncAlt } from 'react-icons/fa';
 import pricingData from "./pricing.json"; 
 import { countries } from './AbstractSubmission';
+import { useConference } from "../contexts/ConferenceContext";
 
 // ---------------- TYPES ----------------
 
@@ -6679,6 +6680,18 @@ const Style: React.FC = () => (
 // ---------------- COMPONENT ----------------
 
 const RegistrationPage: React.FC = () => {
+    const { data } = useConference();
+    const importantDates = data?.importantDates || [];
+
+    const getDateByType = (type: string) => {
+        const found = importantDates.find((d: any) => d.dateType === type);
+        return found ? found.date : "TBA";
+    };
+
+    const conferenceDates = getDateByType("Conference Dates");
+    const registrationDeadline = getDateByType("Registration Deadline") !== "TBA"
+        ? getDateByType("Registration Deadline")
+        : getDateByType("Early Bird Registration Closes");
     const [loading, setLoading] = useState(false);
     const [verifyingPayment, setVerifyingPayment] = useState(false); // New state for payment check
     const [price, setPrice] = useState(0);
@@ -6958,7 +6971,7 @@ const RegistrationPage: React.FC = () => {
                         </h2>
                         <div className="w-24 h-1 bg-black mx-auto mb-2"></div>
                         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                            Register for the AIMLR 2026
+                            Register for the PharmaTech 2026
                         </p>
                     </div>
 
@@ -6968,15 +6981,15 @@ const RegistrationPage: React.FC = () => {
                             <div className="info-section">
                                 <div className="info-item">
                                     <label>Conference Date</label>
-                                    <p>July 28–30, 2026</p>
+                                    <p>{conferenceDates}</p>
                                 </div>
                                 <div className="info-item">
                                     <label>Location</label>
-                                    <p>Crowne Plaza - St. Peter’s Rome, Italy</p>
+                                    <p>{data?.venues && data.venues.length > 0 ? data.venues[0].venue : 'Crowne Plaza - St. Peter’s Rome, Italy'}</p>
                                 </div>
                                 <div className="info-item">
                                     <label>Registration Deadline</label>
-                                    <p>July 10, 2026</p>
+                                    <p>{registrationDeadline}</p>
                                 </div>
                             </div>
 
@@ -7178,8 +7191,8 @@ const RegistrationPage: React.FC = () => {
 
                                     <div className="mt-4 p-3 bg-white border border-blue-200 rounded text-sm text-gray-700">
                                         <p className="font-medium text-gray-900 mb-1">Accommodation Details:</p>
-                                        <p>• Conference Date: July 28–30, 2026</p>
-                                        <p>• Location: Crowne Plaza Rome - St. Peter’s</p>
+                                        <p>• Conference Date: {conferenceDates}</p>
+                                        <p>• Location: {data?.venues && data.venues.length > 0 ? data.venues[0].venue : 'Crowne Plaza Rome - St. Peter’s'}</p>
                                         <p>• Selected: {formData.numberOfGuests} guest{formData.numberOfGuests > 1 ? 's' : ''} for {formData.numberOfNights} night{formData.numberOfNights > 1 ? 's' : ''}</p>
                                     </div>
                                 </div>

@@ -250,36 +250,36 @@ export default function QuickLinksSection() {
       </div> */}
 
         <div className="flex flex-col gap-2">
-  <Link to="/venue" title="Venue Details for AIMLR 2026 Conference" aria-label="Venue Details for AIMLR 2026 Conference">
+  <Link to="/venue" title="Venue Details for PharmaTech 2026 Conference" aria-label="Venue Details for PharmaTech 2026 Conference">
     <button 
       className="w-full bg-white text-black flex justify-between items-center px-5 py-3 text-base shadow-[0_4px_0_0_#b9c3cc] hover:bg-gray-100 transition"
-      title="Venue Details for AIMLR 2026 Conference"
-      aria-label="Venue Details for AIMLR 2026 Conference"
+      title="Venue Details for PharmaTech 2026 Conference"
+      aria-label="Venue Details for PharmaTech 2026 Conference"
     >
       <span className="font-semibold">Venue Details</span>
-      <FiArrowRight size={22} title="Venue Details for AIMLR 2026 Conference" aria-label="Venue Details for AIMLR 2026 Conference" />
+      <FiArrowRight size={22} title="Venue Details for PharmaTech 2026 Conference" aria-label="Venue Details for PharmaTech 2026 Conference" />
     </button>
   </Link>
 
-  <Link to="/register" title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference">
+  <Link to="/register" title="Register for PharmaTech 2026 Conference" aria-label="Register for PharmaTech 2026 Conference">
     <button 
       className="w-full bg-white text-black flex justify-between items-center px-5 py-3 text-base shadow-[0_4px_0_0_#b9c3cc] hover:bg-gray-100 transition"
-      title="Register for AIMLR 2026 Conference"
-      aria-label="Register for AIMLR 2026 Conference"
+      title="Register for PharmaTech 2026 Conference"
+      aria-label="Register for PharmaTech 2026 Conference"
     >
       <span className="font-semibold">Register Now</span>
-      <FiArrowRight size={22} title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference" />
+      <FiArrowRight size={22} title="Register for PharmaTech 2026 Conference" aria-label="Register for PharmaTech 2026 Conference" />
     </button>
   </Link>
 
-  <Link to="/speakers" title="Meet the Speakers at AIMLR 2026 Conference" aria-label="Meet the Speakers at AIMLR 2026 Conference">
+  <Link to="/speakers" title="Meet the Speakers at PharmaTech 2026 Conference" aria-label="Meet the Speakers at PharmaTech 2026 Conference">
     <button 
       className="w-full bg-white text-black flex justify-between items-center px-5 py-3 text-base shadow-[0_4px_0_0_#b9c3cc] hover:bg-gray-100 transition"
-      title="Meet the Speakers at AIMLR 2026 Conference"
-      aria-label="Meet the Speakers at AIMLR 2026 Conference"
+      title="Meet the Speakers at PharmaTech 2026 Conference"
+      aria-label="Meet the Speakers at PharmaTech 2026 Conference"
     >
       <span className="font-semibold">Our Speakers</span>
-      <FiArrowRight size={22} title="Meet the Speakers at AIMLR 2026 Conference" aria-label="Meet the Speakers at AIMLR 2026 Conference" />
+      <FiArrowRight size={22} title="Meet the Speakers at PharmaTech 2026 Conference" aria-label="Meet the Speakers at PharmaTech 2026 Conference" />
     </button>
   </Link>
 </div>

@@ -439,7 +439,7 @@ function VenueComponent() {
 
         {/* Description */}
         <p className="max-w-3xl text-[#6B6F74] leading-relaxed text-base">
-          The AIMLR 2026 Conference will be hosted at the Crowne Plaza Rome – St. Peter’s,
+          The PharmaTech 2026 Conference will be hosted at the Crowne Plaza Rome – St. Peter’s,
           a premium international conference venue offering modern meeting facilities,
           comfortable accommodations, and convenient access to central Rome.
         </p>

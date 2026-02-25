@@ -123,7 +123,7 @@
 //           {/* <h2 className="text-4xl font-bold">Participants Feedback</h2> */}
 
 //           <h2 className="text-3xl font-bold text-[#ffffff] mb-4 text-center">
-//             AIMLR 2025 PARTICIPANTS FEEDBACK
+//             PharmaTech 2025 PARTICIPANTS FEEDBACK
 //           </h2>
 //         </div>
 
@@ -209,76 +209,103 @@
 
 import React, { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { useConference } from "../contexts/ConferenceContext";
 
 interface Testimonial {
   id: number;
   name: string;
   title: string;
-  location: string;
+  location?: string;
   image: string;
   message: string;
 }
 
-const testimonials: Testimonial[] = [
+// Fallback testimonials (matches the JSON you provided)
+const fallbackTestimonialsRaw = [
   {
-    id: 1,
-    name: "Dr. Aisha Raman",
-    title: "Faculty Participant, Previous Edition",
-    location: "India",
-    image: "aisha-raman.jpeg",
-    message:
-      "The conference provided a structured platform for presenting research and engaging in constructive technical discussions with participants from different institutions.",
-  },
-  {
-    id: 2,
-    name: "Miguel Alvarez",
-    title: "Research Participant, Previous Edition",
-    location: "Spain",
-    image: "miguel-alvarez.jpeg",
-    message:
-      "The sessions were well organized and covered a broad range of topics in artificial intelligence, machine learning, and robotics.",
-  },
-  {
-    id: 3,
-    name: "Dr. Hana Sato",
-    title: "Poster Presenter, Previous Edition",
-    location: "Japan",
-    image: "hana-sato.jpeg",
-    message:
-      "I found the opportunity to present my work and receive feedback from peers to be valuable for improving my research.",
-  },
-  {
-    id: 4,
-    name: "Jonathan Miller",
-    title: "Conference Attendee, Previous Edition",
-    location: "USA",
-    image: "jonathan-miller.jpeg",
-    message:
-      "The conference created a professional environment for knowledge exchange and interdisciplinary interaction.",
-  },
-  {
-    id: 5,
+    id: 11,
+    imagePath:
+      "https://roboticsaisummit.com/uploads/speakersimages/1771929871677_uifaces-popular-avatar__8_-removebg-preview.png",
     name: "Martin Alvarez",
-    title: "PhD Scholar in AI & Robotics, University of Manchester",
-    location: "UK",
-    image: "martin-alvarez.jpeg",
-    message:
+    university: "PhD Scholar in AI & Robotics, University of Manchester",
+    description:
       "The hybrid format enabled effective participation and interaction with researchers despite geographical limitations.",
+    rating: 4,
+    conferencecode: "pharma",
   },
   {
-    id: 6,
+    id: 12,
+    imagePath:
+      "https://roboticsaisummit.com/uploads/speakersimages/1771929911692_RajaRamannaPic.jpg",
     name: "Hasan Yilmaz",
-    title: "PhD Scholar in AI & Robotics, University of Aberdeen",
-    location: "UK",
-    image: "hasan-yilmaz.jpeg",
-    message:
+    university: "PhD Scholar in AI & Robotics, University of Aberdeen",
+    description:
       "The discussions and networking opportunities contributed positively to research collaboration and idea sharing.",
+    rating: 5,
+    conferencecode: "pharma",
+  },
+  {
+    id: 13,
+    imagePath:
+      "https://roboticsaisummit.com/uploads/speakersimages/1771929945277_Homi_Jehangir_Bhabha_1960s.jpg",
+    name: "Dr. Aisha Raman",
+    university: "Faculty Participant, Previous Edition",
+    description:
+      "The conference provided a structured platform for presenting research and engaging in constructive technical discussions with participants from different institutions",
+    rating: 4,
+    conferencecode: "pharma",
+  },
+  {
+    id: 14,
+    imagePath:
+      "https://roboticsaisummit.com/uploads/speakersimages/1771929994622_uifaces-human-avatar__4_.jpg",
+    name: "Miguel Alvarez",
+    university: "Research Participant, Previous Edition",
+    description:
+      "The sessions were well organized and covered a broad range of topics in artificial intelligence, machine learning, and robotics.",
+    rating: 5,
+    conferencecode: "pharma",
+  },
+  {
+    id: 15,
+    imagePath:
+      "https://roboticsaisummit.com/uploads/speakersimages/1771930033073_uifaces-popular-avatar__6_.jpg",
+    name: "Dr. Hana Sato",
+    university: "Poster Presenter, Previous Edition",
+    description:
+      "I found the opportunity to present my work and receive feedback from peers to be valuable for improving my research.",
+    rating: 5,
+    conferencecode: "pharma",
+  },
+  {
+    id: 16,
+    imagePath:
+      "https://roboticsaisummit.com/uploads/speakersimages/1771930675298_RajaRamannaPic.jpg",
+    name: "Jonathan Miller",
+    university: "Conference Attendee, Previous Edition",
+    description:
+      "The conference created a professional environment for knowledge exchange and interdisciplinary interaction.",
+    rating: null,
+    conferencecode: "pharma",
   },
 ];
 
 const Testimonials: React.FC = () => {
+  const { data } = useConference();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isMobile, setIsMobile] = useState(false);
+
+  // build items from API data or fallback
+  const apiRaw = data?.testimonials ?? [];
+  const sourceRaw = apiRaw.length ? apiRaw : fallbackTestimonialsRaw;
+  const items: Testimonial[] = sourceRaw.map((t: any) => ({
+    id: t.id,
+    name: t.name,
+    title: t.university || t.title || "",
+    location: t.location || undefined,
+    image: t.imagePath || t.image || "",
+    message: t.description || t.message || "",
+  }));
 
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth < 768);
@@ -288,25 +315,24 @@ const Testimonials: React.FC = () => {
   }, []);
 
   const prevSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
-    );
+    if (items.length === 0) return;
+    setCurrentIndex((prev) => (prev === 0 ? items.length - 1 : prev - 1));
   };
 
   const nextSlide = () => {
-    setCurrentIndex((prev) =>
-      prev === testimonials.length - 1 ? 0 : prev + 1
-    );
+    if (items.length === 0) return;
+    setCurrentIndex((prev) => (prev === items.length - 1 ? 0 : prev + 1));
   };
 
   const getVisibleTestimonials = () => {
+    if (items.length === 0) return [];
     if (isMobile) {
-      return [testimonials[currentIndex]];
+      return [items[currentIndex % items.length]];
     }
     return [
-      testimonials[currentIndex % testimonials.length],
-      testimonials[(currentIndex + 1) % testimonials.length],
-      testimonials[(currentIndex + 2) % testimonials.length],
+      items[currentIndex % items.length],
+      items[(currentIndex + 1) % items.length],
+      items[(currentIndex + 2) % items.length],
     ];
   };
 
@@ -319,7 +345,7 @@ const Testimonials: React.FC = () => {
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl font-semibold text-white mb-3">
-            AIMLR 2025 PARTICIPANTS FEEDBACK
+            PharmaTech 2025 PARTICIPANTS FEEDBACK
           </h2>
           <p className="text-[#D1D5D8] text-sm max-w-xl mx-auto">
             Insights and experiences shared by participants from previous editions

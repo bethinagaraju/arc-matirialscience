@@ -382,12 +382,13 @@ const ConferenceActivities: React.FC = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-[#1F2327] mb-4">
             Conference Sessions & Activities
           </h2>
+
           <p className="text-[#6B6F74] leading-relaxed max-w-3xl">
             The conference will feature a diverse range of technical sessions and
             interactive activities designed to encourage knowledge exchange,
-            discussion, and collaboration across Artificial Intelligence,
-            Machine Learning, and Robotics.
+            discussion, and collaboration.
           </p>
+
         </div>
 
         {/* Activities List */}

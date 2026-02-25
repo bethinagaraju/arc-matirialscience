@@ -426,8 +426,8 @@
 //                     key={label as string}
 //                     to={path as string}
 //                     className="text-[#C7D2FE] hover:text-[#60A5FA] transition hover:translate-x-1 inline-block"
-//                     title={`${label} | AIMLR 2026 Conference`}
-//                     aria-label={`${label} | AIMLR 2026 Conference`}
+//                     title={`${label} | PharmaTech 2026 Conference`}
+//                     aria-label={`${label} | PharmaTech 2026 Conference`}
 //                   >
 //                     {label}
 //                   </Link>
@@ -457,11 +457,11 @@
 //       {/* ================= FLOAT COOKIE BUTTON ================= */}
 //       <button
 //         onClick={() => setCookieVisible(true)}
-//         aria-label="Manage cookie preferences for AIMLR 2026 Conference"
-//         title="Manage cookie preferences for AIMLR 2026 Conference"
+//         aria-label="Manage cookie preferences for PharmaTech 2026 Conference"
+//         title="Manage cookie preferences for PharmaTech 2026 Conference"
 //         className="hidden md:block fixed bottom-6 left-6 z-50 p-3 bg-white rounded-full shadow-lg border hover:scale-110 transition"
 //       >
-//         <FaCookieBite className="w-6 h-6 text-[#002d45]" title="Manage cookie preferences for AIMLR 2026 Conference" aria-label="Manage cookie preferences for AIMLR 2026 Conference" />
+//         <FaCookieBite className="w-6 h-6 text-[#002d45]" title="Manage cookie preferences for PharmaTech 2026 Conference" aria-label="Manage cookie preferences for PharmaTech 2026 Conference" />
 //       </button>
 
 //     </footer>

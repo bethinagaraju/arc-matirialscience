@@ -397,8 +397,22 @@ import {
   CalendarDays
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useConference } from "../contexts/ConferenceContext";
 
 const ConferenceGuidelines: React.FC = () => {
+  const { data } = useConference();
+  const conferenceStartDate =
+    data?.importantDates?.find((d: any) => d.dateType === "Conference Start Date")?.date ||
+    "July 28, 2026";
+
+  const registrationItems = [
+    `Registrations start at 08:00 AM on ${conferenceStartDate} at the venue.`,
+    "The registration desk remains open throughout the conference.",
+    "Participants will receive a conference kit and name badge.",
+    "On-site coordinators will be available for assistance.",
+    "Lunch vouchers must be presented at the restaurant."
+  ];
+
   return (
     <section className="py-20 px-6 bg-white">
       <div className="max-w-5xl mx-auto text-[#1F2327]">
@@ -422,7 +436,7 @@ const ConferenceGuidelines: React.FC = () => {
           </div>
 
           <ul className="space-y-2 text-[#6B6F74] ml-9">
-            <li><strong>Date:</strong> July 28, 2026</li>
+            <li><strong>Date:</strong> {conferenceStartDate}</li>
             <li><strong>Time:</strong> 8:00 AM</li>
             <li><strong>Location:</strong> Rome, Italy</li>
             <li><strong>Venue:</strong> Crowne Plaza – St. Peter’s Rome</li>
@@ -435,13 +449,7 @@ const ConferenceGuidelines: React.FC = () => {
           <GuidelineSection
             icon={ClipboardCheck}
             title="Registration"
-            items={[
-              "Registrations start at 08:00 AM on July 28, 2026 at the venue.",
-              "The registration desk remains open throughout the conference.",
-              "Participants will receive a conference kit and name badge.",
-              "On-site coordinators will be available for assistance.",
-              "Lunch vouchers must be presented at the restaurant."
-            ]}
+            items={registrationItems}
           />
 
           {/* Speaker Guidelines */}

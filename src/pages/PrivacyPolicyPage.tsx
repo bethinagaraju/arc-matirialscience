@@ -12,7 +12,7 @@ const PrivacyPolicyPage: React.FC = () => {
         
         {/* Page Header */}
         <div className="mb-10 border-b border-gray-200 pb-6">
-          <h1 className="text-3xl md:text-4xl font-bold text-[#2e376d] mb-2">
+          <h1 className="text-3xl md:text-4xl font-bold text-[#c9ab63] mb-2">
             Privacy & Cookies Policy
           </h1>
           <p className="text-sm text-gray-500">
@@ -28,7 +28,8 @@ const PrivacyPolicyPage: React.FC = () => {
               This Privacy & Cookies Policy ("Policy") replaces our previous policies. Please take the time to review before you continue to use our products and services.
             </p>
             <p className="mb-4">
-              The <strong>AI, ML & Robotics International Conference (ROBOTICS-2026)</strong> is an international scientific gathering dedicated to the advancement of technology. For the purpose of applicable data protection laws, the <strong>Data Controller</strong> is the Organizing Committee of ROBOTICS-2026.
+              The <strong>Pharmaceutical Innovation,
+Research & Drug Development Summit 2026</strong> is an international scientific gathering dedicated to the advancement of technology. For the purpose of applicable data protection laws, the <strong>Data Controller</strong> is the Organizing Committee of Pharma Tech-2026
             </p>
             <p className="mb-4">
               We are committed to protecting and respecting your privacy. This privacy policy explains the types of personal information we collect, how we use that information, who we share it with, how we protect that information, and your legal rights in relation to your information. We are committed to abiding by this privacy policy, as well as the requirements of applicable laws, in the operation of our business.
@@ -40,11 +41,11 @@ const PrivacyPolicyPage: React.FC = () => {
 
           {/* 2. Information we hold */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#c9ab63] mb-4 border-l-4 border-[#c9ab63] pl-3">
               Information We May Hold About You
             </h3>
             <p className="mb-4">
-              This policy covers all personal information collected and used by ROBOTICS-2026. In this policy "personal information" means information that (either in isolation or in combination with other information held by us) enables you to be identified as an individual or recognized directly or indirectly. This may include:
+              This policy covers all personal information collected and used by Pharma Tech-2026 In this policy "personal information" means information that (either in isolation or in combination with other information held by us) enables you to be identified as an individual or recognized directly or indirectly. This may include:
             </p>
             <ul className="list-disc pl-5 space-y-1 mb-4 ml-4">
               <li>Your name, date of birth, gender, postal address, email address, computer IP address, and phone number.</li>
@@ -58,7 +59,7 @@ const PrivacyPolicyPage: React.FC = () => {
 
           {/* 3. Collection */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#c9ab63] mb-4 border-l-4 border-[#c9ab63] pl-3">
               Collection of Personal Information
             </h3>
             <p className="mb-4">We may collect information about you from different sources detailed below.</p>
@@ -93,7 +94,7 @@ const PrivacyPolicyPage: React.FC = () => {
 
           {/* 4. Cookies */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#c9ab63] mb-4 border-l-4 border-[#c9ab63] pl-3">
               Cookies
             </h3>
             <p>
@@ -103,7 +104,7 @@ const PrivacyPolicyPage: React.FC = () => {
 
           {/* 5. Usage Table */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#c9ab63] mb-4 border-l-4 border-[#c9ab63] pl-3">
               Our Use of Your Personal Information
             </h3>
             <p className="mb-4">We may use your personal information for the following purposes:</p>
@@ -200,7 +201,7 @@ const PrivacyPolicyPage: React.FC = () => {
 
           {/* 6. Transfers */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#c9ab63] mb-4 border-l-4 border-[#c9ab63] pl-3">
               Transfers of Personal Information
             </h3>
             <p className="mb-4">
@@ -216,7 +217,7 @@ const PrivacyPolicyPage: React.FC = () => {
 
           {/* 7. Storage */}
           <section>
-            <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+            <h3 className="text-xl font-bold text-[#c9ab63] mb-4 border-l-4 border-[#c9ab63] pl-3">
               Where We Store Your Data
             </h3>
             <p className="mb-4">
@@ -227,7 +228,7 @@ const PrivacyPolicyPage: React.FC = () => {
           {/* 8. Retention & Security */}
           <section className="grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+              <h3 className="text-xl font-bold text-[#c9ab63] mb-4 border-l-4 border-[#c9ab63] pl-3">
                 Data Retention
               </h3>
               <p>
@@ -235,7 +236,7 @@ const PrivacyPolicyPage: React.FC = () => {
               </p>
             </div>
             <div>
-              <h3 className="text-xl font-bold text-[#2e376d] mb-4 border-l-4 border-[#2e376d] pl-3">
+              <h3 className="text-xl font-bold text-[#c9ab63] mb-4 border-l-4 border-[#c9ab63] pl-3">
                 Security
               </h3>
               <p>
@@ -246,7 +247,7 @@ const PrivacyPolicyPage: React.FC = () => {
 
           {/* 9. Your Rights */}
           <section className="bg-gray-50 p-8 rounded-lg border border-gray-200">
-            <h3 className="text-xl font-bold text-[#2e376d] mb-6">
+            <h3 className="text-xl font-bold text-[#c9ab63] mb-6">
               Your Rights
             </h3>
             <div className="space-y-4">
@@ -277,13 +278,13 @@ const PrivacyPolicyPage: React.FC = () => {
           <section className="border-t border-gray-200 pt-10">
             <div className="grid md:grid-cols-2 gap-10">
                 <div>
-                    <h3 className="text-lg font-bold text-[#2e376d] mb-3">Changes to our privacy policy</h3>
+                    <h3 className="text-lg font-bold text-[#c9ab63] mb-3">Changes to our privacy policy</h3>
                     <p>
                     We reserve the right to amend this privacy policy at our sole discretion, without prior notice to you. We will notify you of any such changes (including when they will take effect). Your continued use of our services or our websites or attendance at the event following the posting of changes to these terms means that you consent to those changes.
                     </p>
                 </div>
                 <div>
-                    <h3 className="text-lg font-bold text-[#2e376d] mb-3">Contacting Us</h3>
+                    <h3 className="text-lg font-bold text-[#c9ab63] mb-3">Contacting Us</h3>
                     <p className="mb-2">
                     If you have any questions about this privacy policy, you can email us at <a href="mailto:secretary@roboticsaisummit.com" className="text-blue-600 font-semibold">secretary@roboticsaisummit.com</a>.
                     </p>
@@ -292,7 +293,7 @@ const PrivacyPolicyPage: React.FC = () => {
                     </p>
                     <address className="mt-4 not-italic bg-[#f8f9fa] p-4 rounded border border-gray-200 text-gray-600">
                         <strong>The Data Protection Officer</strong><br />
-                        ROBOTICS-2026 Organizing Committee<br />
+                        Pharma Tech-2026 Organizing Committee<br />
                         secretary@roboticsaisummit.com
                     </address>
                 </div>

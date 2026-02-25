@@ -11,7 +11,7 @@
 //       {/* Background Video */}
 //       <video
 //         className="absolute inset-0 w-full h-full object-cover"
-//         src="/aimlr-banner-video.mp4"
+//         src="/PharmaTech-banner-video.mp4"
 //         autoPlay
 //         loop
 //         muted
@@ -39,29 +39,29 @@
 //             <div className="flex flex-row items-center lg:items-start justify-center lg:justify-center gap-3 sm:gap-4 w-full">
 
 
-//               <Link to="/register" title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference">
+//               <Link to="/register" title="Register for PharmaTech 2026 Conference" aria-label="Register for PharmaTech 2026 Conference">
 //                 <button
 //                   className="w-full sm:w-auto px-5 sm:px-6 py-2 sm:py-3 font-semibold text-sm sm:text-base transition hover:opacity-90"
 //                   style={{
 //                     backgroundImage:
 //                       'linear-gradient(90deg, rgba(35,35,87,1) 0%, rgba(76,109,166,1) 100%)',
 //                   }}
-//                   title="Register for AIMLR 2026 Conference"
-//                   aria-label="Register for AIMLR 2026 Conference"
+//                   title="Register for PharmaTech 2026 Conference"
+//                   aria-label="Register for PharmaTech 2026 Conference"
 //                 >
 //                   REGISTER
 //                 </button>
 //               </Link>
 
-//               <Link to="/register" title="Submit Abstract for AIMLR 2026 Conference" aria-label="Submit Abstract for AIMLR 2026 Conference">
+//               <Link to="/register" title="Submit Abstract for PharmaTech 2026 Conference" aria-label="Submit Abstract for PharmaTech 2026 Conference">
 //                 <button
 //                   className="w-full sm:w-auto px-5 sm:px-6 py-2 sm:py-3 font-semibold text-sm sm:text-base transition hover:opacity-90"
 //                   style={{
 //                     backgroundImage:
 //                       'linear-gradient(90deg, rgba(0,72,139,1) 0%, rgba(15,133,255,1) 100%)',
 //                   }}
-//                   title="Submit Abstract for AIMLR 2026 Conference"
-//                   aria-label="Submit Abstract for AIMLR 2026 Conference"
+//                   title="Submit Abstract for PharmaTech 2026 Conference"
+//                   aria-label="Submit Abstract for PharmaTech 2026 Conference"
 //                 >
 //                   SUBMISSION
 //                 </button>
@@ -100,7 +100,7 @@ const HeroSection: React.FC = () => {
       {/* Background Video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
-        src="/aimlr-banner-video.mp4"
+        src="/PharmaTech-banner-video.mp4"
         autoPlay
         loop
         muted
@@ -122,8 +122,9 @@ const HeroSection: React.FC = () => {
             </h1> */}
 
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight mb-6">
-              Artificial Intelligence, <br />
-              Machine Learning & Robotics
+              Pharmaceutical Innovation, <br />
+              Research & Drug Development Summit 2026
+    
             </h2>
 
             <p className="text-lg text-white/90 mb-8">
@@ -166,11 +167,11 @@ const HeroSection: React.FC = () => {
         <div className="container mx-auto px-6 lg:px-16 pb-10">
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
             {[
-              ["25,000+", "Attendees"],
-              ["250+", "Exhibitors"],
-              ["1,000+", "Delegates"],
-              ["500+", "Speakers"],
-              ["120+", "Sessions"],
+              ["150+", "PARTICIPANTS"],
+              ["20+", "COUNTRIES REPRESENTED"],
+              ["10+", "Delegates"],
+              ["35+", "EXPECTED SPEAKERS"],
+              ["25+", "SESSIONS & ACTIVITIES"],
             ].map(([value, label]) => (
               <div
                 key={label}

@@ -165,6 +165,7 @@
 import { Bell } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
+import { useConference } from "../contexts/ConferenceContext";
 
 export default function AnnouncementBar() {
   const [isVisible, setIsVisible] = useState(true);
@@ -184,9 +185,13 @@ export default function AnnouncementBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isMobile]);
 
+  const { data } = useConference();
+  const importantDates = data?.importantDates || [];
+  const getDate = (type: string) => importantDates.find((d: any) => d.dateType === type)?.date || "TBA";
+
   const announcements = [
-    "First Round of Abstract Submission Closes on January 30, 2026",
-    "Early Bird Registration Closes on February 15, 2026",
+    `First Round of Abstract Submission Closes on ${getDate("First Round of Abstract Submission Closes")}`,
+    `Early Bird Registration Closes on ${getDate("Early Bird Registration Closes")}`,
   ];
 
   if (!isMobile || isVisible) {
@@ -228,8 +233,8 @@ export default function AnnouncementBar() {
                   <Link
                     to="/register"
                     className="underline hover:text-blue-600 transition"
-                    title="Register for AIMLR 2026 Conference - Early Bird Registration"
-                    aria-label="Register for AIMLR 2026 Conference - Early Bird Registration"
+                    title="Register for PharmaTech 2026 Conference - Early Bird Registration"
+                    aria-label="Register for PharmaTech 2026 Conference - Early Bird Registration"
                   >
                     {text}
                   </Link>
@@ -237,8 +242,8 @@ export default function AnnouncementBar() {
                   <Link
                     to="/AbstractSubmission"
                     className="underline hover:text-blue-600 transition"
-                    title="Submit Abstract for AIMLR 2026 Conference - Abstract Submission"
-                    aria-label="Submit Abstract for AIMLR 2026 Conference - Abstract Submission"
+                    title="Submit Abstract for PharmaTech 2026 Conference - Abstract Submission"
+                    aria-label="Submit Abstract for PharmaTech 2026 Conference - Abstract Submission"
                   >
                     {text}
                   </Link>

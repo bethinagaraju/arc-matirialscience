@@ -20,16 +20,16 @@ function HighletOne() {
         <div className="flex flex-col md:flex-row gap-4 h-auto md:h-[50%]">
           <div className="w-full md:w-1/2 h-auto">
             <img
-              src="aimlr-2025-participants-group-photo.jpeg"
-              alt="AIMLR 2025 Participants Group Photo"
+              src="PharmaTech-2025-participants-group-photo.jpeg"
+              alt="PharmaTech 2025 Participants Group Photo"
               className="w-full h-full object-cover lazyload"
             />
           </div>
 
           <div className="w-full md:w-1/2 h-auto">
             <img
-              src="aimlr-2025-poster-presentation.jpeg"
-              alt="AIMLR 2025 Poster Presentation"
+              src="PharmaTech-2025-poster-presentation.jpeg"
+              alt="PharmaTech 2025 Poster Presentation"
               className="w-full h-full object-cover lazyload"
             />
           </div>
@@ -41,15 +41,15 @@ function HighletOne() {
       <div className="w-full md:w-[28vw] flex flex-col gap-4">
         <div className="h-auto md:h-[35vh]">
           <img
-            src="aimlr-2025-networking-session.png"
-            alt="AIMLR 2025 Networking Session"
+            src="PharmaTech-2025-networking-session.png"
+            alt="PharmaTech 2025 Networking Session"
             className="w-full h-full object-cover lazyload"
           />
         </div>
         <div className="h-auto md:h-[38vh]">
           <img
-            src="aimlr-2025-poster-explanation-session.jpeg"
-            alt="AIMLR 2025 Poster Explanation Session"
+            src="PharmaTech-2025-poster-explanation-session.jpeg"
+            alt="PharmaTech 2025 Poster Explanation Session"
             className="w-full h-full object-cover lazyload"
           />
         </div>

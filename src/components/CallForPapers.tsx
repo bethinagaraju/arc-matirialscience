@@ -19,7 +19,7 @@
 // //       {/* Page Header */}
 // //       <div className="mb-12 border-b-2 border-[#304278] pb-4">
 // //         <h1 className="text-3xl md:text-4xl font-bold text-blue-900">
-// //           CALL FOR PAPERS – AIMLR 2026
+// //           CALL FOR PAPERS – PharmaTech 2026
 // //         </h1>
 // //         <p className="mt-2 text-gray-500 text-lg">
 // //           Submit your research and join the global conversation on AI, ML and Robotics.
@@ -128,8 +128,8 @@
 // //               <Link
 // //                 to="/sessions"
 // //                 className="leading-relaxed text-blue-600 hover:text-blue-800 underline"
-// //                 title="View more topics for AIMLR 2026 Conference"
-// //                 aria-label="View more topics for AIMLR 2026 Conference"
+// //                 title="View more topics for PharmaTech 2026 Conference"
+// //                 aria-label="View more topics for PharmaTech 2026 Conference"
 // //               >
 // //                 more topics
 // //               </Link>
@@ -212,8 +212,8 @@
 // //         <Link
 // //           to="/register"
 // //           className="flex items-center justify-center gap-2 px-8 py-3 bg-[#304278] text-white font-semibold rounded hover:bg-[#304278] transition-colors"
-// //           title="Register for the AIMLR 2026 Conference in Rome"
-// //           aria-label="Register for the AIMLR 2026 Conference in Rome"
+// //           title="Register for the PharmaTech 2026 Conference in Rome"
+// //           aria-label="Register for the PharmaTech 2026 Conference in Rome"
 // //         >
 // //           Register Now <ArrowRight className="w-4 h-4" />
 // //         </Link>
@@ -221,8 +221,8 @@
 // //         <Link
 // //           to="/AbstractSubmission"
 // //           className="flex items-center justify-center gap-2 px-8 py-3 border-2 border-gray-200 text-gray-700 font-semibold rounded hover:border-[#0091b5] hover:text-[#0091b5] transition-colors"
-// //           title="Submit your full paper for AIMLR 2026 Conference"
-// //           aria-label="Submit your full paper for AIMLR 2026 Conference"
+// //           title="Submit your full paper for PharmaTech 2026 Conference"
+// //           aria-label="Submit your full paper for PharmaTech 2026 Conference"
 // //         >
 // //           Submit Full Paper
 // //         </Link>
@@ -296,7 +296,7 @@
 //         {/* Header */}
 //         <header className="mb-16">
 //           <h1 className="text-4xl font-bold text-[#1E3A8A]">
-//             Call for Papers – AIMLR 2026
+//             Call for Papers – PharmaTech 2026
 //           </h1>
 //           <p className="mt-4 text-lg text-gray-600 max-w-3xl">
 //             Submit your research and contribute to the global advancement of
@@ -316,7 +316,7 @@
 //             </h2>
 //           </div>
 //           <p className="text-gray-700 leading-relaxed max-w-4xl">
-//             AIMLR 2026 invites full-length research papers presenting original
+//             PharmaTech 2026 invites full-length research papers presenting original
 //             contributions, innovative methodologies, and impactful applications
 //             across AI, ML, and Robotics.
 //           </p>
@@ -461,6 +461,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import { useConference } from '../contexts/ConferenceContext';
 
 const Section = ({
   icon,
@@ -488,7 +489,7 @@ const Section = ({
   </section>
 );
 
-const List = ({ items }: { items: string[] }) => (
+const List = ({ items }: { items: (string | React.ReactNode)[] }) => (
   <ul className="space-y-2 mt-3">
     {items.map((item, idx) => (
       <li
@@ -503,6 +504,11 @@ const List = ({ items }: { items: string[] }) => (
 );
 
 const CallForPapers: React.FC = () => {
+  const { data } = useConference();
+  const topics = data?.topics || [];
+  const displayedTopics = topics.slice(0, 8).map(t => t.topicName);
+  const moreLink = <Link to="/sessions" className="text-[#C9AB63] underline hover:text-[#D6BC7A]">More Topics</Link>;
+
   return (
     <section className="py-8">
       <div className="max-w-5xl mx-auto px-6 text-[#2A2E33]">
@@ -510,7 +516,7 @@ const CallForPapers: React.FC = () => {
         {/* Header */}
         <header className="mb-16">
           <h1 className="text-4xl font-bold text-[#1C1F23]">
-            Call for Papers – AIMLR 2026
+            Call for Papers – PharmaTech 2026
           </h1>
           <p className="mt-4 text-lg text-[#6B7280] max-w-3xl">
             Submit your research and contribute to the global advancement of
@@ -530,10 +536,11 @@ const CallForPapers: React.FC = () => {
             </h2>
           </div>
           <p className="text-[#3A3F45] leading-relaxed max-w-4xl">
-            AIMLR 2026 invites full-length research papers presenting original
+            PharmaTech 2026 invites full-length research papers presenting original
             contributions, innovative methodologies, and impactful applications
-            across AI, ML, and Robotics.
+            across PharmaTech.
           </p>
+
         </div>
 
         {/* Sections */}
@@ -571,25 +578,8 @@ const CallForPapers: React.FC = () => {
             title="Topics of Interest"
           >
             <List
-              items={[
-                "Artificial Intelligence",
-                "Machine Learning & Deep Learning",
-                "Robotics & Autonomous Systems",
-                "Generative AI",
-                "AI in Healthcare",
-                "Computer Vision & NLP",
-                "Human–Robot Interaction",
-                "Smart Systems & IoT",
-              ]}
+              items={[...displayedTopics, moreLink]}
             />
-            <div className="ml-7 mt-2">
-              <Link
-                to="/sessions"
-                className="text-[#C9AB63] underline hover:text-[#D6BC7A]"
-              >
-                View all topics
-              </Link>
-            </div>
           </Section>
 
           <Section

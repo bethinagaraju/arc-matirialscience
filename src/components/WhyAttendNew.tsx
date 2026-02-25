@@ -118,7 +118,7 @@
 // // // //         {/* Header Section */}
 // // // //         <div className="text-center mb-16">
 // // // //           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4 drop-shadow-lg tracking-tight">
-// // // //             Why Attend AIMLR 2026?
+// // // //             Why Attend PharmaTech 2026?
 // // // //           </h2>
 // // // //           <p className="text-lg text-blue-200/70 max-w-2xl mx-auto font-light">
 // // // //             A global platform advancing Artificial Intelligence, Machine Learning & Robotics.
@@ -247,11 +247,11 @@
 // // //             font-bold text-white 
 // // //             mb-3 sm:mb-4
 // // //           ">
-// // //             Why Attend AIMLR 2026?
+// // //             Why Attend PharmaTech 2026?
 // // //           </h2> */}
 
 // // //           <h2 className="text-3xl font-bold text-[#ffffff] mb-8 text-center">
-// // //            WHY ATTEND AIMLR 2026 ?
+// // //            WHY ATTEND PharmaTech 2026 ?
 // // //           </h2>
 
 // // //           <p className="
@@ -383,7 +383,7 @@
 // //         {/* Header */}
 // //         <div className="text-center mb-14">
 // //           <h2 className="text-3xl font-semibold mb-4">
-// //             WHY ATTEND AIMLR 2026?
+// //             WHY ATTEND PharmaTech 2026?
 // //           </h2>
 // //           <p className="text-[#6B6F74] max-w-2xl mx-auto text-sm">
 // //             A global platform advancing Artificial Intelligence, Machine Learning & Robotics.
@@ -525,22 +525,22 @@ const cards: CardItem[] = [
   {
     title: "Network",
     description:
-      "With key stakeholders, government officials and industry leaders shaping innovation and collaboration.",
+      "Build strategic partnerships with pharmaceutical companies, biotech startups, CROs, CMOs, regulators, and investors.",
   },
   {
     title: "Build",
     description:
-      "Partnerships that create new academic, research, and industry opportunities aligned with emerging technologies.",
+      "Discover innovative manufacturing technologies, AI-based drug discovery tools, and smart regulatory solutions.",
   },
   {
     title: "Showcase",
     description:
-      "Your solutions, research, and innovations to decision-makers transforming real-world applications.",
+      "Present your research, launch new products, and demonstrate cutting-edge pharma solutions.",
   },
   {
     title: "Gain insights",
     description:
-      "Into emerging technologies, regulations, and trends shaping the future of intelligent systems.",
+      "Learn from global experts on drug approvals, clinical trials, precision medicine, biologics, and emerging markets.",
   },
 ];
 
@@ -585,7 +585,7 @@ const WhyAttendNew: React.FC = () => {
 
         {/* Section Title */}
         <h2 className="text-3xl uppercase font-semibold text-[#2F3439] mb-12">
-          Why Attend at AIMLR 2026
+          Why Attend at PharmaTech 2026
         </h2>
 
         {/* 2×2 Grid */}

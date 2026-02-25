@@ -6,7 +6,7 @@
 // //     {
 // //       title: "When & Where",
 // //       content: `
-// //         AIMLR 2026 will be held during July 28-30, 2026.
+// //         PharmaTech 2026 will be held during July 28-30, 2026.
 // //         The conference will take place in Hybrid mode — participants may join in-person
 // //         at Crowne Plaza - St. Peter’s Rome, Italy or virtually from home or work.
 // //       `,
@@ -100,12 +100,12 @@
 //         <div className="space-y-4">
 //           <div>
 //             <h4 className="font-bold text-gray-900">When will the conference take place?</h4>
-//             <p>AIMLR 2026 will be held during <strong>July 28-30, 2026</strong>.</p>
+//             <p>PharmaTech 2026 will be held during <strong>July 28-30, 2026</strong>.</p>
 //           </div>
 //           <div>
 //             <h4 className="font-bold text-gray-900">Where will the conference be held?</h4>
 //             <p>
-//               AIMLR 2026 will be held in Hybrid mode, participants can join <strong>In Person</strong> at <strong>Crowne Plaza - St. Peter’s Rome, Italy</strong> or <strong>Virtually</strong> from home or work.
+//               PharmaTech 2026 will be held in Hybrid mode, participants can join <strong>In Person</strong> at <strong>Crowne Plaza - St. Peter’s Rome, Italy</strong> or <strong>Virtually</strong> from home or work.
 //             </p>
 //           </div>
 //         </div>
@@ -117,10 +117,10 @@
 //         <div className="space-y-4">
 //           <div>
 //             <h4 className="font-bold text-gray-900">When does registration open?</h4>
-//             <p>Registration for AIMLR 2026 Conference opens on <strong>October 31, 2025</strong>.</p>
+//             <p>Registration for PharmaTech 2026 Conference opens on <strong>October 31, 2025</strong>.</p>
 //           </div>
 //           <div>
-//             <h4 className="font-bold text-gray-900">Where do I go to register for the AIMLR 2026 conference?</h4>
+//             <h4 className="font-bold text-gray-900">Where do I go to register for the PharmaTech 2026 conference?</h4>
 //             <p>You can register for the conference via our <a href="#" className="text-blue-600 hover:underline">online registration form</a>.</p>
 //           </div>
           
@@ -343,12 +343,12 @@ const FAQS = () => {
         <div className="space-y-4">
           <div>
             <h4 className="font-bold text-gray-900">When will the conference take place?</h4>
-            <p>AIMLR 2026 will be held during <strong>July 28-30, 2026</strong>.</p>
+            <p>PharmaTech 2026 will be held during <strong>July 28-30, 2026</strong>.</p>
           </div>
           <div>
             <h4 className="font-bold text-gray-900">Where will the conference be held?</h4>
             <p>
-              AIMLR 2026 will be held in Hybrid mode, participants can join <strong>In Person</strong> at <strong>Crowne Plaza - St. Peter’s Rome, Italy</strong> or <strong>Virtually</strong> from home or work.
+              PharmaTech 2026 will be held in Hybrid mode, participants can join <strong>In Person</strong> at <strong>Crowne Plaza - St. Peter’s Rome, Italy</strong> or <strong>Virtually</strong> from home or work.
             </p>
           </div>
         </div>
@@ -360,10 +360,10 @@ const FAQS = () => {
         <div className="space-y-4">
           <div>
             <h4 className="font-bold text-gray-900">When does registration open?</h4>
-            <p>Registration for the AIMLR 2026 Conference is <strong>now open</strong>.</p>
+            <p>Registration for the PharmaTech 2026 Conference is <strong>now open</strong>.</p>
           </div>
           <div>
-            <h4 className="font-bold text-gray-900">Where do I go to register for the AIMLR 2026 conference?</h4>
+            <h4 className="font-bold text-gray-900">Where do I go to register for the PharmaTech 2026 conference?</h4>
             <p>You can register for the conference via our <a href="#" className="text-blue-600 hover:underline">online registration form</a>.</p>
           </div>
           

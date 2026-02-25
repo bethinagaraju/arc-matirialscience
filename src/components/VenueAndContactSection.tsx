@@ -100,8 +100,8 @@
 //           <Link
 //             to="/venue-travel"
 //             className="inline-flex items-center gap-2 bg-indigo-600 text-white px-7 py-3 hover:bg-indigo-700 transition duration-300 font-semibold"
-//             title="View detailed venue and travel information for AIMLR 2026 Conference in Rome"
-//             aria-label="View detailed venue and travel information for AIMLR 2026 Conference in Rome"
+//             title="View detailed venue and travel information for PharmaTech 2026 Conference in Rome"
+//             aria-label="View detailed venue and travel information for PharmaTech 2026 Conference in Rome"
 //           >
 //             View Venue Details
 //             <ArrowRight size={18}/>
@@ -136,8 +136,8 @@
 //             you shortly.
 //           </p>
 
-//           <Link to="/contact" title="Contact AIMLR 2026 Conference Organizers" aria-label="Contact AIMLR 2026 Conference Organizers">
-//             <button className="bg-white text-[#344278] font-bold py-3 px-10 transition duration-300 hover:bg-gray-200" title="Contact AIMLR 2026 Conference Organizers" aria-label="Contact AIMLR 2026 Conference Organizers">
+//           <Link to="/contact" title="Contact PharmaTech 2026 Conference Organizers" aria-label="Contact PharmaTech 2026 Conference Organizers">
+//             <button className="bg-white text-[#344278] font-bold py-3 px-10 transition duration-300 hover:bg-gray-200" title="Contact PharmaTech 2026 Conference Organizers" aria-label="Contact PharmaTech 2026 Conference Organizers">
 //               Contact Us
 //             </button>
 //           </Link>
@@ -182,8 +182,8 @@ const VenueAndContactSection = () => {
           <Link
             to="/venue-travel"
             className="inline-flex items-center gap-3 text-sm font-semibold text-[#111] hover:underline"
-            title="View detailed venue and travel information for AIMLR 2026 Conference in Rome"
-            aria-label="View detailed venue and travel information for AIMLR 2026 Conference in Rome"
+            title="View detailed venue and travel information for PharmaTech 2026 Conference in Rome"
+            aria-label="View detailed venue and travel information for PharmaTech 2026 Conference in Rome"
           >
             View Venue Details
             <ArrowRight size={16} />
@@ -204,8 +204,8 @@ const VenueAndContactSection = () => {
 
           <Link
             to="/contact"
-            title="Contact AIMLR 2026 Conference Organizers"
-            aria-label="Contact AIMLR 2026 Conference Organizers"
+            title="Contact PharmaTech 2026 Conference Organizers"
+            aria-label="Contact PharmaTech 2026 Conference Organizers"
             className="inline-block w-fit"
           >
             <span className="

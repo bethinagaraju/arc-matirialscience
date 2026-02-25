@@ -448,7 +448,7 @@ const WhoShouldAttendSection: React.FC = () => {
             Who Should Attend?
           </h2>
           <p className="text-[#6B7280] text-lg max-w-3xl">
-            AIMLR 2026 brings together researchers, professionals, and leaders
+            PharmaTech 2026 brings together researchers, professionals, and leaders
             shaping the future of Artificial Intelligence, Machine Learning, and Robotics.
           </p>
           <div className="mt-6 h-px bg-[#E5E7EB]" />

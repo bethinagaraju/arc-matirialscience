@@ -304,7 +304,7 @@
 //               Frequently Asked Questions
 //             </h2>
 //             <p className="text-gray-600 text-lg">
-//               Quick answers to common questions about AIMLR 2026
+//               Quick answers to common questions about PharmaTech 2026
 //             </p>
 //           </div>
 
@@ -386,6 +386,7 @@ import {
   HelpCircle
 } from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
+import { useConference } from "../contexts/ConferenceContext";
 
 const ContactPage: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -408,6 +409,14 @@ const ContactPage: React.FC = () => {
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
+  const { data } = useConference();
+  const conferenceDates =
+    data?.importantDates?.find((d: any) => d.dateType === "Conference Dates")?.date ||
+    "July 28–30, 2026";
+  const abstractSubmissionDeadline =
+    data?.importantDates?.find((d: any) => d.dateType === "First Round of Abstract Submission Closes")?.date ||
+    "January 30, 2026";
+
   return (
     <div className="min-h-screen bg-white text-[#1F2327]">
       <Header />
@@ -416,7 +425,7 @@ const ContactPage: React.FC = () => {
       <section className="py-20 px-6">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
-            Contact the AIMLR 2026 Team
+            Contact Team
           </h1>
           <p className="text-[#6B6F74] text-lg max-w-2xl mx-auto">
             Have questions about registration, submissions, or participation?
@@ -444,7 +453,7 @@ const ContactPage: React.FC = () => {
               <InfoRow
                 icon={Clock}
                 title="Dates"
-                content="July 28–30, 2026"
+                content={conferenceDates}
               />
             </InfoBlock>
 
@@ -538,7 +547,7 @@ const ContactPage: React.FC = () => {
               Frequently Asked Questions
             </h2>
             <p className="text-[#6B6F74] text-lg">
-              Quick answers to common questions about AIMLR 2026
+              Quick answers to common questions about PharmaTech 2026
             </p>
           </div>
 
@@ -549,7 +558,7 @@ const ContactPage: React.FC = () => {
             />
             <FAQItem
               question="What is the abstract submission deadline?"
-              answer="The abstract submission deadline is January 30, 2026."
+              answer={`The abstract submission deadline is ${abstractSubmissionDeadline}.`}
             />
             <FAQItem
               question="Will sessions be recorded?"

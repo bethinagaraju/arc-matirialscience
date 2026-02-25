@@ -161,7 +161,7 @@ const SessionTypesSection: React.FC = () => {
             Session Types
           </h2>
           <p className="text-[#D1D5D8] text-lg max-w-2xl leading-relaxed">
-            AIMLR 2026 features a diverse range of sessions designed to
+            PharmaTech 2026 features a diverse range of sessions designed to
             encourage knowledge exchange, discussion, and practical learning.
           </p>
         </div>

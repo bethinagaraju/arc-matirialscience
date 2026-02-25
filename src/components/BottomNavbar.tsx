@@ -72,8 +72,8 @@ style={{
             to="/"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center hover:text-gray-300 text-sm mr-12"
-            title="Go to AIMLR 2026 Home Page"
-            aria-label="AIMLR 2026 Home Page"
+            title="Go to PharmaTech 2026 Home Page"
+            aria-label="PharmaTech 2026 Home Page"
           >
             <Home size={20} />
             <span className="ml-2">HOME</span>
@@ -91,11 +91,11 @@ style={{
             </span>
             {hovered === "calls" && (
               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
-                <Link to="/call-for-abstract" className="block px-4 py-2 hover:bg-gray-100" title="Call for Abstracts - AIMLR 2026" aria-label="Call for Abstracts">Call for Abstracts</Link>
-                <Link to="/call-for-papers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Papers - AIMLR 2026" aria-label="Call for Papers">Call for Papers</Link>
-                <Link to="/call-for-posters" className="block px-4 py-2 hover:bg-gray-100" title="Call for Posters - AIMLR 2026" aria-label="Call for Posters">Call for Posters</Link>
-                <Link to="/call-for-speakers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Speakers - AIMLR 2026" aria-label="Call for Speakers">Call for Speakers</Link>
-                <Link to="/call-for-reviewers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Reviewers - AIMLR 2026" aria-label="Call for Reviewers">Call for Reviewers</Link>
+                <Link to="/call-for-abstract" className="block px-4 py-2 hover:bg-gray-100" title="Call for Abstracts - PharmaTech 2026" aria-label="Call for Abstracts">Call for Abstracts</Link>
+                <Link to="/call-for-papers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Papers - PharmaTech 2026" aria-label="Call for Papers">Call for Papers</Link>
+                <Link to="/call-for-posters" className="block px-4 py-2 hover:bg-gray-100" title="Call for Posters - PharmaTech 2026" aria-label="Call for Posters">Call for Posters</Link>
+                <Link to="/call-for-speakers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Speakers - PharmaTech 2026" aria-label="Call for Speakers">Call for Speakers</Link>
+                <Link to="/call-for-reviewers" className="block px-4 py-2 hover:bg-gray-100" title="Call for Reviewers - PharmaTech 2026" aria-label="Call for Reviewers">Call for Reviewers</Link>
               </div>
             )}
           </div>
@@ -111,19 +111,19 @@ style={{
             </span>
             {hovered === "conference" && (
               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
-                <Link to="/about" className="block px-4 py-2 hover:bg-gray-100" title="About AIMLR 2026 Conference" aria-label="About Conference">About Conference</Link>
-                <Link to="/committee" className="block px-4 py-2 hover:bg-gray-100" title="AIMLR 2026 Conference Committee" aria-label="Committee">Committee</Link>
+                <Link to="/about" className="block px-4 py-2 hover:bg-gray-100" title="About PharmaTech 2026 Conference" aria-label="About Conference">About Conference</Link>
+                <Link to="/committee" className="block px-4 py-2 hover:bg-gray-100" title="PharmaTech 2026 Conference Committee" aria-label="Committee">Committee</Link>
                 {/* <Link to="/past-conferences" className="block px-4 py-2 hover:bg-gray-100">Past Conferences</Link> */}
               </div>
             )}
           </div>
 
-          <Link to="/sessions" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Conference Sessions - AIMLR 2026" aria-label="Sessions">
+          <Link to="/sessions" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Conference Sessions - PharmaTech 2026" aria-label="Sessions">
             SESSIONS
           </Link>
 
           {/* SPEAKERS */}
-          <Link to="/speakers" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Conference Speakers - AIMLR 2026" aria-label="Speakers">
+          <Link to="/speakers" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Conference Speakers - PharmaTech 2026" aria-label="Speakers">
             SPEAKERS
           </Link>
 
@@ -138,25 +138,25 @@ style={{
             </span>
             {hovered === "program" && (
               <div className="absolute top-full left-0 bg-white text-black shadow-md rounded-md py-2 min-w-[220px] z-10">
-                <Link to="/schedule" className="block px-4 py-2 hover:bg-gray-100" title="Program Schedule - AIMLR 2026" aria-label="Program Schedule">Program Schedule</Link>
-                <Link to="/venue" className="block px-4 py-2 hover:bg-gray-100" title="Venue - AIMLR 2026" aria-label="Venue">Venue</Link>
-                {/* <Link to="/sessions" className="block px-4 py-2 hover:bg-gray-100" title="Sessions - AIMLR 2026" aria-label="Sessions">Sessions</Link> */}
-                <Link to="/important-dates" className="block px-4 py-2 hover:bg-gray-100" title="Important Dates - AIMLR 2026" aria-label="Important Dates">Important Dates</Link>
+                <Link to="/schedule" className="block px-4 py-2 hover:bg-gray-100" title="Program Schedule - PharmaTech 2026" aria-label="Program Schedule">Program Schedule</Link>
+                <Link to="/venue" className="block px-4 py-2 hover:bg-gray-100" title="Venue - PharmaTech 2026" aria-label="Venue">Venue</Link>
+                {/* <Link to="/sessions" className="block px-4 py-2 hover:bg-gray-100" title="Sessions - PharmaTech 2026" aria-label="Sessions">Sessions</Link> */}
+                <Link to="/important-dates" className="block px-4 py-2 hover:bg-gray-100" title="Important Dates - PharmaTech 2026" aria-label="Important Dates">Important Dates</Link>
 
                 {/* Newly Added */}
-                <Link to="/guidelines" className="block px-4 py-2 hover:bg-gray-100" title="Conference Guidelines - AIMLR 2026" aria-label="Guidelines">Guidelines</Link>
-                <Link to="/faq" className="block px-4 py-2 hover:bg-gray-100" title="Conference FAQ - AIMLR 2026" aria-label="FAQ">FAQ</Link>
+                <Link to="/guidelines" className="block px-4 py-2 hover:bg-gray-100" title="Conference Guidelines - PharmaTech 2026" aria-label="Guidelines">Guidelines</Link>
+                <Link to="/faq" className="block px-4 py-2 hover:bg-gray-100" title="Conference FAQ - PharmaTech 2026" aria-label="FAQ">FAQ</Link>
               </div>
             )}
           </div>
 
 
 
-          <Link to="/register" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Register for AIMLR 2026 Conference" aria-label="Register">
+          <Link to="/register" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Register for PharmaTech 2026 Conference" aria-label="Register">
             REGISTER
           </Link>
 
-          <Link to="/contact" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Contact AIMLR 2026 Organizers" aria-label="Contact">
+          <Link to="/contact" style={{ fontFamily: "'IBM Plex Sans', sans-serif" }} className="tracking-wider hover:text-gray-300 text-sm" title="Contact PharmaTech 2026 Organizers" aria-label="Contact">
             CONTACT
           </Link>
 
@@ -167,7 +167,7 @@ style={{
       {menuOpen && (
         <div className="md:hidden bg-white shadow-md px-6 py-6 space-y-6">
           <div className="space-y-3">
-            <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="block text-gray-800 font-semibold" title="Go to AIMLR 2026 Home Page" aria-label="AIMLR 2026 Home Page">
+            <Link to="/" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })} className="block text-gray-800 font-semibold" title="Go to PharmaTech 2026 Home Page" aria-label="PharmaTech 2026 Home Page">
               HOME
             </Link>
 
@@ -186,11 +186,11 @@ style={{
               </div>
               {callsOpen && (
                 <div className="ml-4 space-y-2 mt-2">
-                  <Link to="/call-for-abstract" className="block text-gray-600 hover:text-gray-800" title="Call for Abstracts - AIMLR 2026" aria-label="Call for Abstracts">Call for Abstracts</Link>
-                  <Link to="/call-for-papers" className="block text-gray-600 hover:text-gray-800" title="Call for Papers - AIMLR 2026" aria-label="Call for Papers">Call for Papers</Link>
-                  <Link to="/call-for-posters" className="block text-gray-600 hover:text-gray-800" title="Call for Posters - AIMLR 2026" aria-label="Call for Posters">Call for Posters</Link>
-                  <Link to="/call-for-speakers" className="block text-gray-600 hover:text-gray-800" title="Call for Speakers - AIMLR 2026" aria-label="Call for Speakers">Call for Speakers</Link>
-                  <Link to="/call-for-reviewers" className="block text-gray-600 hover:text-gray-800" title="Call for Reviewers - AIMLR 2026" aria-label="Call for Reviewers">Call for Reviewers</Link>
+                  <Link to="/call-for-abstract" className="block text-gray-600 hover:text-gray-800" title="Call for Abstracts - PharmaTech 2026" aria-label="Call for Abstracts">Call for Abstracts</Link>
+                  <Link to="/call-for-papers" className="block text-gray-600 hover:text-gray-800" title="Call for Papers - PharmaTech 2026" aria-label="Call for Papers">Call for Papers</Link>
+                  <Link to="/call-for-posters" className="block text-gray-600 hover:text-gray-800" title="Call for Posters - PharmaTech 2026" aria-label="Call for Posters">Call for Posters</Link>
+                  <Link to="/call-for-speakers" className="block text-gray-600 hover:text-gray-800" title="Call for Speakers - PharmaTech 2026" aria-label="Call for Speakers">Call for Speakers</Link>
+                  <Link to="/call-for-reviewers" className="block text-gray-600 hover:text-gray-800" title="Call for Reviewers - PharmaTech 2026" aria-label="Call for Reviewers">Call for Reviewers</Link>
                 </div>
               )}
             </div>
@@ -210,18 +210,18 @@ style={{
               </div>
               {conferenceOpen && (
                 <div className="ml-4 space-y-2 mt-2">
-                  <Link to="/about" className="block text-gray-600 hover:text-gray-800" title="About AIMLR 2026 Conference" aria-label="About Conference">About Conference</Link>
-                  <Link to="/committee" className="block text-gray-600 hover:text-gray-800" title="AIMLR 2026 Conference Committee" aria-label="Committee">Committee</Link>
+                  <Link to="/about" className="block text-gray-600 hover:text-gray-800" title="About PharmaTech 2026 Conference" aria-label="About Conference">About Conference</Link>
+                  <Link to="/committee" className="block text-gray-600 hover:text-gray-800" title="PharmaTech 2026 Conference Committee" aria-label="Committee">Committee</Link>
                 </div>
               )}
             </div>
 
 
-            <Link to="/sessions" className="block text-gray-800 font-semibold" title="Conference Sessions - AIMLR 2026" aria-label="Sessions">
+            <Link to="/sessions" className="block text-gray-800 font-semibold" title="Conference Sessions - PharmaTech 2026" aria-label="Sessions">
               SESSIONS
             </Link>
 
-            <Link to="/speakers" className="block text-gray-800 font-semibold" title="Conference Speakers - AIMLR 2026" aria-label="Speakers">
+            <Link to="/speakers" className="block text-gray-800 font-semibold" title="Conference Speakers - PharmaTech 2026" aria-label="Speakers">
               SPEAKERS
             </Link>
 
@@ -241,34 +241,34 @@ style={{
               </div>
               {programOpen && (
                 <div className="ml-4 space-y-2 mt-2">
-                  <Link to="/schedule" className="block text-gray-600 hover:text-gray-800" title="Program Schedule - AIMLR 2026" aria-label="Program Schedule">Program Schedule</Link>
-                  <Link to="/venue" className="block text-gray-600 hover:text-gray-800" title="Venue - AIMLR 2026" aria-label="Venue">Venue</Link>
-                  {/* <Link to="/sessions" className="block text-gray-600 hover:text-gray-800" title="Sessions - AIMLR 2026" aria-label="Sessions">Sessions</Link> */}
-                  <Link to="/guidelines" className="block text-gray-600 hover:text-gray-800" title="Conference Guidelines - AIMLR 2026" aria-label="Guidelines">Guidelines</Link>
-                  <Link to="/important-dates" className="block text-gray-600 hover:text-gray-800" title="Important Dates - AIMLR 2026" aria-label="Important Dates">Important Dates</Link>
-                  <Link to="/faq" className="block text-gray-600 hover:text-gray-800" title="Conference FAQ - AIMLR 2026" aria-label="FAQ">FAQ</Link>
+                  <Link to="/schedule" className="block text-gray-600 hover:text-gray-800" title="Program Schedule - PharmaTech 2026" aria-label="Program Schedule">Program Schedule</Link>
+                  <Link to="/venue" className="block text-gray-600 hover:text-gray-800" title="Venue - PharmaTech 2026" aria-label="Venue">Venue</Link>
+                  {/* <Link to="/sessions" className="block text-gray-600 hover:text-gray-800" title="Sessions - PharmaTech 2026" aria-label="Sessions">Sessions</Link> */}
+                  <Link to="/guidelines" className="block text-gray-600 hover:text-gray-800" title="Conference Guidelines - PharmaTech 2026" aria-label="Guidelines">Guidelines</Link>
+                  <Link to="/important-dates" className="block text-gray-600 hover:text-gray-800" title="Important Dates - PharmaTech 2026" aria-label="Important Dates">Important Dates</Link>
+                  <Link to="/faq" className="block text-gray-600 hover:text-gray-800" title="Conference FAQ - PharmaTech 2026" aria-label="FAQ">FAQ</Link>
                 </div>
               )}
             </div>
 
-            <Link to="/register" className="block text-gray-800 font-semibold" title="Register for AIMLR 2026 Conference" aria-label="Register">
+            <Link to="/register" className="block text-gray-800 font-semibold" title="Register for PharmaTech 2026 Conference" aria-label="Register">
               REGISTER
             </Link>
 
-            <Link to="/contact" className="block text-gray-800 font-semibold" title="Contact AIMLR 2026 Organizers" aria-label="Contact">
+            <Link to="/contact" className="block text-gray-800 font-semibold" title="Contact PharmaTech 2026 Organizers" aria-label="Contact">
               CONTACT
             </Link>
           </div>
 
           {/* Mobile Buttons */}
           <div className="flex flex-col gap-3 pt-4">
-            <Link to="/register" title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference">
-              <button className="w-full bg-[#0047bd] text-white font-bold py-2 rounded-md hover:bg-[#178E70] transition-colors duration-300" title="Register for AIMLR 2026 Conference" aria-label="Register for AIMLR 2026 Conference">
+            <Link to="/register" title="Register for PharmaTech 2026 Conference" aria-label="Register for PharmaTech 2026 Conference">
+              <button className="w-full bg-[#0047bd] text-white font-bold py-2 rounded-md hover:bg-[#178E70] transition-colors duration-300" title="Register for PharmaTech 2026 Conference" aria-label="Register for PharmaTech 2026 Conference">
                 REGISTER
               </button>
             </Link>
-            <Link to="/AbstractSubmission" title="Submit Abstract for AIMLR 2026 Conference" aria-label="Submit Abstract for AIMLR 2026 Conference">
-              <button className="w-full bg-[#000f30] text-white font-bold py-2 rounded-md hover:bg-orange-600 transition-colors duration-300" title="Submit Abstract for AIMLR 2026 Conference" aria-label="Submit Abstract for AIMLR 2026 Conference">
+            <Link to="/AbstractSubmission" title="Submit Abstract for PharmaTech 2026 Conference" aria-label="Submit Abstract for PharmaTech 2026 Conference">
+              <button className="w-full bg-[#000f30] text-white font-bold py-2 rounded-md hover:bg-orange-600 transition-colors duration-300" title="Submit Abstract for PharmaTech 2026 Conference" aria-label="Submit Abstract for PharmaTech 2026 Conference">
                 ABSTRACT SUBMISSION
               </button>
             </Link>

@@ -25,7 +25,7 @@
 // //   {/* ✅ 2. DESCRIPTION: Focuses on "Full Papers" and "Proceedings" */}
 // //   <meta 
 // //     name="description" 
-// //     content="Submit your full research paper for the AI, ML & Robotics Conference (AIMLR 2026) in Rome. Peer-reviewed publication opportunities in conference proceedings. Deadline: July 2026." 
+// //     content="Submit your full research paper for the AI, ML & Robotics Conference (PharmaTech 2026) in Rome. Peer-reviewed publication opportunities in conference proceedings. Deadline: July 2026." 
 // //   />
 
 // //   {/* ✅ 3. KEYWORDS: Targeted for academic publishing */}
@@ -41,13 +41,13 @@
 // //   <meta property="og:type" content="website" />
 // //   <meta property="og:url" content="https://roboticsaisummit.com/call-for-papers" />
 // //   <meta property="og:title" content="Call for Papers - AI, ML & Robotics Conference 2026" />
-// //   <meta property="og:description" content="Submit your full paper for AIMLR 2026. Join global researchers in Rome for peer-reviewed presentation and publication." />
+// //   <meta property="og:description" content="Submit your full paper for PharmaTech 2026. Join global researchers in Rome for peer-reviewed presentation and publication." />
 // //   <meta property="og:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
-// //   <meta property="og:site_name" content="AIMLR 2026" />
+// //   <meta property="og:site_name" content="PharmaTech 2026" />
 
 // //   {/* 6. Twitter Cards */}
 // //   <meta name="twitter:card" content="summary_large_image" />
-// //   <meta name="twitter:title" content="Call for Papers | AIMLR 2026 Rome" />
+// //   <meta name="twitter:title" content="Call for Papers | PharmaTech 2026 Rome" />
 // //   <meta name="twitter:description" content="Submit your full research paper for the premier AI, ML & Robotics conference." />
 // //   <meta name="twitter:image" content="https://roboticsaisummit.com/aimllogo.jpg" />
 // // </Helmet>
@@ -60,7 +60,7 @@
 // //           CALL FOR ABSTRACTS 
 // //         </h2> */}
 // //         <h2 className="text-3xl md:text-4xl font-bold text-blue-900">
-// //           CALL FOR ABSTRACTS – AIMLR 2026
+// //           CALL FOR ABSTRACTS – PharmaTech 2026
 // //         </h2>
 // //         <p className="mt-2 text-gray-500 text-lg">
 // //           Submit your research and join the global conversation on AI, ML and Robotics.
@@ -74,7 +74,7 @@
 // //           <h3 className="text-2xl font-bold text-gray-900">About the Call</h3>
 // //         </div>
 // //         <p className="text-gray-700 leading-relaxed">
-// //           We cordially invite researchers, academicians, industry professionals, and students to submit research abstracts for presentation at the International Conference on Artificial Intelligence, Machine Learning & Robotics (AIMLR 2026), scheduled to be held in Rome, Italy, with in-person and virtual participation options.
+// //           We cordially invite researchers, academicians, industry professionals, and students to submit research abstracts for presentation at the International Conference on Artificial Intelligence, Machine Learning & Robotics (PharmaTech 2026), scheduled to be held in Rome, Italy, with in-person and virtual participation options.
 // //         </p>
 // //         <p className="text-gray-700 leading-relaxed mt-4">
 // //           This conference provides a global platform to present innovative ideas, ongoing research, and practical applications in AI, ML and Robotics.
@@ -164,8 +164,8 @@
 // //               <Link
 // //                 to="/sessions"
 // //                 className="leading-relaxed text-blue-600 hover:text-blue-800 underline"
-// //                 title="View more topics for AIMLR 2026 Conference"
-// //                 aria-label="View more topics for AIMLR 2026 Conference"
+// //                 title="View more topics for PharmaTech 2026 Conference"
+// //                 aria-label="View more topics for PharmaTech 2026 Conference"
 // //               >
 // //                 more topics
 // //               </Link>
@@ -255,8 +255,8 @@
 // //         <Link
 // //           to="/register"
 // //           className="flex items-center justify-center gap-2 px-8 py-3 bg-[#304278] text-white font-semibold rounded hover:bg-[#304278] transition-colors"
-// //           title="Register for the AIMLR 2026 Conference in Rome"
-// //           aria-label="Register for the AIMLR 2026 Conference in Rome"
+// //           title="Register for the PharmaTech 2026 Conference in Rome"
+// //           aria-label="Register for the PharmaTech 2026 Conference in Rome"
 // //         >
 // //           Register Now <ArrowRight className="w-4 h-4" />
 // //         </Link>
@@ -264,8 +264,8 @@
 // //         <Link
 // //           to="/AbstractSubmission"
 // //           className="flex items-center justify-center gap-2 px-8 py-3 border-2 border-gray-200 text-gray-700 font-semibold rounded hover:border-[#0091b5] hover:text-[#0091b5] transition-colors"
-// //           title="Submit your abstract for AIMLR 2026 Conference"
-// //           aria-label="Submit your abstract for AIMLR 2026 Conference"
+// //           title="Submit your abstract for PharmaTech 2026 Conference"
+// //           aria-label="Submit your abstract for PharmaTech 2026 Conference"
 // //         >
 // //           Abstract Submission
 // //         </Link>
@@ -310,7 +310,7 @@
 //         <title>Call for Papers | AI, ML & Robotics Conference 2026 Rome</title>
 //         <meta
 //           name="description"
-//           content="Submit your research paper for AIMLR 2026 in Rome. Peer-reviewed conference proceedings and global academic exposure."
+//           content="Submit your research paper for PharmaTech 2026 in Rome. Peer-reviewed conference proceedings and global academic exposure."
 //         />
 //         <link rel="canonical" href="https://roboticsaisummit.com/call-for-papers" />
 //       </Helmet>
@@ -320,7 +320,7 @@
 //         {/* Header */}
 //         <div className="mb-14 border-b border-[#E5E7EB] pb-6">
 //           <h2 className="text-3xl md:text-4xl font-bold text-[#1F2327]">
-//             Call for Abstracts – AIMLR 2026
+//             Call for Abstracts – PharmaTech 2026
 //           </h2>
 //           <p className="mt-3 text-[#4B5563] text-lg">
 //             Submit your research and join the global conversation on AI, ML and Robotics.
@@ -337,7 +337,7 @@
 //           </div>
 //           <p className="text-[#4B5563] leading-relaxed">
 //             We invite researchers, academicians, industry professionals, and students
-//             to submit abstracts for AIMLR 2026 in Rome, Italy, with in-person and
+//             to submit abstracts for PharmaTech 2026 in Rome, Italy, with in-person and
 //             virtual participation options.
 //           </p>
 //         </div>
@@ -485,6 +485,7 @@ import {
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet-async";
+import { useConference } from '../contexts/ConferenceContext';
 
 const SectionBlock = ({
   icon,
@@ -512,7 +513,7 @@ const SectionBlock = ({
   </section>
 );
 
-const List = ({ items }: { items: string[] }) => (
+const List = ({ items }: { items: (string | React.ReactNode)[] }) => (
   <ul className="space-y-2 mt-3">
     {items.map((item, idx) => (
       <li
@@ -527,13 +528,20 @@ const List = ({ items }: { items: string[] }) => (
 );
 
 const AboutTheCall: React.FC = () => {
+  const { data } = useConference();
+
+  const topics = data?.topics || [];
+
+  const displayedTopics = topics.slice(0, 8).map(t => t.topicName);
+  const moreLink = <Link to="/sessions" className="text-blue-600 hover:underline">More Topics</Link>;
+
   return (
     <>
       <Helmet>
         <title>Call for Papers | AI, ML & Robotics Conference 2026 Rome</title>
         <meta
           name="description"
-          content="Submit your research paper for AIMLR 2026 in Rome. Peer-reviewed conference proceedings and global academic exposure."
+          content="Submit your research paper for PharmaTech 2026 in Rome. Peer-reviewed conference proceedings and global academic exposure."
         />
         <link
           rel="canonical"
@@ -550,7 +558,7 @@ const AboutTheCall: React.FC = () => {
               Call for Abstracts
             </h2>
             <p className="mt-4 text-lg text-[#4B5563] max-w-3xl">
-              Submit your research and participate in AIMLR 2026 — a global forum
+              Submit your research and participate in PharmaTech 2026 — a global forum
               for Artificial Intelligence, Machine Learning and Robotics.
             </p>
             <div className="mt-6 h-[1px] w-full bg-[#E5E7EB]" />
@@ -567,7 +575,7 @@ const AboutTheCall: React.FC = () => {
               </h3>
             </div>
             <p className="text-[#4B5563] leading-relaxed max-w-4xl">
-              AIMLR 2026 invites researchers, academicians, industry professionals
+              PharmaTech 2026 invites researchers, academicians, industry professionals
               and students to submit abstracts for presentation in Rome, Italy,
               with both in-person and virtual participation options.
             </p>
@@ -610,16 +618,7 @@ const AboutTheCall: React.FC = () => {
               title="Topics of Interest"
             >
               <List
-                items={[
-                  "Artificial Intelligence",
-                  "Machine Learning & Deep Learning",
-                  "Robotics & Autonomous Systems",
-                  "Generative AI",
-                  "AI in Healthcare",
-                  "Computer Vision & NLP",
-                  "Human–Robot Interaction",
-                  "Smart Systems & IoT",
-                ]}
+                items={[...displayedTopics, moreLink]}
               />
             </SectionBlock>
 

@@ -9,7 +9,7 @@
 // // //       <div className="bg-gradient-to-r from-indigo-900 to-blue-500 text-white py-16">
 // // //         <div className="container mx-auto px-4 text-center">
 // // //           <h1 className="text-4xl font-bold mb-4">Venue & Travel</h1>
-// // //           <p className="text-xl">Everything you need to know about attending AIMLR 2026 in Rome</p>
+// // //           <p className="text-xl">Everything you need to know about attending PharmaTech 2026 in Rome</p>
 // // //         </div>
 // // //       </div>
 
@@ -264,7 +264,7 @@
         
 // //         <div className="relative container mx-auto px-6 text-center z-10 text-white">
 // //           <span className="inline-block py-1 px-3 rounded-full bg-white/20 backdrop-blur-md border border-white/30 text-xs font-bold uppercase tracking-widest mb-4">
-// //             AIMLR 2026
+// //             PharmaTech 2026
 // //           </span>
 // //           <h1 className="text-5xl md:text-6xl font-extrabold mb-6 tracking-tight">Venue & Travel</h1>
 // //           <p className="text-xl text-indigo-100 max-w-2xl mx-auto font-light">
@@ -340,7 +340,7 @@
 // //             <div className="text-center mb-12">
 // //                <h2 className="text-3xl font-bold text-gray-900 mb-3">Accommodation</h2>
 // //                <p className="text-gray-500 max-w-2xl mx-auto">
-// //                  We have negotiated special rates with several hotels near the venue. Mention "AIMLR 2026" when booking.
+// //                  We have negotiated special rates with several hotels near the venue. Mention "PharmaTech 2026" when booking.
 // //                </p>
 // //             </div>
             
@@ -663,7 +663,7 @@
 //                 <div>
 //                   <h3 className="text-3xl font-bold text-gray-900">Hotel Suggestions</h3>
 //                   <p className="text-gray-600 mt-2">
-//                     We recommend these hotels near the venue. Mention "AIMLR 2026" for special rates.
+//                     We recommend these hotels near the venue. Mention "PharmaTech 2026" for special rates.
 //                   </p>
 //                 </div>
 //               </div>
@@ -946,7 +946,7 @@ function VenueTravelPage() {
             <div>
               <h3 className="text-3xl font-bold">Hotel Suggestions</h3>
               <p className="text-[#6B6F74] mt-1">
-                Mention “AIMLR 2026” for conference rates.
+                Mention “PharmaTech 2026” for conference rates.
               </p>
             </div>
           </div>

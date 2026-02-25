@@ -15,7 +15,7 @@
 //             Ready to Share Your Research?
 //           </h2>
 //           <p className="text-indigo-200 mb-8 leading-relaxed">
-//             Join our distinguished speakers and present your groundbreaking work at AIMLR 2026.
+//             Join our distinguished speakers and present your groundbreaking work at PharmaTech 2026.
 //           </p>
 //           <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
 //             <Link to="/AbstractSubmission">
@@ -71,7 +71,7 @@ function SpeakersBottomSection() {
         {/* Description */}
         <p className="text-[#D1D5D8] text-base leading-relaxed mb-10">
           Join distinguished researchers, academicians, and industry experts by
-          presenting your work at the AIMLR 2026 Conference.
+          presenting your work at the PharmaTech 2026 Conference.
         </p>
 
         {/* Actions */}

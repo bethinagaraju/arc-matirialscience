@@ -496,10 +496,9 @@
 
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useConference } from "../contexts/ConferenceContext";
 
-/* =======================
-   Types
-======================= */
+
 interface ScheduleItem {
   time: string;
   title: string;
@@ -514,9 +513,7 @@ interface ScheduleData {
   day3: ScheduleItem[];
 }
 
-/* =======================
-   Schedule Data
-======================= */
+
 const scheduleData: ScheduleData = {
   day1: [
     {
@@ -583,6 +580,33 @@ const scheduleData: ScheduleData = {
 ======================= */
 const Agenda: React.FC = () => {
   const [activeDay, setActiveDay] = useState<number>(1);
+  const { data } = useConference();
+
+  // derive day-specific items from conference data (if available)
+  const conferenceAgenda = data?.agenda ?? [];
+  const day1FromApi = conferenceAgenda.filter((a) => a.day === "day1");
+  const day2FromApi = conferenceAgenda.filter((a) => a.day === "day2");
+  const day3FromApi = conferenceAgenda.filter((a) => a.day === "day3");
+
+  // map fetched agenda items to the local ScheduleItem shape
+  const mapAgenda = (items: any[]): ScheduleItem[] =>
+    items.map((it) => ({
+      time: it.time || "",
+      title: it.title || "",
+      description: it.description || "",
+      speaker: it.speaker || null,
+      room: it.room || null,
+    }));
+
+  const day1Items: ScheduleItem[] = day1FromApi.length
+    ? mapAgenda(day1FromApi)
+    : scheduleData.day1;
+  const day2Items: ScheduleItem[] = day2FromApi.length
+    ? mapAgenda(day2FromApi)
+    : [];
+  const day3Items: ScheduleItem[] = day3FromApi.length
+    ? mapAgenda(day3FromApi)
+    : [];
 
   /* Render Schedule */
   const renderSchedule = (day: ScheduleItem[]) =>
@@ -646,10 +670,12 @@ const Agenda: React.FC = () => {
           <h1 className="text-3xl md:text-4xl font-bold text-[#1F2327] mb-4">
             Conference Agenda
           </h1>
+
           <p className="text-[#6B6F74] max-w-2xl mx-auto">
             Three days of keynote talks, technical sessions, workshops, and
-            academic exchange in AI, Machine Learning, and Robotics.
+            academic exchange in the pharmaceutical industry.
           </p>
+
         </div>
 
         {/* Day Tabs */}
@@ -675,9 +701,9 @@ const Agenda: React.FC = () => {
         </div>
 
         {/* Agenda Content */}
-        {activeDay === 1 && renderSchedule(scheduleData.day1)}
-        {activeDay === 2 && <ComingSoon day={2} />}
-        {activeDay === 3 && <ComingSoon day={3} />}
+        {activeDay === 1 && renderSchedule(day1Items)}
+        {activeDay === 2 && (day2Items.length ? renderSchedule(day2Items) : <ComingSoon day={2} />)}
+        {activeDay === 3 && (day3Items.length ? renderSchedule(day3Items) : <ComingSoon day={3} />)}
 
         {/* Footer Note */}
         <p className="text-center text-sm text-[#6B6F74] mt-12">

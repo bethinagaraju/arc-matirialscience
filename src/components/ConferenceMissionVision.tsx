@@ -106,7 +106,7 @@
 // // // // //   {
 // // // // //     title: "Collaboration",
 // // // // //     icon: Users,
-// // // // //     desc: "We believe true innovation happens when diverse minds connect. AIMLR brings together academia, industry, and research communities to foster interdisciplinary exchange, teamwork, and long-term partnerships.",
+// // // // //     desc: "We believe true innovation happens when diverse minds connect. PharmaTech brings together academia, industry, and research communities to foster interdisciplinary exchange, teamwork, and long-term partnerships.",
 // // // // //     tags: ["Teamwork", "Networking", "Community"],
 // // // // //   },
 // // // // //   {
@@ -223,14 +223,14 @@
 // // // //       title: "Collaboration",
 // // // //       icon: Users,
 // // // //       desc:
-// // // //         "We believe real innovation emerges through shared knowledge. AIMLR connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
+// // // //         "We believe real innovation emerges through shared knowledge. PharmaTech connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
 // // // //       tags: ["Teamwork", "Networking", "Community"],
 // // // //     },
 // // // //     {
 // // // //       title: "Global Reach",
 // // // //       icon: Earth,
 // // // //       desc:
-// // // //         "AIMLR welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
+// // // //         "PharmaTech welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
 // // // //       tags: ["Accessibility", "Diversity", "Knowledge Sharing"],
 // // // //     },
 // // // //   ];
@@ -319,14 +319,14 @@
 // // //       title: "Collaboration",
 // // //       icon: Users,
 // // //       desc:
-// // //         "We believe real innovation emerges through shared knowledge. AIMLR connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
+// // //         "We believe real innovation emerges through shared knowledge. PharmaTech connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
 // // //       tags: ["Teamwork", "Networking", "Community"],
 // // //     },
 // // //     {
 // // //       title: "Global Reach",
 // // //       icon: Earth,
 // // //       desc:
-// // //         "AIMLR welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
+// // //         "PharmaTech welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
 // // //       tags: ["Accessibility", "Diversity", "Knowledge Sharing"],
 // // //     },
 // // //   ];
@@ -371,13 +371,13 @@
 // //       title: "Collaboration",
 // //       icon: Users,
 // //       desc:
-// //         "We believe real innovation emerges through shared knowledge. AIMLR connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
+// //         "We believe real innovation emerges through shared knowledge. PharmaTech connects academia, industry, and research communities to foster interdisciplinary exchange, partnerships, and meaningful collaboration.",
 // //     },
 // //     {
 // //       title: "Global Reach",
 // //       icon: Earth,
 // //       desc:
-// //         "AIMLR welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
+// //         "PharmaTech welcomes participation from every region and encourages equal access to knowledge. Our platform ensures that groundbreaking discoveries are shared with the world, not limited by geography.",
 // //     },
 // //   ];
 
@@ -526,7 +526,7 @@ const ConferenceMissionVisionList: React.FC = () => {
           </h2>
           <p className="text-[#6B7280] text-lg max-w-3xl">
             The guiding principles that define the purpose, direction, and
-            values of the AIMLR conference series.
+            values of the PharmaTech conference series.
           </p>
           <div className="mt-6 h-px bg-[#E5E7EB]" />
         </div>
